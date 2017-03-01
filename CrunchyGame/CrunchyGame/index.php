@@ -16,6 +16,7 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 </head>
 <body>
+    text
     <php?
         php echo "Chrumkavý Svet!";
         phpinfo();
