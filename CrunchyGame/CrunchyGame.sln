@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "Crunchy Game", "Crunchy Game\Crunchy Game.phpproj", "{574E52AD-A659-43ED-9820-8750EDA278C3}"
+Project("{A0786B88-2ADB-4C21-ABE8-AA2D79766269}") = "CrunchyGame", "CrunchyGame\CrunchyGame.phpproj", "{05B1D884-DB84-4602-981A-B6559B0AA79A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,8 +11,8 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{574E52AD-A659-43ED-9820-8750EDA278C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{574E52AD-A659-43ED-9820-8750EDA278C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05B1D884-DB84-4602-981A-B6559B0AA79A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05B1D884-DB84-4602-981A-B6559B0AA79A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
