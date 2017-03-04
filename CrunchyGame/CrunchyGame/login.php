@@ -50,7 +50,7 @@
           <input type="text" placeholder="Používateľské meno" name="Meno" />
           <input type="password" placeholder="Heslo" name="Heslo" />
           <button name="login" type="submit">Prihlásiť sa</button>
-          <p class="message">Niesi zaregistrovaný ?<a href="#">Vytvoriť Účet</a>
+          <p class="message">Niesi zaregistrovaný ?<a href="#"> Vytvoriť Účet</a>
           </p>
       </form>
   </div>
