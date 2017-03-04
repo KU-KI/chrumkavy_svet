@@ -46,12 +46,14 @@
       <button>Vytvoriť Účet</button>
       <p class="message">Už si registrovaný ? <a href="#"> Prihlás sa</a></p>
     </form>
-    <form class="login-form">
-      <input type="text" placeholder="Používateľské meno" name="meno"/>
-      <input type="password" placeholder="Heslo" name="Heslo"/>
-        <button name="login">Prihlásiť sa</button>
-      <p class="message">Niesi zaregistrovaný ?<a href="#"> Vytvoriť Účet</a></p>
-    </form>
+
+      <form class="login-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+          <input type="text" placeholder="Používateľské meno" name="Meno" />
+          <input type="password" placeholder="Heslo" name="Heslo" />
+          <button name="login">Prihlásiť sa</button>
+          <p class="message">Niesi zaregistrovaný ?<a href="#">Vytvoriť Účet</a>
+          </p>
+      </form>
   </div>
 </div>
 
