@@ -34,6 +34,7 @@
     <script src="assets/js/index.js"></script>
     <?php
         include 'config.php';
+        mysql_query("SHOW TABLES FROM yourDB");
     ?>
 </body>
 </html>
