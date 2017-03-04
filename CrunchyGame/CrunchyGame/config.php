@@ -10,7 +10,7 @@ catch (PDOException $e) {
 if($conn == true){
     print("Pripojenie nadviazane</br>");
 }*/
-$servername = "tcp:crunchygamedatabase.database.windows.net:1433";
+$servername = "crunchygamedatabase.database.windows.net:1433";
 $username = "crunchygame";
 $password = "Gameoftheyear2017";
 $dbname = "crunchygame";
