@@ -33,13 +33,13 @@
     <form class="login-form">
       <input type="text" placeholder="Používateľské meno"/>
       <input type="password" placeholder="Heslo"/>
-      <button>Prihlásiť sa</button>
+        <button onclick="PrihlasMa()">Prihlásiť sa</button>
       <p class="message">Niesi zaregistrovaný ?<a href="#"> Vytvoriť Účet</a></p>
     </form>
   </div>
 </div>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-
+    <p id="demo"></p>
     <script src="assets/js/index.js"></script>
     <?php
         include 'config.php';
@@ -81,5 +81,10 @@
         $conn = null;
         echo "</table>";
     ?>
+    <script>
+        function PrihlasMa() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+    </script>
 </body>
 </html>
