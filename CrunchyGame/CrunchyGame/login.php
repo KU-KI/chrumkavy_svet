@@ -45,6 +45,7 @@
             echo "Žiadne účty neboli nájdené";
         }
         $conn->close();*/
+
         // sql to create table
         $sql = "CREATE TABLE MyGuests (
         id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
@@ -53,14 +54,11 @@
         email VARCHAR(50),
         reg_date TIMESTAMP
         )";
-        if($conn==true) echo "hai";
-        if ($conn->query($sql) === TRUE) {
-            echo "Table MyGuests created successfully";
-        } else {
-            echo "Error creating table: " . $conn->error;
-        }
 
-        $conn->close();
+        // use exec() because no results are returned
+        $conn->exec($sql);
+        echo "Table MyGuests created successfully";
+        $conn = null;
     ?>
 </body>
 </html>
