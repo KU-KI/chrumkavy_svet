@@ -4,10 +4,10 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
-    print("Error connecting to SQL Server.");
+    print("Chyba pri nadvezovani spojenia");
     die(print_r($e));
 }
 if($conn == true){
-    print("Hurá si pripojený :D");
+    print("Spojenie nadviazane");
 }
 ?>
