@@ -34,7 +34,7 @@
     <script src="assets/js/index.js"></script>
     <?php
         include 'config.php';
-        $sql = "SELECT ID FROM Accounts";
+        /*$sql = "SELECT ID FROM Accounts";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
@@ -44,8 +44,23 @@
         } else {
             echo "Žiadne účty neboli nájdené";
         }
+        $conn->close();*/
+        // sql to create table
+        $sql = "CREATE TABLE MyGuests (
+        id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+        firstname VARCHAR(30) NOT NULL,
+        lastname VARCHAR(30) NOT NULL,
+        email VARCHAR(50),
+        reg_date TIMESTAMP
+        )";
+
+        if ($conn->query($sql) === TRUE) {
+            echo "Table MyGuests created successfully";
+        } else {
+            echo "Error creating table: " . $conn->error;
+        }
+
         $conn->close();
-    ?>
     ?>
 </body>
 </html>
