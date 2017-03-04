@@ -34,7 +34,7 @@
     <script src="assets/js/index.js"></script>
     <?php
         include 'config.php';
-        $sql = "SELECT ID, Meno, Heslo FROM Accounts";
+        $sql = "SELECT ID, Meno, Heslo FROM dbo.Accounts";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
