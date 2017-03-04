@@ -30,7 +30,7 @@
         }
         else 
         {
-            $msg = 'Zlé meno alebo heslo';
+            echo 'Zlé meno alebo heslo';
         }
     }
     ?>
@@ -49,7 +49,7 @@
       <form class="login-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
           <input type="text" placeholder="Používateľské meno" name="Meno" />
           <input type="password" placeholder="Heslo" name="Heslo" />
-          <button name="login">Prihlásiť sa</button>
+          <button name="login" type="submit">Prihlásiť sa</button>
           <p class="message">Niesi zaregistrovaný ?<a href="#">Vytvoriť Účet</a>
           </p>
       </form>
