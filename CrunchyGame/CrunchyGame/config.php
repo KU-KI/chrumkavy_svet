@@ -19,7 +19,7 @@ if($conn == true){
 $connectionInfo = array("UID" => "crunchygame@crunchygamedatabase", "pwd" => "Gameoftheyear2017", "Database" => "crunchygame", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
 $serverName = "tcp:crunchygamedatabase.database.windows.net,1433";
 $conn = sqlsrv_connect($serverName, $connectionInfo);*/
-$mysqli = new mysqli("tcp:crunchygamedatabase.database.windows.net,1433", "crunchygame", "Gameoftheyear2017", "crunchygame");
+$mysqli = new mysqli("tcp:crunchygamedatabase.database.windows.net:1433", "crunchygame", "Gameoftheyear2017", "crunchygame");
 /* check connection */
 if (mysqli_connect_errno()) {
     printf("Connect failed: %s\n", mysqli_connect_error());
