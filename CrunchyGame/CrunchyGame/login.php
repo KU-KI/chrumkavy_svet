@@ -36,7 +36,7 @@
         include 'config.php';
 
         echo "<table style='border: solid 1px black;'>";
-        echo "<tr><th>Id</th><th>Firstname</th><th>Lastname</th></tr>";
+        echo "<tr><th>ID</th><th>MENO</th></tr>";
 
         class TableRows extends RecursiveIteratorIterator {
             function __construct($it) {
@@ -57,7 +57,7 @@
         }
 
         try {
-            $stmt = $conn->prepare("SELECT ID, Meno, Heslo FROM Accounts");
+            $stmt = $conn->prepare("SELECT ID, Meno FROM Accounts");
             $stmt->execute();
 
             // set the resulting array to associative
