@@ -24,13 +24,12 @@
 
     <?php
     $msg = '';
-
-    if (isset($_POST['login']) && !empty($_POST['Meno'])
-       && !empty($_POST['Heslo'])) {
-        if ($_POST['Meno'] == 'test' &&
-           $_POST['password'] == 'test') {
+    if (isset($_POST['login']) && !empty($_POST['Meno']) && !empty($_POST['Heslo'])) {
+        if ($_POST['Meno'] == 'test' && $_POST['Heslo'] == 'test') {
             echo 'Boli ste prihlásený';
-        }else {
+        }
+        else 
+        {
             $msg = 'Zlé meno alebo heslo';
         }
     }
