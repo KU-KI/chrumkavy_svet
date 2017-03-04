@@ -10,6 +10,7 @@ catch (PDOException $e) {
 }
 if($conn == true){
     print("Hurá si pripojený :D");
+    $premenna = "ahoj svet";
 }
 
 

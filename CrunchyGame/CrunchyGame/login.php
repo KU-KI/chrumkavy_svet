@@ -34,7 +34,7 @@
     <script src="assets/js/index.js"></script>
     <?php
         include 'config.php';
-        echo $conn;
+        echo $premenna;
     ?>
 </body>
 </html>
