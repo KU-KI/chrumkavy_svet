@@ -7,8 +7,17 @@
   
   
       <link rel="stylesheet" href="assets/css/style.css">
+        <style>
+            body {
+                text-align: center;
+            }
 
-  
+            #wrapper {
+                margin: 0 auto;
+                width: 900px;
+                text-align: left;
+            }
+        </style>
 </head>
 
 <body>

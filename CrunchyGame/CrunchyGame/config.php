@@ -4,10 +4,10 @@ try {
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
-    print("Chyba pri nadvezovani spojenia");
+    print("Chyba pri nadvezovani spojenia</br>");
     die(print_r($e));
 }
 if($conn == true){
-    print("Spojenie nadviazane");
+    print("Spojenie nadviazane</br>");
 }
 ?>
