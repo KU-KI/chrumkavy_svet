@@ -8,6 +8,6 @@ catch (PDOException $e) {
     die(print_r($e));
 }
 if($conn == true){
-    print("Pripojenie nadviazane");
+    print("Pripojenie nadviazane</br>");
 }
 ?>
