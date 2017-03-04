@@ -53,7 +53,7 @@
         email VARCHAR(50),
         reg_date TIMESTAMP
         )";
-
+        if($conn==true) echo "hai";
         if ($conn->query($sql) === TRUE) {
             echo "Table MyGuests created successfully";
         } else {
