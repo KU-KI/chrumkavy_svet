@@ -34,7 +34,19 @@
     <script src="assets/js/index.js"></script>
     <?php
         include 'config.php';
-        mysql_query("SHOW TABLES FROM crunchygame");
+        $sql = "SELECT ID, Meno, Heslo FROM Accounts";
+        $result = $conn->query($sql);
+
+        if ($result->num_rows > 0) {
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>";
+            }
+        } else {
+            echo "Žiadne účty neboli nájdené";
+        }
+        $conn->close();
+    ?>
     ?>
 </body>
 </html>
