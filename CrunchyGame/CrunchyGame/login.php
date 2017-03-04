@@ -34,7 +34,7 @@
     <script src="assets/js/index.js"></script>
     <?php
         include 'config.php';
-        $sql = "SELECT ID FROM dbo.Accounts";
+        $sql = "SELECT ID FROM Accounts";
         $result = $conn->query($sql);
 
         if ($result->num_rows > 0) {
