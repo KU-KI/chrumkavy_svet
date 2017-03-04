@@ -45,7 +45,7 @@
         include 'config.php';
         echo "Registrované Účty";
         echo "<center><table style='border: solid 1px black;'></center>";
-        echo "<center><tr><th>ID</th><th>Meno Účtu</th></tr></center>";
+        echo "<tr><th>ID</th><th>Meno Účtu</th></tr>";
 
         class TableRows extends RecursiveIteratorIterator {
             function __construct($it) {
