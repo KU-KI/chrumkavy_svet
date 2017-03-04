@@ -34,7 +34,7 @@
     <script src="assets/js/index.js"></script>
     <?php
         include 'config.php';
-
+        echo "Registrované Účty";
         echo "<table style='border: solid 1px black;'>";
         echo "<tr><th>ID</th><th>MENO</th></tr>";
 
