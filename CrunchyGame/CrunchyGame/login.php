@@ -75,7 +75,7 @@
             }
 
             function current() {
-                return "<td style='width:150px;border:1px solid black;text-align:center'>" . parent::current(). "</td>";
+                return "<td style='width:150px;border:1px solid black;text-align:center;font color=red'>" . parent::current(). "</td>";
             }
 
             function beginChildren() {
