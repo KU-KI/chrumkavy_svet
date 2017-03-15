@@ -7,7 +7,7 @@
     <meta name="author" content="">
 
 
-    <title>All Template Needs</title>
+    <title>Chrumkavý Svet</title>
 
     <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
