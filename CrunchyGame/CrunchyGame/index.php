@@ -80,7 +80,7 @@ jj<!DOCTYPE html>
                     <div class="item active">
                         <img src="assets/img/banner-img.jpg" alt="" class="">
                         <div class="carousel-caption">
-                            <i class="fw-icon-pencil"></i>
+                            <i class="fw-icon-pencil"><img src="assets/img/logo_small.png" alt=""></i>
                             <h1>Crunchy game</h1>
                             
                             <a href="login.php" class="btn"> Prihlásenie</a>
@@ -89,16 +89,16 @@ jj<!DOCTYPE html>
                     <div class="item">
                         <img src="assets/img/crunchy1.jpg" alt="">
                         <div class="carousel-caption">
-                            <i class="fw-icon-pencil"></i>
+                            <i class="fw-icon-pencil"><img src="assets/img/logo_small.png" alt=""></i>
                             <h1>Crunchy game</h1>
-                            
+
                             <a href="login.php" class="btn"> Prihlásenie</a>
                         </div>
                     </div>
                     <div class="item">
                         <img src="assets/img/banner-img.jpg" alt="">
                         <div class="carousel-caption">
-                            <i class="fw-icon-pencil"></i>
+                            <i class="fw-icon-pencil"><img src="assets/img/logo_small.png" alt=""></i>
                             <h1>Crunchy game</h1>
                             
                            <a href="login.php" class="btn"> Prihlásenie</a>
