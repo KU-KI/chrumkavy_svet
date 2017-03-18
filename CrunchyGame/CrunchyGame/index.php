@@ -81,27 +81,27 @@ jj<!DOCTYPE html>
                         <img src="assets/img/banner-img.jpg" alt="" class="">
                         <div class="carousel-caption">
                             <i class="fw-icon-pencil"></i>
-                            <h2>Corem ipsum</h2>
-                            <h1>sit amet vivamus</h1>
-                            <a href="#" class="btn"> more info</a>
+                            <h1>Crunchy game</h1>
+                            
+                            <a href="login.php" class="btn"> Prihlásenie</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="assets/img/crunchy1.jpg" alt="">
+                        <div class="carousel-caption">
+                            <i class="fw-icon-pencil"></i>
+                            <h1>Crunchy game</h1>
+                            
+                            <a href="login.php" class="btn"> Prihlásenie</a>
                         </div>
                     </div>
                     <div class="item">
                         <img src="assets/img/banner-img.jpg" alt="">
                         <div class="carousel-caption">
                             <i class="fw-icon-pencil"></i>
-                            <h2>Corem ipsum</h2>
-                            <h1>sit amet vivamus</h1>
-                            <a href="#" class="btn"> more info</a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <img src="assets/img/banner-img.jpg" alt="">
-                        <div class="carousel-caption">
-                            <i class="fw-icon-pencil"></i>
-                            <h2>Corem ipsum</h2>
-                            <h1>sit amet vivamus</h1>
-                            <a href="#" class="btn"> more info</a>
+                            <h1>Crunchy game</h1>
+                            
+                           <a href="login.php" class="btn"> Prihlásenie</a>
                         </div>
                     </div>
                 </div>
@@ -119,10 +119,10 @@ jj<!DOCTYPE html>
             <div class="main-title">
                 <ul class="grid effect-8" id="grid">
                     <li>
-                        <h1>Lorem ipsum</h1>
+                        <h1>Crunchy game</h1>
                         <h4>
-                            Donec nec justo eget felis facilisis fermentum.<br>
-                            Aliquam porttit or mauris sit amet orci. Aenean dignissim pellentesque felis.
+                            Stredoveká browserová hra na štýl Travianu/Divokých kmeňov<br>
+                            
                         </h4>
                     </li>
                 </ul>
@@ -141,8 +141,8 @@ jj<!DOCTYPE html>
             <div class="main-title spacing-bt">
                 <ul class="grid effect-8" id="grid">
                     <li>
-                        <h1>Cras iaculis</h1>
-                        <h4>Fusce lobortis lorem at ipsum semper sagittis</h4>
+                        <h1>O hre</h1>
+                        <h4>Bližšie predstavenie hry</h4>
                     </li>
                 </ul>
             </div>
