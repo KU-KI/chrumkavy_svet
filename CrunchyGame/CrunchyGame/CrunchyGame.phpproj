@@ -18,5 +18,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="admin.php" />
+    <Compile Include="logout.php" />
   </ItemGroup>
 </Project>

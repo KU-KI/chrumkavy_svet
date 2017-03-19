@@ -1,3 +1,7 @@
+<?php
+ob_start();
+session_start();
+?>
 <!DOCTYPE html>
 <html >
 <head>
@@ -26,9 +30,13 @@
     $msg = '';
     if (isset($_POST['login']) && !empty($_POST['Meno']) && !empty($_POST['Heslo'])) {
         if ($_POST['Meno'] == 'test' && $_POST['Heslo'] == 'test') {
+            $_SESSION['valid'] = true;
+            $_SESSION['timeout'] = time();
+            $_SESSION['username'] = $_POST['Meno'];
             echo 'Boli ste prihlásený';
+            header( 'Location: profile.php' );
         }
-        else 
+        else
         {
             echo 'Zlé meno alebo heslo';
         }

@@ -1,0 +1,8 @@
+<?php
+session_start();
+unset($_SESSION["username"]);
+unset($_SESSION["password"]);
+
+echo 'Boli ste odhlásený';
+header('Refresh: 2; URL = index.php');
+?>
