@@ -41,20 +41,7 @@ jj<!DOCTYPE html>
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav ">
-                            <li><a href="#">Domov</a></li>
-                            <li class="dropdown ">
-                                <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Test<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="login.php">Prihlásenie</a></li>
-                        </ul>
-
-                    </div><!--/.navbar-collapse -->
-
+                    
                 </div>
                 <div class="mini-menu">
                     <label>
