@@ -41,6 +41,22 @@ session_start();
             echo 'Zlé meno alebo heslo';
         }
     }
+
+    //TEST
+    $name = $_post['Patrik'];
+    if (mysqli_connect_errno())
+      {
+        echo "Failed to connect to MySQL: " . mysqli_connect_error();
+      }
+
+    $result = mysqli_query($conn, "SELECT * FROM Accounts WHERE meno LIKE '%{$name}%'");
+
+    while ($row = mysqli_fetch_array($result))
+    {
+            echo $row['meno'];
+            echo "<br>";
+    }
+    mysqli_close($conn);
     ?>
 
 
