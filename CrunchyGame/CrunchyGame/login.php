@@ -2,10 +2,6 @@
 include("config.php");
 session_start();
 
-// Check connection
-if ($db->connect_error) {
-    echo 'chyba pripojenia';
-}
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
 
