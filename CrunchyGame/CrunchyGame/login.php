@@ -1,131 +1,88 @@
 <?php
-ob_start();
+include("config.php");
 session_start();
-?>
-<!DOCTYPE html>
-<html >
-<head>
-  <meta charset="UTF-8">
-  <title>Prihlásenie do CrunchyGame</title>
-  
-  
-  
-      <link rel="stylesheet" href="assets/css/style.css">
-        <style>
-            body {
-                text-align: center;
-            }
 
-            #wrapper {
-                margin: 0 auto;
-                width: 900px;
-                text-align: left;
-            }
-        </style>
+if($_SERVER["REQUEST_METHOD"] == "POST") {
+    // username and password sent from form
+
+    $myusername = mysqli_real_escape_string($db,$_POST['username']);
+    $mypassword = mysqli_real_escape_string($db,$_POST['password']);
+
+    $sql = "SELECT id FROM admin WHERE username = '$myusername' and passcode = '$mypassword'";
+    $result = mysqli_query($db,$sql);
+    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+    $active = $row['active'];
+
+    $count = mysqli_num_rows($result);
+
+    // If result matched $myusername and $mypassword, table row must be 1 row
+
+    if($count == 1) {
+        session_register("myusername");
+        $_SESSION['login_user'] = $myusername;
+
+        header("location: welcome.php");
+    }else {
+        $error = "Your Login Name or Password is invalid";
+    }
+}
+?>
+<html>
+
+<head>
+    <title>Prihlásenie do Crunchy Game</title>
+
+    <style type="text/css">
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+        }
+
+        label {
+            font-weight: bold;
+            width: 100px;
+            font-size: 14px;
+        }
+
+        .box {
+            border: #666666 solid 1px;
+        }
+    </style>
+
 </head>
 
-<body>
+<body bgcolor="#FFFFFF">
 
-    <?php
-    $msg = '';
-    if (isset($_POST['login']) && !empty($_POST['Meno']) && !empty($_POST['Heslo'])) {
-        if ($_POST['Meno'] == 'test' && $_POST['Heslo'] == 'test') {
-            $_SESSION['valid'] = true;
-            $_SESSION['timeout'] = time();
-            $_SESSION['username'] = $_POST['Meno'];
-            echo 'Boli ste prihlásený';
-            header( 'Location: profile.php' );
-        }
-        else
-        {
-            echo 'Zlé meno alebo heslo';
-        }
-    }
+    <div align="center">
+        <div style="width:300px; border: solid 1px #333333; " align="left">
+            <div style="background-color:#333333; color:#FFFFFF; padding:3px;">
+                <b>Login</b>
+            </div>
 
-    //TEST
-    $name = $_post['Patrik'];
-    if (mysqli_connect_errno())
-      {
-        echo "Failed to connect to MySQL: " . mysqli_connect_error();
-      }
+            <div style="margin:30px">
 
-    $result = mysqli_query($conn, "SELECT * FROM Accounts WHERE meno LIKE '%{$name}%'");
+                <form action="" method="post">
+                    <label>UserName  :</label>
+                    <input type="text" name="username" class="box" />
+                    <br />
+                    <br />
+                    <label>Password  :</label>
+                    <input type="password" name="password" class="box" />
+                    <br />
+                    <br />
+                    <input type="submit" value=" Submit " />
+                    <br />
+                </form>
 
-    while ($row = mysqli_fetch_array($result))
-    {
-            echo $row['meno'];
-            echo "<br>";
-    }
-    mysqli_close($conn);
-    ?>
+                <div style="font-size:11px; color:#cc0000; margin-top:10px">
+                    <?php echo $error; ?>
+                </div>
 
+            </div>
 
-  <div class="login-page">
-  <div class="form">
-    <form class="register-form">
-      <input type="text" placeholder="Používateľské meno"/>
-      <input type="password" placeholder="Heslo"/>
-      <input type="text" placeholder="Emailová adresa"/>
-      <button>Vytvoriť Účet</button>
-      <p class="message">Už si registrovaný ? <a href="#"> Prihlás sa</a></p>
-    </form>
+        </div>
 
-      <form class="login-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-          <input type="text" placeholder="Používateľské meno" name="Meno" />
-          <input type="password" placeholder="Heslo" name="Heslo" />
-          <button name="login" type="submit">Prihlásiť sa</button>
-          <p class="message">Niesi zaregistrovaný ?<a href="#"> Vytvoriť Účet</a>
-          </p>
-      </form>
-  </div>
-</div>
+    </div>
 
-
-  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <p id="demo"></p>
-    <script src="assets/js/index.js"></script>
-
-
-
-    <?php
-        include 'config.php';
-        echo "Registrované Účty";
-        echo "<center><table style='border: solid 1px black;'></center>";
-        echo "<tr><th>ID</th><th>Meno Účtu</th></tr>";
-
-        class TableRows extends RecursiveIteratorIterator {
-            function __construct($it) {
-                parent::__construct($it, self::LEAVES_ONLY);
-            }
-
-            function current() {
-                return "<td style='width:150px;border:1px solid black;text-align:center;font color=red'>" . parent::current(). "</td>";
-            }
-
-            function beginChildren() {
-                echo "<tr>";
-            }
-
-            function endChildren() {
-                echo "</tr>" . "\n";
-            }
-        }
-
-        try {
-            $stmt = $conn->prepare("SELECT ID, Meno FROM Accounts");
-            $stmt->execute();
-
-            // set the resulting array to associative
-            $result = $stmt->setFetchMode(PDO::FETCH_ASSOC);
-            foreach(new TableRows(new RecursiveArrayIterator($stmt->fetchAll())) as $k=>$v) {
-                echo $v;
-            }
-        }
-        catch(PDOException $e) {
-            echo "Error: " . $e->getMessage();
-        }
-        $conn = null;
-        echo "</table>";
-    ?>
 </body>
 </html>
