@@ -27,62 +27,82 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
+<!DOCTYPE html>
+
 <html>
 
 <head>
-    <title>Prihlásenie do Crunchy Game</title>
 
-    <style type="text/css">
+    <meta charset="UTF-8" />
+
+    <title>Prihlásenie do CrunchyGame</title>
+
+
+
+
+
+
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
         body {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 14px;
+            text-align: center;
         }
 
-        label {
-            font-weight: bold;
-            width: 100px;
-            font-size: 14px;
-        }
 
-        .box {
-            border: #666666 solid 1px;
+
+        #wrapper {
+            margin: 0 auto;
+            width: 900px;
+            text-align: left;
         }
     </style>
 
 </head>
+<div class="login-page">
 
-<body bgcolor="#FFFFFF">
+    <div class="form">
 
-    <div align="center">
-        <div style="width:300px; border: solid 1px #333333; " align="left">
-            <div style="background-color:#333333; color:#FFFFFF; padding:3px;">
-                <b>Prihlásenie do Crunchy Game</b>
-            </div>
+        <form class="register-form">
 
-            <div style="margin:30px">
+            <input type="text" placeholder="Používateľské meno" />
 
-                <form action="" method="post">
-                    <label>UserName  :</label>
-                    <input type="text" name="username" class="box" />
-                    <br />
-                    <br />
-                    <label>Password  :</label>
-                    <input type="password" name="password" class="box" />
-                    <br />
-                    <br />
-                    <input type="submit" value=" Submit " />
-                    <br />
-                </form>
+            <input type="password" placeholder="Heslo" />
 
-                <div style="font-size:11px; color:#cc0000; margin-top:10px">
-                    <?php echo $error; ?>
-                </div>
+            <input type="text" placeholder="Emailová adresa" />
 
-            </div>
+            <button>Vytvoriť Účet</button>
 
-        </div>
+            <p class="message">Už si registrovaný ? <a href="#"> Prihlás sa</a></p>
+
+        </form>
+
+
+
+        <form class="login-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+
+            <input type="text" placeholder="Používateľské meno" name="username" />
+
+            <input type="password" placeholder="Heslo" name="password" />
+
+            <button name="login" type="submit">Prihlásiť sa</button>
+
+            <p class="message">
+                Niesi zaregistrovaný ?<a href="#">Vytvoriť Účet</a>
+
+            </p>
+
+        </form>
 
     </div>
 
-</body>
+</div>
+
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+<p id="demo"></p>
+
+<script src="assets/js/index.js"></script>
+        </body>
 </html>
