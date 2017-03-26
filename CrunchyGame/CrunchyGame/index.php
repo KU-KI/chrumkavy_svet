@@ -41,20 +41,7 @@ jj<!DOCTYPE html>
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-                    <div class="navbar-collapse collapse">
-                        <ul class="nav navbar-nav ">
-                            <li><a href="#">Domov</a></li>
-                            <li class="dropdown ">
-                                <a href="#" class="dropdown-toggle active" data-toggle="dropdown">Test<b class="caret"></b></a>
-                                <ul class="dropdown-menu">
-                                    <li><a href="#">Another action</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="login.php">Prihlásenie</a></li>
-                        </ul>
-
-                    </div><!--/.navbar-collapse -->
-
+                    
                 </div>
                 <div class="mini-menu">
                     <label>
@@ -78,18 +65,19 @@ jj<!DOCTYPE html>
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="assets/img/banner-img.jpg" alt="" class="">
+                        <img src="assets/img/banner_2.png" alt="" class="">
                         <div class="carousel-caption">
-                            <i class="fw-icon-pencil"><img src="assets/img/logo_small.png" alt=""></i>
+                            <i class=""></i>
                             <h1>Crunchy game</h1>
                             
                             <a href="login.php" class="btn"> Prihlásenie</a>
                         </div>
                     </div>
                     <div class="item">
+
                         <img src="assets/img/crunchy1.jpg" alt="">
                         <div class="carousel-caption">
-                            <i class="fw-icon-pencil"><img src="assets/img/logo_small.png" alt=""></i>
+                            <i class=""></i>
                             <h1>Crunchy game</h1>
 
                             <a href="login.php" class="btn"> Prihlásenie</a>
@@ -98,7 +86,7 @@ jj<!DOCTYPE html>
                     <div class="item">
                         <img src="assets/img/banner-img.jpg" alt="">
                         <div class="carousel-caption">
-                            <i class="fw-icon-pencil"><img src="assets/img/logo_small.png" alt=""></i>
+                            <i class=""></i>
                             <h1>Crunchy game</h1>
                             
                            <a href="login.php" class="btn"> Prihlásenie</a>
