@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         header("location: profile.php");
     }else {
-        $error = "Your Login Name or Password is invalid";
+        $error = "Vaše prihlasovacie meno alebo heslo niesú správne";
     }
 }
 ?>
