@@ -2,6 +2,10 @@
 include("config.php");
 session_start();
 
+// Check connection
+if ($db->connect_error) {
+    echo 'chyba pripojenia';
+}
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
 
@@ -26,18 +30,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Vaše prihlasovacie meno alebo heslo niesú správne";
     }
 }
-//TEST
-$sql = "SELECT id, username, nickname FROM account";
-$result = $db->query($sql);
-
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) { 
-        echo "id: " . $row["id"]. " - Name: " . $row["username"]. " " . $row["nickname"]. "<br>";
-    }
-} else {
-    echo '0 results';
-}
-
 ?>
 <html>
 
