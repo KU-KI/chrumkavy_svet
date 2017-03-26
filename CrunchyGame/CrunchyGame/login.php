@@ -56,7 +56,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     <div align="center">
         <div style="width:300px; border: solid 1px #333333; " align="left">
             <div style="background-color:#333333; color:#FFFFFF; padding:3px;">
-                <b>Login</b>
+                <b>Prihlásenie do Crunchy Game</b>
             </div>
 
             <div style="margin:30px">
