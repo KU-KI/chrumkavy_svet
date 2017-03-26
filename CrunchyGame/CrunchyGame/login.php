@@ -2,6 +2,14 @@
 include("config.php");
 session_start();
 
+if ($db->connect_error) {
+    echo "Not connected, error: " . $db->connect_error;
+}
+else
+{
+    echo "Connected.";
+}
+
 if($_SERVER["REQUEST_METHOD"] == "POST") {
     // username and password sent from form
 
