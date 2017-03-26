@@ -1,18 +1,24 @@
 <?php
-/*try {
-    $conn = new PDO("sqlsrv:server = tcp:crunchygamedatabase.database.windows.net,1433; Database = crunchygame", "crunchygame", "Gameoftheyear2017");
-    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+$connectstr_dbhost = '';
+$connectstr_dbname = '';
+$connectstr_dbusername = '';
+$connectstr_dbpassword = '';
+
+foreach ($_SERVER as $key => $value) {
+    if (strpos($key, "MYSQLCONNSTR_localdb") !== 0) {
+        continue;
+    }
+
+    $connectstr_dbhost = preg_replace("/^.*Data Source=(.+?);.*$/", "\\1", $value);
+    $connectstr_dbname = preg_replace("/^.*Database=(.+?);.*$/", "\\1", $value);
+    $connectstr_dbusername = preg_replace("/^.*User Id=(.+?);.*$/", "\\1", $value);
+    $connectstr_dbpassword = preg_replace("/^.*Password=(.+?)$/", "\\1", $value);
 }
-catch (PDOException $e) {
-    print("Chyba pri nadvezovani spojenia</br>");
-    die(print_r($e));
-}
-if($conn == true){
-    print("Spojenie nadviazane</br>");
-}*/
-    define('DB_SERVER', 'tcp:crunchygamedatabase.database.windows.net:1433');
-    define('DB_USERNAME', 'crunchygame');
-    define('DB_PASSWORD', 'Gameoftheyear2017');
-    define('DB_DATABASE', 'crunchygame');
+
+    define('DB_SERVER', $connectstr_dbhost);
+    define('DB_USERNAME', $connectstr_dbusername);
+    define('DB_PASSWORD', $connectstr_dbpassword);
+    define('DB_DATABASE', $connectstr_dbname);
     $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
 ?>
