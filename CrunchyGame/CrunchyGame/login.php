@@ -26,6 +26,20 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Vaše prihlasovacie meno alebo heslo niesú správne";
     }
 }
+//TEST
+$sql = "SELECT id, username, nickname FROM account";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Name: " . $row["username"]. " " . $row["nickname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
+
 ?>
 <html>
 
