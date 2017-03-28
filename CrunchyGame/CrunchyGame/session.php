@@ -2,7 +2,7 @@
 include('config.php');
 session_start();
 
-$user_check = $_SESSION['login_user'];
+$user_check = $_SESSION['username'];
 
 $ses_sql = mysqli_query($db,"select username from account where username = '$user_check' ");
 
