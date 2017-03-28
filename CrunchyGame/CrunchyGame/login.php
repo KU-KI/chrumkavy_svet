@@ -19,7 +19,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if($count == 1) {
         $_SESSION['username'] = $myusername;
-        $_SESSION['ID'] = $sql;
+        $_SESSION['ID'] = $row['id'];
 
 
         header("location: profile.php");
