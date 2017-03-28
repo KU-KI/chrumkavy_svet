@@ -96,10 +96,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 </div>
 
+<body>
+</body>
+
+</html>
+
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 
 <p id="demo"></p>
 
 <script src="assets/js/index.js"></script>
-        </body>
-</html>
