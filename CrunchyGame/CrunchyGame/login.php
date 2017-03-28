@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     // If result matched $myusername and $mypassword, table row must be 1 row
 
     if($count == 1) {
-        //session_register("myusername");
+        session_register("Patrik");
         $_SESSION['login_user'] = $myusername;
 
         header("location: profile.php");
@@ -70,8 +70,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <input type="password" placeholder="Heslo" />
 
-            <input type="text" placeholder="Emailová adresa" />
-
             <button>Vytvoriť Účet</button>
 
             <p class="message">Už si registrovaný ? <a href="#"> Prihlás sa</a></p>
@@ -82,14 +80,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <form class="login-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 
-            <input type="text" placeholder="Používateľské meno" name="username" />
+            <input type="text" placeholder="Meno účtu" name="username" />
 
             <input type="password" placeholder="Heslo" name="password" />
 
             <button name="login" type="submit">Prihlásiť sa</button>
 
-            <p class="message">
-                Niesi zaregistrovaný ?<a href="#">Vytvoriť Účet</a>
+            <p class="message">Niesi zaregistrovaný ? <a href="#">Vytvoriť Účet</a>
 
             </p>
 
