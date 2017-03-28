@@ -10,8 +10,6 @@ $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
 
 $username = $row['username'];
 
-$_SESSION['username'];
-
 if(!isset($_SESSION['login_user'])){
     header("location:login.php");
 }
