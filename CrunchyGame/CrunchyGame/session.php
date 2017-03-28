@@ -8,7 +8,7 @@ $ses_sql = mysqli_query($db,"select username from account where username = '$use
 
 $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
 
-$login_session = $row['username'];
+$username = $row['username'];
 
 $_SESSION['username'];
 

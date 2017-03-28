@@ -9,7 +9,7 @@ session_start();
    </head>
    
    <body>
-      <h1>Vitajte <?php echo $$login_session; ?></h1> 
+      <h1>Vitajte <?php echo $$username; ?></h1> 
       <h2><a href = "logout.php">Odhlásiť sa</a></h2>
    </body>
    
