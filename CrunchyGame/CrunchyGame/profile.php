@@ -38,6 +38,8 @@ session_start();
                        <li>
                            <a href="#battlevalley">Bojová Sieň</a>
                        </li>
+                       </li>TEST1</li>
+                     TEST2
                    </ul>
                </div><!--/.nav-collapse -->
            </div>
