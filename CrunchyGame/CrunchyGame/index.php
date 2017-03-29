@@ -110,7 +110,6 @@
                         <h1>Crunchy game</h1>
                         <h4>
                             Stredoveká browserová hra na štýl Travianu/Divokých kmeňov<br>
-                            
                         </h4>
                     </li>
                 </ul>

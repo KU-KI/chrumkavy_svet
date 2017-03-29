@@ -38,22 +38,15 @@ session_start();
                        <li>
                            <a href="#battlevalley">Bojová Sieň</a>
                        </li>
-                       </li>TEST1</li>
-                     TEST2
+                       <li align="right">
+                           <a href="">Odhlásiť</a>
+                       </li>
                    </ul>
                </div><!--/.nav-collapse -->
            </div>
        </nav>
 
        <div class="container">
-
-           <div class="starter-template">
-               <h1>Bootstrap starter template</h1>
-               <p class="lead">
-                   Use this document as a way to quickly start any new project.
-                   <br />All you get is this text and a mostly barebones HTML document.
-               </p>
-           </div>
 
        </div><!-- /.container -->
 
