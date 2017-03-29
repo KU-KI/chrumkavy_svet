@@ -25,18 +25,18 @@ session_start();
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                    </button>
-                   <a class="navbar-brand" href="#">Project name</a>
+                   <a class="navbar-brand" href="#">Crunchy Game</a>
                </div>
                <div id="navbar" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
                        <li class="active">
-                           <a href="#">Home</a>
+                           <a href="#">Profil</a>
                        </li>
                        <li>
-                           <a href="#about">About</a>
+                           <a href="#Dedina">Dedina</a>
                        </li>
                        <li>
-                           <a href="#contact">Contact</a>
+                           <a href="#battlevalley">Bojová Sieň</a>
                        </li>
                    </ul>
                </div><!--/.nav-collapse -->
