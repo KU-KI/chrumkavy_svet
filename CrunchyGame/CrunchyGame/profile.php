@@ -15,7 +15,6 @@ session_start();
    
    <body>
       <h1>Vitajte ID: <?php echo $_SESSION['ID'] ?></h1> 
-      <h2><a href = "logout.php">Odhlásiť sa</a></h2>
        <nav class="navbar navbar-inverse navbar-fixed-top">
            <div class="container">
                <div class="navbar-header">
@@ -39,7 +38,7 @@ session_start();
                            <a href="#battlevalley">Bojová Sieň</a>
                        </li>
                        <li align="right">
-                           <a href="" align="right">Odhlásiť</a>
+                           <a href="logout.php">Odhlásiť</a>
                        </li>
                    </ul>
                </div><!--/.nav-collapse -->
