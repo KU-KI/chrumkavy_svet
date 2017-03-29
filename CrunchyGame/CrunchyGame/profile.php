@@ -39,7 +39,7 @@ session_start();
                            <a href="#battlevalley">Bojová Sieň</a>
                        </li>
                        <li align="right">
-                           <a href="">Odhlásiť</a>
+                           <a href="" align="right">Odhlásiť</a>
                        </li>
                    </ul>
                </div><!--/.nav-collapse -->
