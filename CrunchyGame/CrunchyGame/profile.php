@@ -14,7 +14,6 @@ session_start();
    </head>
    
    <body>
-      <h1>Vitajte ID: <?php echo $_SESSION['ID'] ?></h1> 
        <nav class="navbar navbar-inverse navbar-fixed-top">
            <div class="container">
                <div class="navbar-header">
@@ -39,6 +38,11 @@ session_start();
                        </li>
                        <li align="right">
                            <a href="logout.php">Odhlásiť</a>
+                       </li>
+                       <li>
+                           <h1>
+                               Vitajte ID: <?php echo $_SESSION['ID'] ?>
+                           </h1>
                        </li>
                    </ul>
                </div><!--/.nav-collapse -->
