@@ -40,9 +40,7 @@ session_start();
                            <a href="logout.php">Odhlásiť</a>
                        </li>
                        <li>
-                           <h1>
-                               Vitajte ID: <?php echo $_SESSION['ID'] ?>
-                           </h1>
+                           Vitajte ID: <?php echo $_SESSION['ID'];?> Používateľ: <?php echo $_SESSION['username'];?>
                        </li>
                    </ul>
                </div><!--/.nav-collapse -->
