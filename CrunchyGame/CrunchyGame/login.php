@@ -33,7 +33,7 @@ elseif (isset($_POST['register'])) {
         $password = $_POST['password'];
 		$nickname = $_POST['nickname'];
  
-        $query = "INSERT INTO account (id, username, password, Nickname) VALUES (NULL,'$username', '$password','$nickname')";
+        $query = "INSERT INTO account (id, username, password, Nickname) VALUES ('5','$username', '$password','$nickname')";
         $result = mysqli_query($connection, $query);
         if($result){
             $smsg = "Účet vytvorený úspešne";
@@ -79,8 +79,6 @@ elseif (isset($_POST['register'])) {
     <div class="form">
 
         <form class="register-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-		 <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
-		 <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
 
             <input type="text" placeholder="Používateľské meno" name="username"/>
 
@@ -97,6 +95,9 @@ elseif (isset($_POST['register'])) {
 
 
         <form class="login-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+
+		<?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+		<?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
 
             <input type="text" placeholder="Meno účtu" name="username" />
 
