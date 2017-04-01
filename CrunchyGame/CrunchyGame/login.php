@@ -28,7 +28,7 @@ if (isset($_POST['login'])) {
     }
 }
 elseif (isset($_POST['register'])) {
-        echo "Registrácie su momentalne uzatvorené";
+        header("location: index.php");
     }
 ?>
 <!DOCTYPE html>
