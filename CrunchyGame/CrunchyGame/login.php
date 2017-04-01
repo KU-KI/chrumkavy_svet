@@ -34,7 +34,7 @@ elseif (isset($_POST['register'])) {
 		$nickname = $_POST['nickname'];
  
         $query = "INSERT INTO account (id, username, password, Nickname) VALUES ('5','$username', '$password','$nickname')";
-        $result = mysqli_query($connection, $query);
+        $result = mysqli_query($db, $query);
         if($result){
             $fmsg = "Účet vytvorený úspešne";
         }else{
