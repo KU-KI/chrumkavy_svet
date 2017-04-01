@@ -31,8 +31,9 @@ elseif (isset($_POST['register'])) {
         if (isset($_POST['username']) && isset($_POST['password'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
+		$nickname = $_POST['nickname'];
  
-        $query = "INSERT INTO `account` (username, password) VALUES ('$username', '$password')";
+        $query = "INSERT INTO `account` (id, username, password, Nickname) VALUES (NULL,'$username', '$password','$nickname')";
         $result = mysqli_query($connection, $query);
         if($result){
             $smsg = "Účet vytvorený úspešne";
@@ -84,6 +85,8 @@ elseif (isset($_POST['register'])) {
             <input type="text" placeholder="Používateľské meno" name="username"/>
 
             <input type="password" placeholder="Heslo" name="password" />
+
+			<input type="text" placeholder="Nickname" name="nickname" />
 
             <button name="register" type="submit">Vytvoriť Účet</button>
 
