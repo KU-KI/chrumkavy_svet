@@ -29,18 +29,17 @@ if (isset($_POST['login'])) {
 }
 elseif (isset($_POST['register'])) {
         if (isset($_POST['username']) && isset($_POST['password'])){
-        /*$username = $_POST['username'];
+        $username = $_POST['username'];
         $password = $_POST['password'];
 		$nickname = $_POST['nickname'];
  
         $query = "INSERT INTO account (id, username, password, Nickname) VALUES ('5','$username', '$password','$nickname')";
         $result = mysqli_query($connection, $query);
         if($result){
-            $smsg = "Účet vytvorený úspešne";
+            $fmsg = "Účet vytvorený úspešne";
         }else{
             $fmsg ="Registrácia účtu zlyhala";
-        }*/
-		$fmsg = "disko keksy funguju";
+        }
     }
     }
 ?>
