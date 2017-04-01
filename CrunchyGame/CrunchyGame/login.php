@@ -28,8 +28,8 @@ if (isset($_POST['login'])) {
     }
 }
 elseif (isset($_POST['register'])) {
-        //if (isset($_POST['username']) && isset($_POST['password'])){
-        $username = $_POST['username'];
+        if (isset($_POST['username']) && isset($_POST['password'])){
+        /*$username = $_POST['username'];
         $password = $_POST['password'];
 		$nickname = $_POST['nickname'];
  
@@ -39,7 +39,8 @@ elseif (isset($_POST['register'])) {
             $smsg = "Účet vytvorený úspešne";
         }else{
             $fmsg ="Registrácia účtu zlyhala";
-        }
+        }*/
+		$fmsg = "disko keksy funguju";
     }
     }
 ?>
