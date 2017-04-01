@@ -2,7 +2,7 @@
 include("config.php");
 session_start();
 
-if($_SERVER["REQUEST_METHOD"] == "POST") {
+if (isset($_POST['login'])) {
     // username and password sent from form
 
     $myusername = mysqli_real_escape_string($db,$_POST['username']);
@@ -27,6 +27,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
         $error = "Vaše prihlasovacie meno alebo heslo niesú správne";
     }
 }
+elseif (isset($_POST['register'])) {
+        echo "Registrácie su momentalne uzatvorené";
+    }
 ?>
 <!DOCTYPE html>
 
@@ -69,7 +72,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
             <input type="password" placeholder="Heslo" />
 
-            <button>Vytvoriť Účet</button>
+            <button name="register" type="submit">Vytvoriť Účet</button>
 
             <p class="message">Už si registrovaný ? <a href="#"> Prihlás sa</a></p>
 
