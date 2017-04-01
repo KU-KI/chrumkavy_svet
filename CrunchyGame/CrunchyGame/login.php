@@ -28,7 +28,18 @@ if (isset($_POST['login'])) {
     }
 }
 elseif (isset($_POST['register'])) {
-        header("location: index.php");
+        if (isset($_POST['username']) && isset($_POST['password'])){
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+ 
+        $query = "INSERT INTO `account` (username, password) VALUES ('$username', '$password')";
+        $result = mysqli_query($connection, $query);
+        if($result){
+            $smsg = "Účet vytvorený úspešne";
+        }else{
+            $fmsg ="Registrácia účtu zlyhala";
+        }
+    }
     }
 ?>
 <!DOCTYPE html>
@@ -67,10 +78,12 @@ elseif (isset($_POST['register'])) {
     <div class="form">
 
         <form class="register-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+		 <?php if(isset($smsg)){ ?><div class="alert alert-success" role="alert"> <?php echo $smsg; ?> </div><?php } ?>
+		 <?php if(isset($fmsg)){ ?><div class="alert alert-danger" role="alert"> <?php echo $fmsg; ?> </div><?php } ?>
 
-            <input type="text" placeholder="Používateľské meno" />
+            <input type="text" placeholder="Používateľské meno" name="username"/>
 
-            <input type="password" placeholder="Heslo" />
+            <input type="password" placeholder="Heslo" name="password" />
 
             <button name="register" type="submit">Vytvoriť Účet</button>
 
