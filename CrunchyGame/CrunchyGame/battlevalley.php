@@ -27,13 +27,13 @@ session_start();
                </div>
                <div id="navbar" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
-                       <li class="active">
+                       <li>
                            <a href="profile.php">Profil</a>
                        </li>
                        <li>
                            <a href="dedina.php">Dedina</a>
                        </li>
-                       <li>
+                       <li class="active">
                            <a href="battlevalley.php">Bojová Sieň</a>
                        </li>
                        <li align="right">
