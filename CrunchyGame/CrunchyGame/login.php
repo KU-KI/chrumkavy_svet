@@ -66,7 +66,7 @@ elseif (isset($_POST['register'])) {
 
     <div class="form">
 
-        <form class="register-form">
+        <form class="register-form" role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
 
             <input type="text" placeholder="Používateľské meno" />
 
