@@ -33,10 +33,10 @@ elseif (isset($_POST['register'])) {
         $password = $_POST['password'];
 		$nickname = $_POST['nickname'];
  
-        $query = "INSERT INTO account (id, username, password, Nickname) VALUES ('5','$username', '$password','$nickname')";
+        $query = "INSERT INTO account (id, username, password, Nickname) VALUES (NULL,'$username', '$password','$nickname')";
         $result = mysqli_query($db, $query);
         if($result){
-            $fmsg = "Účet vytvorený úspešne";
+            $smsg = "Účet vytvorený úspešne";
         }else{
             $fmsg ="Registrácia účtu zlyhala";
         }
