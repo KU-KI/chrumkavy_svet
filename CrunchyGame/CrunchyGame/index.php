@@ -118,10 +118,8 @@
         </div>
         <div class="lines">
             <div class="more-btn">
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn">Pozri viac</a>
             </div>
-        </div>
-        <div class="content-wrap">
         </div>
         <div class="ruler"></div>
         <div class="content-wrap centering">
@@ -137,32 +135,32 @@
                 <ul class="grid effect-2" id="grid">
                     <li>
                         <div class="item">
-                            <h5>Vestibulum commodo<br> felis quis tortor</h5>
+                            <h5>Budovanie dediny</h5>
                             <div class="grow">
                                 <img src="assets/img/img1.jpg" alt="">
                             </div>
-                            <p>Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus.</p>
-                            <p><a href="#" class="more">more info <i class="fw-icon-chevron-right"></i></a></p>
+                            <p>Vybuduj si vlastnú dedinu, bojuj s časom, alebo si dopomôž historickými hádankami a skráť tak svoje čakanie!</p>
+                            <p><a href="#" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <h5>Donec quis dui at<br> dolor</h5>
+                            <h5>Bojová sien<br>Battle-Valley</h5>
                             <div class="grow">
                                 <img src="assets/img/img2.jpg" alt="">
                             </div>
-                            <p>Suspendisse mauris. Fusce accumsan mollis eros. Pellentesque a diam sit amet mi ullamcorper vehicula. Integer adipiscing risus</p>
-                            <p><a href="#" class="more">more info <i class="fw-icon-chevron-right"></i></a></p>
+                            <p>Miesto kde môžeš preukázať svoje zručnosti v logických a historických hádankách</p>
+                            <p><a href="#" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
                         </div>
                     </li>
                     <li>
                         <div class="item">
-                            <h5>Vestibulum commodo<br> felis quis tortor</h5>
+                            <h5>Profil</h5>
                             <div class="grow">
                                 <img src="assets/img/img3.jpg" alt="">
                             </div>
-                            <p>Mauris nibh felis, adipiscing varius, adipiscing in, lacinia vel, tellus. Suspendisse ac urna. Etiam pellentesque mauris ut lectus.</p>
-                            <p><a href="#" class="more">more info <i class="fw-icon-chevron-right"></i></a></p>
+                            <p>Sleduj svoj postup v hre v kolonke profil kde si môžeš porovnať svoj postup s ostatnými!</p>
+                            <p><a href="#" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
                         </div>
                     </li>
                 </ul>
