@@ -23,7 +23,7 @@ session_start();
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                    </button>
-                   <a class="navbar-brand" href="#">Crunchy Game</a>
+                   <a class="navbar-brand" href="profile.php">Crunchy Game</a>
                </div>
                <div id="navbar" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
@@ -48,7 +48,7 @@ session_start();
        </nav>
 
        <div class="container">
-
+           <center>TEST</center>
        </div><!-- /.container -->
 
 
