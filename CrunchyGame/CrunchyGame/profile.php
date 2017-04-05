@@ -48,8 +48,14 @@ session_start();
        </nav>
 
        <div class="container">
-           <center>TEST</center>
-       </div><!-- /.container -->
+           <div class="starter-template">
+               <h1>VáŠ profil</h1>
+               <p class="lead">
+                   Meno: <?php echo $_SESSION['nickname']; ?>
+                   <br />Vaša aktuálna úroveň -> <?php echo $_SESSION['lvl']; ?>
+               </p>
+           </div>
+       </div>
 
 
        <!-- Bootstrap core JavaScript
