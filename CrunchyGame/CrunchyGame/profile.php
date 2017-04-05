@@ -51,8 +51,14 @@ session_start();
            <div class="starter-template">
                <h1>Váš profil</h1>
                <p class="lead">
-                   Váš Nickname: <?php echo $_SESSION['nickname']; ?>
-                   <br />Level: <?php echo $_SESSION['lvl']; ?>
+                   Váš Nickname: TESTNAME
+                   <br />Level: TEST
+
+                   <form action="upload.php" method="post" enctype="multipart/form-data">
+                       Select image to upload:
+                       <input type="file" name="fileToUpload" id="fileToUpload" />
+                       <input type="submit" value="Upload Image" name="submit" />
+                   </form>
                </p>
            </div>
        </div>

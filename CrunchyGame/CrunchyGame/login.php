@@ -32,7 +32,6 @@ elseif (isset($_POST['register'])) {
         if (isset($_POST['username']) && isset($_POST['password'])){
         $username = $_POST['username'];
         $password = $_POST['password'];
-		$nickname = $_POST['nickname'];
  
         $query = "INSERT INTO account (id, username, password, Nickname) VALUES (NULL,'$username', '$password','$nickname')";
         $result = mysqli_query($db, $query);
