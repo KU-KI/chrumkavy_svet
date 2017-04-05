@@ -20,5 +20,6 @@
     <Compile Include="admin.php" />
     <Compile Include="logout.php" />
     <Compile Include="session.php" />
+    <Compile Include="upload.php" />
   </ItemGroup>
 </Project>
