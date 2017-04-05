@@ -51,7 +51,7 @@ session_start();
            <div class="starter-template">
                <h1>Váš profil</h1>
                <p class="lead">
-                   Meno: <?php echo $_SESSION['nickname']; ?>
+                   Meno: <?php echo $username; ?>
                    <br />Vaša aktuálna úroveň -> <?php echo $_SESSION['lvl']; ?>
                </p>
            </div>
