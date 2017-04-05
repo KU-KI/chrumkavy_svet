@@ -20,7 +20,7 @@ if (isset($_POST['login'])) {
     if($count == 1) {
         $_SESSION['username'] = $myusername;
         $_SESSION['ID'] = $row['id'];
-        $_SESSION['level'] = $row['level'];
+        $_SESSION['lvl'] = $row['level'];
 
 
         header("location: profile.php");

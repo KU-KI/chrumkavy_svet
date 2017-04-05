@@ -52,7 +52,7 @@ session_start();
                <h1>Váš profil</h1>
                <p class="lead">
                    Váš Nickname: <?php echo $_SESSION['nickname']; ?>
-                   <br />Level: <?php echo $_SESSION['level']; ?>
+                   <br />Level: <?php echo $_SESSION['lvl']; ?>
                </p>
            </div>
        </div>
