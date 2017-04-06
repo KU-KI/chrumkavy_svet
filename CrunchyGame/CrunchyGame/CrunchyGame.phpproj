@@ -18,6 +18,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="admin.php" />
+    <Compile Include="data.php" />
     <Compile Include="logout.php" />
     <Compile Include="session.php" />
   </ItemGroup>
