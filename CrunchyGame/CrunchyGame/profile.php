@@ -54,6 +54,7 @@ session_start();
                    Váš Nickname: TESTNAME
                    <br />Level: TEST
                </p>
+               <p><center><img src="assets/img/profile.png" alt="Profilova fotka" style="width:304px;height:228px;" /></center></p>
            </div>
        </div>
 
