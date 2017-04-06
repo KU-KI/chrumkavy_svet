@@ -56,7 +56,7 @@ session_start();
                            <img src="assets/img/profile.png" />
                        </center>
                    </p>
-                   Váš Nickname: <?php $name = $db->query("SELECT nickname FROM account WHERE id = 1")->fetch_object()->name;  ?>
+                   Váš Nickname: <?php $name = $db->query("SELECT nickname FROM account WHERE id = 1")->fetch_object()->username;  ?>
                    <br />Level: TEST
                </p>
            </div>
