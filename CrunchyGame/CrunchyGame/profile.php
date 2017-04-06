@@ -68,8 +68,8 @@ $db->close();
                        </center>
                    </p>
                    Váš Nickname: <?php echo $nickname; ?>
-                   <br /><h5>Level: <?php echo $level; ?></h5>
-                    <br />XP: <?php echo $xp; ?>
+                   <br /><h4>Level: <?php echo $level; ?></h4>
+                    XP: <?php echo $xp; ?>
                </p>
            </div>
        </div>
