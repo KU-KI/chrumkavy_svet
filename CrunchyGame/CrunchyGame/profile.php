@@ -51,10 +51,14 @@ session_start();
            <div class="starter-template">
                <h1>Váš profil</h1>
                <p class="lead">
+                   <p>
+                       <center>
+                           <img src="assets/img/profile.png" />
+                       </center>
+                   </p>
                    Váš Nickname: TESTNAME
                    <br />Level: TEST
                </p>
-               <p><center><img src="assets/img/profile.png" alt="Profilova fotka" style="width:304px;height:228px;" /></center></p>
            </div>
        </div>
 
