@@ -4,14 +4,12 @@ session_start();
 $experimental=$_SESSION['ID'];
 $sql = "SELECT id, username, nickname, level, xp FROM account WHERE id='$experimental'";
 $result = $db->query($sql);
-
+//premenné
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
-        echo "id: " . $row["id"]. " - Meno: " . $row["username"]. " Nickname: " . $row["nickname"]. "<br>";
+        $id=$row["id"]; $meno=$row["username"]; $nickname=$row["nickname"]; $level=$row["level"]; $xp=$row["xp"];
     }
-} else {
-    echo "0 results";
 }
 $db->close();
 ?>
@@ -69,8 +67,8 @@ $db->close();
                            <img src="assets/img/profile.png" />
                        </center>
                    </p>
-                   Váš Nickname: <?php $name = $db->query("SELECT nickname FROM account WHERE id = 1")->fetch_object()->username;  ?>
-                   <br />Level: TEST
+                   Váš Nickname: <?php echo $nickname; ?>
+                   <br />Level: <?php echo $level; ?>
                </p>
            </div>
        </div>
