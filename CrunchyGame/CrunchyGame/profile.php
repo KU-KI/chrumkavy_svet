@@ -3,7 +3,7 @@ include('session.php');
 session_start();
 $experimental=$_SESSION['ID'];
 $sql = "SELECT id, username, nickname, level, xp FROM account WHERE id='$experimental'";
-$result = $conn->query($db);
+$result = $db->query($sql);
 
 if ($result->num_rows > 0) {
     // output data of each row
@@ -13,7 +13,7 @@ if ($result->num_rows > 0) {
 } else {
     echo "0 results";
 }
-$conn->close();
+$db->close();
 ?>
 <!DOCTYPE html>
    
