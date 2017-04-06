@@ -1,6 +1,19 @@
 <?php
 include('session.php');
 session_start();
+$experimental=$_SESSION['ID'];
+$sql = "SELECT id, username, nickname, level, xp FROM account WHERE id='$experimental'";
+$result = $conn->query($db);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"]. " - Meno: " . $row["username"]. " Nickname: " . $row["nickname"]. "<br>";
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
 ?>
 <!DOCTYPE html>
    
