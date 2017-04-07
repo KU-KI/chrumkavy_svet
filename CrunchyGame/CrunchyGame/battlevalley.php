@@ -1,17 +1,17 @@
 <?php
 include('session.php');
 include('data.php');
+session_start();
 $nahoda=rand(1, 31);
-$sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
-$result = $db->query($sql);
+$prikaz = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
+$vysledok = $db->query($prikaz);
 //premenné
-if ($result->num_rows > 0) {
+if ($vysledok->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
-session_start();
 ?>
 <!DOCTYPE html>
    
