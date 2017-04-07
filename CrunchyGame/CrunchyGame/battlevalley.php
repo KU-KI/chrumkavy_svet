@@ -63,10 +63,10 @@ if ($result->num_rows > 0) {
                <h1>Bojová Sieň</h1>
                <p class="lead">
                    <h2><?php echo $otazka; ?></h2>
-                   <input type="radio" name="gender" value="prva" /><?php echo $prva; ?><br />
-                   <input type="radio" name="gender" value="druha" /><?php echo $druha; ?><br />
-                   <input type="radio" name="gender" value="tretia" /><?php echo $tretia; ?><br />
-                   <input type="radio" name="gender" value="stvrta" /><?php echo $spravna; ?>
+                   <h3><input type="radio" name="gender" value="prva" /> <?php echo $prva; ?><br />
+                   <input type="radio" name="gender" value="druha" /> <?php echo $druha; ?><br />
+                   <input type="radio" name="gender" value="tretia" /> <?php echo $tretia; ?><br />
+                   <input type="radio" name="gender" value="stvrta" /> <?php echo $spravna; ?></h3>
                 </p>
             </div>
            </div><!-- /.container -->
