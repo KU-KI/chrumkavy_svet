@@ -21,4 +21,5 @@ foreach ($_SERVER as $key => $value) {
     define('DB_PASSWORD', $connectstr_dbpassword);
     define('DB_DATABASE', $connectstr_dbname);
     $db = mysqli_connect(DB_SERVER,DB_USERNAME,DB_PASSWORD,DB_DATABASE);
+    $db->set_charset("utf8");
 ?>
