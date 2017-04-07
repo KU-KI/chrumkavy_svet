@@ -1,5 +1,7 @@
 <?php
 include('session.php');
+include('data.php');
+echo rand(1, 31);
 session_start();
 ?>
 <!DOCTYPE html>
@@ -48,16 +50,25 @@ session_start();
        </nav>
 
        <div class="container">
+           <div class="starter-template">
+               <h1>Bojová Sieň</h1>
+               <p class="lead">
+                   <h2>Otázka: </h2>
+                   <input type="radio" name="gender" value="prva" />Prvá
+                   <input type="radio" name="gender" value="druha" />Druhá
+                   <input type="radio" name="gender" value="tretia" />Tretia
+                   <input type="radio" name="gender" value="stvrta" />Štvrtá
+                </p>
+            </div>
+           </div><!-- /.container -->
 
-       </div><!-- /.container -->
 
-
-       <!-- Bootstrap core JavaScript
+           <!-- Bootstrap core JavaScript
     ================================================== -->
-       <!-- Placed at the end of the document so the pages load faster -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-       <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-       <script src="assets/js/bootstrap.min.js"></script>
+           <!-- Placed at the end of the document so the pages load faster -->
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+           <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+           <script src="assets/js/bootstrap.min.js"></script>
 
-   </body>
+</body>
    
