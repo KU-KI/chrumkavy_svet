@@ -12,14 +12,14 @@ if ($result->num_rows > 0) {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
-utf8_encode($otazka); utf8_encode($prva); utf8_encode($druha); utf8_encode($tretia); utf8_encode($spravna);
+utf8_decode($otazka); utf8_decode($prva); utf8_decode($druha); utf8_decode($tretia); utf8_decode($spravna);
 ?>
 <!DOCTYPE html>
    
    <head>
       <title>Administrácia</title>
        <meta charset="utf-8">
-       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
        <link href="assets/css/administracia.css" rel="stylesheet" />
