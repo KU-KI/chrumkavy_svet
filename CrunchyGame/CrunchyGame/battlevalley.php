@@ -12,6 +12,7 @@ if ($vysledok->num_rows > 0) {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
+else echo "chyba";
 ?>
 <!DOCTYPE html>
    
