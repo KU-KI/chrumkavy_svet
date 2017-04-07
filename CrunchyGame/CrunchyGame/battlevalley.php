@@ -2,7 +2,6 @@
 include('session.php');
 //include('data.php');
 session_start();
-header('Content-type: text/plain; charset=utf-8');
 $nahoda=rand(1, 31);
 $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
 $result = $db->query($sql);
