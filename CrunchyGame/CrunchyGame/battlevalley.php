@@ -55,7 +55,7 @@ session_start();
                <p class="lead">
                    <h2>Otázka: </h2>
                    <input type="radio" name="gender" value="prva" />Prvá
-                   <input type="radio" name="gender" value="druha" />Druhá
+                   <input type="radio" name="gender" value="druha" />Druhá<br />
                    <input type="radio" name="gender" value="tretia" />Tretia
                    <input type="radio" name="gender" value="stvrta" />Štvrtá
                 </p>
