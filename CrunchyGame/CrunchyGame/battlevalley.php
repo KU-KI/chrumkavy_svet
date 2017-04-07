@@ -1,6 +1,5 @@
 <?php
 include('session.php');
-//include('data.php');
 session_start();
 $nahoda=rand(1, 31);
 $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
@@ -63,10 +62,10 @@ if ($result->num_rows > 0) {
                <h1>Bojová Sieň</h1>
                <p class="lead">
                    <h2><?php echo $otazka; ?></h2>
-                   <p><h4><input type="radio" name="gender" value="prva" /> <?php echo $prva; ?><br />
+                   <h4><input type="radio" name="gender" value="prva" /> <?php echo $prva; ?><br />
                    <input type="radio" name="gender" value="druha" /> <?php echo $druha; ?><br />
                    <input type="radio" name="gender" value="tretia" /> <?php echo $tretia; ?><br />
-                   <input type="radio" name="gender" value="stvrta" /> <?php echo $spravna; ?></h4><p>
+                   <input type="radio" name="gender" value="stvrta" /> <?php echo $spravna; ?></h4>
                 </p>
             </div>
            </div><!-- /.container -->
