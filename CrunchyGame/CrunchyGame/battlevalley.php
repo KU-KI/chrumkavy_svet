@@ -1,7 +1,16 @@
 <?php
 include('session.php');
 include('data.php');
-echo rand(1, 31);
+$nahoda=rand(1, 31);
+$sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
+$result = $db->query($sql);
+//premenné
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
+    }
+}
 session_start();
 ?>
 <!DOCTYPE html>
@@ -53,11 +62,11 @@ session_start();
            <div class="starter-template">
                <h1>Bojová Sieň</h1>
                <p class="lead">
-                   <h2>Otázka: </h2>
-                   <input type="radio" name="gender" value="prva" />Prvá
-                   <input type="radio" name="gender" value="druha" />Druhá<br />
-                   <input type="radio" name="gender" value="tretia" />Tretia
-                   <input type="radio" name="gender" value="stvrta" />Štvrtá
+                   <h2><?php echo $otazka; ?></h2>
+                   <input type="radio" name="gender" value="prva" /><?php echo $prva; ?>
+                   <input type="radio" name="gender" value="druha" /><?php echo $druha; ?><br />
+                   <input type="radio" name="gender" value="tretia" /><?php echo $tretia; ?>
+                   <input type="radio" name="gender" value="stvrta" /><?php echo $spravna; ?>
                 </p>
             </div>
            </div><!-- /.container -->
