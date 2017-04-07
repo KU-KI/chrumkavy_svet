@@ -56,8 +56,6 @@ session_start();
         <div class="starter-template">
             <h1>Nastavenia</h1>
             <p class="lead">
-
-            <p>
             </p>
         </div>
     </div>

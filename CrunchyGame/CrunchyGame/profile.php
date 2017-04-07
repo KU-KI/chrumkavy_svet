@@ -41,7 +41,7 @@ session_start();
                            <a href="logout.php">Odhlásiť</a>
                        </li>
                        <li>
-                          <p><span style="color:lightgray">ID: <?php echo $id;?> Používateľ: <?php echo $username;?></span></p>
+                          <p><span style="color:lightgray">ID: <?php echo $_SESSION['ID'];?> Používateľ: <?php echo $_SESSION['username'];?></span></p>
                        </li>
                    </ul>
                </div><!--/.nav-collapse -->
