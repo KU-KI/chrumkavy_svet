@@ -8,7 +8,7 @@ $vysledok = $db->query($prikaz);
 //premenné
 if ($vysledok->num_rows > 0) {
     // output data of each row
-    while($row = $result->fetch_assoc()) {
+    while($row = $vysledok->fetch_assoc()) {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
