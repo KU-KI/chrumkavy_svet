@@ -12,7 +12,6 @@ if ($result->num_rows > 0) {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
-utf8_decode($otazka); utf8_decode($prva); utf8_decode($druha); utf8_decode($tretia); utf8_decode($spravna);
 ?>
 <!DOCTYPE html>
    
