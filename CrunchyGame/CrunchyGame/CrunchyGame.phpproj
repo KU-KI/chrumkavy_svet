@@ -21,5 +21,6 @@
     <Compile Include="data.php" />
     <Compile Include="logout.php" />
     <Compile Include="session.php" />
+    <Compile Include="settings.php" />
   </ItemGroup>
 </Project>
