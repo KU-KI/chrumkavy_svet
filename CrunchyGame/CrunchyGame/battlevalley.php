@@ -20,6 +20,7 @@ utf8_encode($otazka); utf8_encode($prva); utf8_encode($druha); utf8_encode($tret
       <title>Administrácia</title>
        <meta charset="utf-8">
        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
        <link href="assets/css/administracia.css" rel="stylesheet" />
