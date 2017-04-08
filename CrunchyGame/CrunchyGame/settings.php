@@ -75,7 +75,7 @@ if (isset($_POST['zmenheslo']))
                 <input pattern=".{5,}" required title="5 characters minimum" type="password" placeholder="Heslo" name="passwordchange" /><br /><br/>
                 <button name="zmenheslo" type="submit">Zmeniť heslo</button>
             </form>
-            <?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
+            <br/><br/><?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
     </div>
     </div>
 
