@@ -13,8 +13,11 @@ if ($result->num_rows > 0) {
 }
 if(isset($_POST['odoslat']))
 {
-
-    echo $radio_value = $_POST["otazka"];
+    echo '<center>'.$radio_value = $_POST["otazka"].'</center>';
+    if($radio_value==spravna)
+    {
+        echo '<br>Správne!';
+    }
 }
 ?>
 <!DOCTYPE html>
