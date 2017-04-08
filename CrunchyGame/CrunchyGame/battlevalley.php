@@ -11,16 +11,17 @@ if ($result->num_rows > 0) {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
+$_SESSION["spravnaodpovedulozena"]=$spravna;
 if(isset($_POST['odoslat']))
 {
     echo '<center>'.$radio_value = $_POST["otazka"].'</center>';
-    if($radio_value==spravna)
+    if($_SESSION["spravnaodpovedulozena"]==spravna)
     {
         echo '<br>Správne!';
     }
-    else 
+    else
     {
-        echo 'nesprávne, '. $spravna;
+        echo 'nesprávne, '. $_SESSION["spravnaodpovedulozena"];
     }
 }
 ?>
