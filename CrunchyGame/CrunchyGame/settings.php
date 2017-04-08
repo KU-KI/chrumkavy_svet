@@ -8,9 +8,9 @@ if (isset($_POST['zmenheslo']))
     $noveheslo = mysqli_real_escape_string($db,$_POST['passwordchange']);
     $sql = "UPDATE account SET password ='$noveheslo' WHERE id='$id'";
     if (mysqli_query($db, $sql)) {
-        echo "Record updated successfully";
+        echo "<center><h3>Vaše heslo bolo zmenené</h3></center>";
     } else {
-        echo "Error updating record";
+        echo "<center>Chyba pri zmene hesla</center>";
     }
 }
 ?>
