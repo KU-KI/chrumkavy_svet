@@ -19,7 +19,7 @@ function timer() {
         clearInterval(counter);
         return;
     }
-    document.getElementById("timer").innerHTML = '<center>Zostáva ' + minutes + ':' + seconds + ' </center>';
+    document.getElementById("timer").innerHTML = '<center>Zostava ' + minutes + ':' + seconds + ' </center>';
     if (count === 0) {
         location.reload();
     }
