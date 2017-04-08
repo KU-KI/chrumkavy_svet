@@ -5,7 +5,6 @@ $nahoda=rand(1, 31);
 $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
 $result = $db->query($sql);
 //premenné
-$_SESSION["spravnaodpovedulozena"]=$spravna;
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
@@ -14,14 +13,13 @@ if ($result->num_rows > 0) {
 }
 if(isset($_POST['odoslat']))
 {
-    echo '<center>'.$radio_value = $_POST["otazka"].'</center>';
-    if($_SESSION["spravnaodpovedulozena"]==spravna)
+    if($radio_value==$_POST['spravnaODP'])
     {
         echo '<br>Správne!';
     }
     else
     {
-        echo 'nesprávne, '. $_SESSION["spravnaodpovedulozena"];
+        echo 'nesprávne, '. $radio_value;
     }
 }
 ?>
@@ -79,6 +77,7 @@ if(isset($_POST['odoslat']))
                            <?php echo $otazka; ?>
                        </h2>
                        <h4>
+                           <input type='hidden' name="spravnaODP" value=" <?php echo $spravna; ?> " />
                            <input type="radio" name="otazka" value="<?php echo $prva; ?>" /><?php echo $prva; ?>
                            <br />
                            <br />
