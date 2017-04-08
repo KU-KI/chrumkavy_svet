@@ -59,7 +59,10 @@ session_start();
                    </p>
                    Váš Nickname: <?php echo $nickname; ?>
                    <br /><h4>Level: <?php echo $level.'/30'; ?></h4>
-                    XP: <?php echo $xp.'/UNKNOWN'; ?><br /><br />
+                    XP: <?php 
+                        if($level<30) echo $xp.'/UNKNOWN'; 
+                        else echo 'MAX';?>
+                   <br /><br />
                    <a href="settings.php" class="btn btn-primary" role="button">Nastavenia</a>
                </p>
            </div>
