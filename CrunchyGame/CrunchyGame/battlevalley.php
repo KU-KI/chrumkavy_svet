@@ -65,7 +65,8 @@ if ($result->num_rows > 0) {
                    <h4><input type="radio" name="gender" value="prva" /> <?php echo $prva; ?><br /><br />
                    <input type="radio" name="gender" value="druha" /> <?php echo $druha; ?><br /><br />
                    <input type="radio" name="gender" value="tretia" /> <?php echo $tretia; ?><br /><br />
-                   <input type="radio" name="gender" value="stvrta" /> <?php echo $spravna; ?></h4>
+                   <input type="radio" name="gender" value="stvrta" /> <?php echo $spravna; ?></h4><br /><br />
+                   <button type="submit" class="btn btn-danger" button name="odoslat">Odoslať odpoveď</button>
                 </p>
             </div>
            </div><!-- /.container -->
