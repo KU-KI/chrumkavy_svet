@@ -59,6 +59,12 @@ session_start();
                    </p>
                    Váš Nickname: <?php echo $nickname; ?>
                    <br /><h4>Level: <?php echo $level.'/30'; ?></h4>
+                   <div class="progress">
+                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
+                           aria-valuemin="0" aria-valuemax="10000" style="width:<?php echo $xp.'%'?>">
+                           <?php echo $xp.'%'?>
+                       </div>
+                   </div>
                     XP: <?php 
                         if($level<30) echo $xp.'/UNKNOWN'; 
                         else echo 'MAX';?>
