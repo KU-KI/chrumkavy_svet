@@ -8,9 +8,9 @@ if (isset($_POST['zmenheslo']))
     $noveheslo = mysqli_real_escape_string($db,$_POST['passwordchange']);
     $sql = "UPDATE account SET password ='$noveheslo' WHERE id='$id'";
     if (mysqli_query($db, $sql)) {
-        echo '<p class="text-primary"><center><h3>Vaše heslo bolo zmenené</h3></center></p>';
+        $smsg = "Vaše heslo bolo zmenené úspešne!";
     } else {
-        echo "<center>Chyba pri zmene hesla</center>";
+        $smsg = "Chyba pri zmene hesla";
     }
 }
 ?>
@@ -71,8 +71,8 @@ if (isset($_POST['zmenheslo']))
             <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <input type="password" placeholder="Heslo" name="passwordchange" /><br /><br/>
                 <button name="zmenheslo" type="submit">Zmeniť heslo</button>
+                <?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
             </form>
-            <p class="bg-primary">This text is important.</p>
     </div>
     </div>
 
