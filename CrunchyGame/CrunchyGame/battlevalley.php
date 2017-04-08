@@ -13,13 +13,6 @@ if ($result->num_rows > 0) {
     }
 }
 
-//Prehodenie poradia
-$numbers = array($prva,$druha,$tretia,$spravna);
-shuffle($numbers);
-foreach ($numbers as $number) {
-    echo $number;
-}
-
 if(isset($_POST['odoslat']))
 {
     if($_POST["otazka"]==$_COOKIE['Cookie'])
@@ -88,17 +81,17 @@ setcookie("Cookie", $spravna);
                            <?php echo $otazka; ?>
                        </h2>
                        <h4>
-                           <?php echo '<input type="radio" name="otazka" value="'.$prva.'" />'.$prva.'
-                           <br />
-                           <br />
-                           <input type="radio" name="otazka" value="'.$druha.'" />'.$druha.'
-                           <br />
-                           <br />
-                           <input type="radio" name="otazka" value="'.$tretia.'" />'.$tretia.'
-                           <br />
-                           <br />
-                           <input type="radio" name="otazka" value="'.$spravna.'" />'.$spravna.'
-                           '?>
+                           <?php
+                           //Prehodenie poradia
+                           $numbers = array($prva,$druha,$tretia,$spravna);
+                           shuffle($numbers);
+                           foreach ($numbers as $number) {
+                               echo $number;
+                               echo '<input type="radio" name="otazka" value="'.$number.'" />'.$number.'
+                               <br />
+                               <br />';
+                           }
+                           ?>
                        </h4>
                        <br />
                        <br />
