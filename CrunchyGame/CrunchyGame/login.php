@@ -1,6 +1,7 @@
 <?php
 include("config.php");
 session_start();
+$registration_avilable=false;
 
 if (isset($_POST['login'])) {
     // username and password sent from form
@@ -28,20 +29,33 @@ if (isset($_POST['login'])) {
         $error = "Vaše prihlasovacie meno alebo heslo niesú správne";
     }
 }
-elseif (isset($_POST['register'])) {
-        if (isset($_POST['username']) && isset($_POST['password'])){
-        $username = $_POST['username'];
-        $password = $_POST['password'];
- 
-        $query = "INSERT INTO account (id, username, password, nickname, level, xp) VALUES (NULL,'$username', '$password','$nickname',1,0)";
-        $result = mysqli_query($db, $query);
-        if($result){
-            $smsg = "Účet vytvorený úspešne";
-        }else{
-            $fmsg ="Registrácia účtu zlyhala";
+elseif (isset($_POST['register'])) 
+{
+
+        if (isset($_POST['username']) && isset($_POST['password']))
+        {
+            if($registration_avilable) //dokodit
+            {
+                $username = $_POST['username'];
+                $password = $_POST['password'];
+                
+                $query = "INSERT INTO account (id, username, password, nickname, level, xp) VALUES (NULL,'$username', '$password','$nickname',1,0)";
+                $result = mysqli_query($db, $query);
+                if($result)
+                {
+                    $smsg = "Účet vytvorený úspešne";
+                }
+                else
+                {
+                    $fmsg ="Registrácia účtu zlyhala";
+                }
+            }
+            else
+            {
+                $smsg= "REGISTRACIA JE UZATVORENA";
+            }
         }
-    }
-    }
+}
 ?>
 <!DOCTYPE html>
 
