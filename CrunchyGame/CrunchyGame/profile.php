@@ -62,7 +62,7 @@ session_start();
                    <div class="progress">
                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
                            aria-valuemin="0" aria-valuemax="10000" style="width:<?php echo $xp.'%';?>">
-                           <?php echo $xp.'%';?>
+                           <?php echo $xp.'%';?>TEST
                        </div>
                    </div>
                     XP: <?php 
