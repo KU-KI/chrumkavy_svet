@@ -10,7 +10,7 @@ if (isset($_POST['zmenheslo']))
     if (mysqli_query($db, $sql)) {
         echo "Record updated successfully";
     } else {
-        echo "Error updating record: " . mysqli_error($db);
+        echo "Error updating record";
     }
 }
 ?>
