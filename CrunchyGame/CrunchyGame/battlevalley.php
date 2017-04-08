@@ -18,6 +18,10 @@ if(isset($_POST['odoslat']))
     {
         echo '<br>Správne!';
     }
+    else 
+    {
+        echo 'nesprávne';
+    }
 }
 ?>
 <!DOCTYPE html>
