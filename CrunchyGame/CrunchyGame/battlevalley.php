@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
 if(isset($_POST['odoslat']))
 {
     echo $_POST["otazka"].$_POST["spravnaODP"];
-    if($_POST["otazka"]==$_POST["spravnaODP"])
+    if($_POST["otazka"]===$_POST["spravnaODP"])
     {
         echo '<br><center>Správne!</center>';
     }
