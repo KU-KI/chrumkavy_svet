@@ -56,7 +56,12 @@ session_start();
         <div class="starter-template">
             <h1>Nastavenia</h1>
             <p class="lead"></p>
-        </div>
+            <h2>Nové Heslo</h2><br />
+            <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                <input type="password" placeholder="Heslo" name="password" /><br />
+                <button name="passwordchange" type="submit">Zmeniť heslo</button>
+            </form>
+    </div>
     </div>
 
 
