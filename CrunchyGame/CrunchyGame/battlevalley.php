@@ -13,8 +13,6 @@ if ($result->num_rows > 0) {
 }
 if(isset($_POST['odoslat']))
 {
-    echo $_POST["otazka"].'/';
-    echo $_POST["spravnaODP"].'/';
     if($_POST["otazka"]==$_POST["spravnaODP"])
     {
         echo '<br><center>Správne!</center>';
@@ -46,7 +44,7 @@ if(isset($_POST['odoslat']))
                        <span class="icon-bar"></span>
                        <span class="icon-bar"></span>
                    </button>
-                   <a class="navbar-brand" href="#">Crunchy Game</a>
+                   <a class="navbar-brand" href="profile.php">Crunchy Game</a>
                </div>
                <div id="navbar" class="collapse navbar-collapse">
                    <ul class="nav navbar-nav">
