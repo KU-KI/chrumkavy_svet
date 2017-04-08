@@ -20,7 +20,7 @@ if(isset($_POST['odoslat']))
     }
     else 
     {
-        echo 'nesprávne';
+        echo 'nesprávne, '. $spravna;
     }
 }
 ?>
