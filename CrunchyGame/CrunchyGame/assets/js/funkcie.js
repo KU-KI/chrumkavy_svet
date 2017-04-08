@@ -7,7 +7,7 @@ function checklength(i) {
 }
 
 var minutes, seconds, count, counter, timer;
-count = 200; //seconds
+count = 100; //seconds
 counter = setInterval(timer, 1000);
 
 function timer() {
