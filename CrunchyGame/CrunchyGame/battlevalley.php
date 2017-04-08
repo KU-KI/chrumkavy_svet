@@ -11,6 +11,11 @@ if ($result->num_rows > 0) {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
+if(isset($_POST['odoslat']))
+{
+
+    echo $radio_value = $_POST["radio"];
+}
 ?>
 <!DOCTYPE html>
    
@@ -66,16 +71,16 @@ if ($result->num_rows > 0) {
                            <?php echo $otazka; ?>
                        </h2>
                        <h4>
-                           <input type="radio" name="gender" value="<?php echo $prva; ?>" /><?php echo $prva; ?>
+                           <input type="radio" name="otazka" value="<?php echo $prva; ?>" /><?php echo $prva; ?>
                            <br />
                            <br />
-                           <input type="radio" name="gender" value="<?php echo $druha; ?>" /><?php echo $druha; ?>
+                           <input type="radio" name="otazka" value="<?php echo $druha; ?>" /><?php echo $druha; ?>
                            <br />
                            <br />
-                           <input type="radio" name="gender" value="<?php echo $tretia; ?>" /><?php echo $tretia; ?>
+                           <input type="radio" name="otazka" value="<?php echo $tretia; ?>" /><?php echo $tretia; ?>
                            <br />
                            <br />
-                           <input type="radio" name="gender" value="<?php echo $spravna; ?>" /><?php echo $spravna; ?>
+                           <input type="radio" name="otazka" value="<?php echo $spravna; ?>" /><?php echo $spravna; ?>
                        </h4>
                        <br />
                        <br />
