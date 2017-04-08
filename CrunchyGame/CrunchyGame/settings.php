@@ -2,7 +2,7 @@
 include('session.php');
 include('data.php');
 session_start();
-if (isset($_POST['passwordchange']))
+if (isset($_POST['zmenheslo']))
 {
     $noveheslo = mysqli_real_escape_string($db,$_POST['passwordchange']);
     echo $noveheslo;
@@ -69,8 +69,8 @@ if (isset($_POST['passwordchange']))
             <p class="lead"></p>
             <h2>Nové Heslo</h2>
             <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                <input type="text" placeholder="Heslo" name="passwordchange" /><br /><br/>
-                <button name="button" type="submit">Zmeniť heslo</button>
+                <input type="password" placeholder="Heslo" name="passwordchange" /><br /><br/>
+                <button name="zmenheslo" type="submit">Zmeniť heslo</button>
             </form>
     </div>
     </div>
