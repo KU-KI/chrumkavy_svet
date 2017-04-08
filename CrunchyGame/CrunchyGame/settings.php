@@ -72,7 +72,7 @@ if (isset($_POST['zmenheslo']))
             <p class="lead"></p>
             <h2>Nové Heslo</h2>
             <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                <input pattern=".{5,}" required title="5 characters minimum" type="password" placeholder="Heslo" name="passwordchange" /><br /><br/>
+                <input pattern=".{5,}" required title="Minimálne 5 znakov" type="password" placeholder="Heslo" name="passwordchange" /><br /><br/>
                 <button name="zmenheslo" type="submit">Zmeniť heslo</button>
             </form>
             <br/><br/><?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
