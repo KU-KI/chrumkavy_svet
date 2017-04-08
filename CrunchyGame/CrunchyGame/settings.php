@@ -4,7 +4,7 @@ include('data.php');
 session_start();
 if (isset($_POST['zmenheslo']))
 {
-    $noveheslo = mysqli_real_escape_string($db,$_POST['passwordchange']);
+    $noveheslo = 'test';//mysqli_real_escape_string($db,$_POST['passwordchange']);
     echo $noveheslo;
     $sql = "UPDATE account SET password='$noveheslo' WHERE id='$id'";
     if ($db->query($sql) === TRUE) {
