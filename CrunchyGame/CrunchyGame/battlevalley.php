@@ -13,8 +13,7 @@ if ($result->num_rows > 0) {
 }
 if(isset($_POST['odoslat']))
 {
-    echo $_POST["key"];
-    if($_POST["otazka"]==$_POST["key"])
+    if($_POST["otazka"]==$_COOKIE['TestCookie'])
     {
         echo '<center>Správne!</center>';
     }
@@ -23,6 +22,7 @@ if(isset($_POST['odoslat']))
         echo '<center>nesprávne</center>';
     }
 }
+setcookie("TestCookie", $spravna);
 ?>
 <!DOCTYPE html>
    
@@ -79,7 +79,6 @@ if(isset($_POST['odoslat']))
                        </h2>
                        <h4>
                            <input type='hidden' name="spravnaODP" value="<?php echo $spravna; ?>" />
-                           <?php $_POST["key"] = $spravna ?>
                            <input type="radio" name="otazka" value="<?php echo $prva; ?>" /><?php echo $prva; ?>
                            <br />
                            <br />
