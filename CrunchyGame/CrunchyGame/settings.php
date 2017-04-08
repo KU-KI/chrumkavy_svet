@@ -5,11 +5,7 @@ session_start();
 if (isset($_POST['zmenheslo']))
 {
     $noveheslo = 'test';//mysqli_real_escape_string($db,$_POST['passwordchange']);
-    echo $noveheslo;
-    if (!$db) {
-        die("Connection failed: " . mysqli_connect_error());
-    }
-    $sql = "UPDATE account SET password='$noveheslo' WHERE id=1";
+    $sql = "UPDATE account SET password='$noveheslo' WHERE id='$id'";
     if (mysqli_query($db, $sql)) {
         echo "Record updated successfully";
     } else {
