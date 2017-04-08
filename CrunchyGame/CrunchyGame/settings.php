@@ -1,7 +1,6 @@
 <?php
 include('session.php');
 include('data.php');
-include('config.php');
 session_start();
 if (isset($_POST['zmenheslo']))
 {

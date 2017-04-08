@@ -1,5 +1,6 @@
 <?php
 include('session.php');
+include('config.php');
 session_start();
 $experimental=$_SESSION['ID'];
 $sql = "SELECT id, username, nickname, level, xp FROM account WHERE id='$experimental'";
