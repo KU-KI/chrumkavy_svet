@@ -82,14 +82,11 @@ setcookie("Cookie", $spravna);
                        </h2>
                        <h4>
                            <?php
-                           //Prehodenie poradia
+                           //Prehodenie poradia OTAZKY
                            $numbers = array($prva,$druha,$tretia,$spravna);
                            shuffle($numbers);
                            foreach ($numbers as $number) {
-                               echo $number;
-                               echo '<input type="radio" name="otazka" value="'.$number.'" />'.$number.'
-                               <br />
-                               <br />';
+                               echo '<input type="radio" name="otazka" value="'.$number.'" />'.$number.'<br /><br />';
                            }
                            ?>
                        </h4>
