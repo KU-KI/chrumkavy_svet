@@ -60,14 +60,28 @@ if ($result->num_rows > 0) {
        <div class="container">
            <div class="starter-template">
                <h1>Bojová Sieň</h1>
-               <p class="lead">
-                   <h2><?php echo $otazka; ?></h2>
-                   <h4><input type="radio" name="gender" value="prva" /> <?php echo $prva; ?><br /><br />
-                   <input type="radio" name="gender" value="druha" /> <?php echo $druha; ?><br /><br />
-                   <input type="radio" name="gender" value="tretia" /> <?php echo $tretia; ?><br /><br />
-                   <input type="radio" name="gender" value="stvrta" /> <?php echo $spravna; ?></h4><br /><br />
-                   <button type="submit" class="btn btn-danger" button name="odoslat">Odoslať odpoveď</button>
-                </p>
+               <form method="post" action="">
+                   <p class="lead">
+                       <h2>
+                           <?php echo $otazka; ?>
+                       </h2>
+                       <h4>
+                           <input type="radio" name="gender" value="<?php echo $prva; ?>" /><?php echo $prva; ?>
+                           <br />
+                           <br />
+                           <input type="radio" name="gender" value="<?php echo $druha; ?>" /><?php echo $druha; ?>
+                           <br />
+                           <br />
+                           <input type="radio" name="gender" value="<?php echo $tretia; ?>" /><?php echo $tretia; ?>
+                           <br />
+                           <br />
+                           <input type="radio" name="gender" value="<?php echo $spravna; ?>" /><?php echo $spravna; ?>
+                       </h4>
+                       <br />
+                       <br />
+                       <button type="submit" class="btn btn-danger" button name="odoslat">Odoslať odpoveď</button>
+                   </p>
+               </form>
             </div>
            </div><!-- /.container -->
 
