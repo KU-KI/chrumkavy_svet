@@ -7,7 +7,7 @@ function checklength(i) {
 }
 
 var minutes, seconds, count, counter, timer;
-count = 601; //seconds
+count = 200; //seconds
 counter = setInterval(timer, 1000);
 
 function timer() {
@@ -19,7 +19,7 @@ function timer() {
         clearInterval(counter);
         return;
     }
-    document.getElementById("timer").innerHTML = 'Next refresh in ' + minutes + ':' + seconds + ' ';
+    document.getElementById("timer").innerHTML = '<center>Zostáva ' + minutes + ':' + seconds + ' </center>';
     if (count === 0) {
         location.reload();
     }
