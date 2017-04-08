@@ -13,6 +13,7 @@ if ($result->num_rows > 0) {
 }
 if(isset($_POST['odoslat']))
 {
+    echo $_POST['spravnaODP'];
     if($radio_value==$_POST['spravnaODP'])
     {
         echo '<br>Správne!';
