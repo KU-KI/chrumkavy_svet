@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
 if(isset($_POST['odoslat']))
 {
 
-    echo $radio_value = $_POST["radio"];
+    echo $radio_value = $_POST["otazka"];
 }
 ?>
 <!DOCTYPE html>
