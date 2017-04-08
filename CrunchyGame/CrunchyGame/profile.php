@@ -60,9 +60,9 @@ session_start();
                    Váš Nickname: <?php echo $nickname; ?>
                    <br /><h4>Level: <?php echo $level.'/30'; ?></h4>
                    <div class="progress">
-                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40"
-                           aria-valuemin="0" aria-valuemax="10000" style="width:<?php echo $xp.'%';?>">
-                           <?php echo $xp.'%';?>TEST
+                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="9999"
+                           aria-valuemin="0" aria-valuemax="10000" style="width:100%">
+                           <?php echo $xp.'%';?>
                        </div>
                    </div>
                     XP: <?php 
