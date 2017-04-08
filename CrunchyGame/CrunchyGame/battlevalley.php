@@ -15,7 +15,7 @@ if(isset($_POST['odoslat']))
 {
     if($_POST["otazka"]==$_POST["spravnaODP"])
     {
-        echo '<br><center>Správne!</center>';
+        echo '<center>Správne!</center>';
     }
     else
     {
