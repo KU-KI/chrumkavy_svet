@@ -4,6 +4,14 @@ session_start();
 $nahoda=rand(1, 31);
 $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
 $result = $db->query($sql);
+
+//Prehodenie poradia
+$numbers = range(1, 4);
+shuffle($numbers);
+foreach ($numbers as $number) {
+    echo "$number ";
+}
+
 //premenné
 if ($result->num_rows > 0) {
     // output data of each row
