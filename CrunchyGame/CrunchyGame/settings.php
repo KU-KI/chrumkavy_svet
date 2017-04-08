@@ -1,13 +1,12 @@
 <?php
 include('session.php');
-include('config.php');
 include('data.php');
 session_start();
 if (isset($_POST['zmenheslo']))
 {
     $noveheslo = 'test';//mysqli_real_escape_string($db,$_POST['passwordchange']);
     echo $noveheslo;
-    $sql = "UPDATE account SET password='$noveheslo' WHERE id='$id'";
+    $sql = "UPDATE account SET password='$noveheslo' WHERE id=1";
     if (mysqli_query($db, $sql)) {
         echo "Record updated successfully";
     } else {
