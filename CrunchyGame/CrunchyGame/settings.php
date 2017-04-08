@@ -69,8 +69,8 @@ if (isset($_POST['passwordchange']))
             <p class="lead"></p>
             <h2>Nové Heslo</h2>
             <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                <input type="password" placeholder="Heslo" name="password" /><br /><br/>
-                <button name="passwordchange" type="submit">Zmeniť heslo</button>
+                <input type="password" placeholder="Heslo" name="passwordchange" /><br /><br/>
+                <button name="button" type="submit">Zmeniť heslo</button>
             </form>
     </div>
     </div>
