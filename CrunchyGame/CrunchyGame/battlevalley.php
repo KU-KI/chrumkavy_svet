@@ -87,16 +87,16 @@ setcookie("Cookie", $spravna);
                            <?php echo $otazka; ?>
                        </h2>
                        <h4>
-                           <?php echo '<input type="radio" name="otazka" value="<?php echo $prva; ?>" /><?php echo $prva; ?>
+                           <?php echo '<input type="radio" name="otazka" value="'.$prva.'" />'.$prva.'
                            <br />
                            <br />
-                           <input type="radio" name="otazka" value="<?php echo $druha; ?>" /><?php echo $druha; ?>
+                           <input type="radio" name="otazka" value="'.$druha.'" />'.$druha.'
                            <br />
                            <br />
-                           <input type="radio" name="otazka" value="<?php echo $tretia; ?>" /><?php echo $tretia; ?>
+                           <input type="radio" name="otazka" value="'.$tretia.'" />'.$tretia.'
                            <br />
                            <br />
-                           <input type="radio" name="otazka" value="<?php echo $spravna; ?>" /><?php echo $spravna; ?>
+                           <input type="radio" name="otazka" value="'.$spravna.'" />'.$spravna.'
                            '?>
                        </h4>
                        <br />
