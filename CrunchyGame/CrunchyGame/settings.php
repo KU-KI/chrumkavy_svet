@@ -6,11 +6,14 @@ session_start();
 if (isset($_POST['zmenheslo']))
 {
     $noveheslo = mysqli_real_escape_string($db,$_POST['passwordchange']);
-    $sql = "UPDATE account SET password ='$noveheslo' WHERE id='$id'";
-    if (mysqli_query($db, $sql)) {
-        $smsg = "Vaše heslo bolo zmenené úspešne!";
-    } else {
-        $smsg = "Chyba pri zmene hesla";
+    if($noveheslo != '')
+    {
+        $sql = "UPDATE account SET password ='$noveheslo' WHERE id='$id'";
+        if (mysqli_query($db, $sql)) {
+            $smsg = "Vaše heslo bolo zmenené úspešne!";
+        } else {
+            $smsg = "Chyba pri zmene hesla";
+        }
     }
 }
 ?>
