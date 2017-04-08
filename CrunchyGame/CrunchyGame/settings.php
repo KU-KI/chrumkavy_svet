@@ -71,8 +71,8 @@ if (isset($_POST['zmenheslo']))
             <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
                 <input type="password" placeholder="Heslo" name="passwordchange" /><br /><br/>
                 <button name="zmenheslo" type="submit">Zmeniť heslo</button>
-                <?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
             </form>
+            <?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
     </div>
     </div>
 
