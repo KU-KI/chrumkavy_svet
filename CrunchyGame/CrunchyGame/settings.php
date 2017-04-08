@@ -35,15 +35,15 @@ session_start();
                         <a href="dedina.php">Dedina</a>
                     </li>
                     <li>
-                        <a href="battlevalley.php">Bojová Sieò</a>
+                        <a href="battlevalley.php">Bojovï¿½ Sieï¿½</a>
                     </li>
                     <li align="right">
-                        <a href="logout.php">Odhlási</a>
+                        <a href="logout.php">Odhlï¿½siï¿½</a>
                     </li>
                     <li>
                         <p>
                             <span style="color:lightgray">
-                                ID: <?php echo $_SESSION['ID'];?> Pouívate¾: <?php echo $_SESSION['username'];?>
+                                ID: <?php echo $_SESSION['ID'];?> Pouï¿½ï¿½vateï¿½: <?php echo $_SESSION['username'];?>
                             </span>
                         </p>
                     </li>
