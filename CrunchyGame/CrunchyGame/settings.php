@@ -7,10 +7,10 @@ if (isset($_POST['zmenheslo']))
     $noveheslo = 'test';//mysqli_real_escape_string($db,$_POST['passwordchange']);
     echo $noveheslo;
     $sql = "UPDATE account SET password='$noveheslo' WHERE id='$id'";
-    if ($db->query($sql) === TRUE) {
+    if (mysqli_query($db, $sql)) {
         echo "Record updated successfully";
     } else {
-        echo "Error updating record: " . $db->error;
+        echo "Error updating record: " . mysqli_error($db);
     }
 }
 ?>
