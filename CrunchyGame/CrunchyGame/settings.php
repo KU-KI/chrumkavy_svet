@@ -35,15 +35,15 @@ session_start();
                         <a href="dedina.php">Dedina</a>
                     </li>
                     <li>
-                        <a href="battlevalley.php">Bojov� Sie�</a>
+                        <a href="battlevalley.php">Bojová Sieň</a>
                     </li>
                     <li align="right">
-                        <a href="logout.php">Odhl�si�</a>
+                        <a href="logout.php">Odhlásiť</a>
                     </li>
                     <li>
                         <p>
                             <span style="color:lightgray">
-                                ID: <?php echo $_SESSION['ID'];?> Pou��vate�: <?php echo $_SESSION['username'];?>
+                                ID: <?php echo $_SESSION['ID'];?> Používateľ: <?php echo $_SESSION['username'];?>
                             </span>
                         </p>
                     </li>
@@ -55,8 +55,7 @@ session_start();
     <div class="container">
         <div class="starter-template">
             <h1>Nastavenia</h1>
-            <p class="lead">
-            </p>
+            <p class="lead"></p>
         </div>
     </div>
 
