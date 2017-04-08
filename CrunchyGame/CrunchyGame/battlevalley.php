@@ -13,14 +13,13 @@ if ($result->num_rows > 0) {
 }
 if(isset($_POST['odoslat']))
 {
-    echo $_POST['spravnaODP'];
-    if($radio_value==$_POST['spravnaODP'])
+    if($_POST["otazka"]==$_POST["spravnaODP"])
     {
-        echo '<br>Správne!';
+        echo '<br><center>Správne!</center>';
     }
     else
     {
-        echo 'nesprávne, '. $radio_value;
+        echo '<center>nesprávne</center>';
     }
 }
 ?>
