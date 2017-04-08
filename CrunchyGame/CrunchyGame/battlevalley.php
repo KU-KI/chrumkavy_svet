@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
                </div><!--/.nav-collapse -->
            </div>
        </nav>
-       <script>countdown(5);</script>
+       <span id="timer"></span>
        <div class="container">
            <div class="starter-template">
                <h1>Bojová Sieň</h1>
