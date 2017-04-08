@@ -5,7 +5,7 @@ include('config.php');
 session_start();
 if (isset($_POST['zmenheslo']))
 {
-    $noveheslo = 'test';//mysqli_real_escape_string($db,$_POST['passwordchange']);
+    $noveheslo = mysqli_real_escape_string($db,$_POST['passwordchange']);
     $sql = "UPDATE account SET password ='$noveheslo' WHERE id='$id'";
     if (mysqli_query($db, $sql)) {
         echo "Record updated successfully";
