@@ -14,7 +14,7 @@ if ($result->num_rows > 0) {
 }
 
 //Prehodenie poradia
-$numbers = range($prva,$druha,$tretia,$spravna);
+$numbers = array($prva,$druha,$tretia,$spravna);
 shuffle($numbers);
 foreach ($numbers as $number) {
     echo $number;
