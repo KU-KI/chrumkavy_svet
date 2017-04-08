@@ -15,7 +15,8 @@ if(isset($_POST['odoslat']))
 {
     if($_POST["otazka"]==$_COOKIE['Cookie'])
     {
-        echo '<center>Správne!</center>';
+        $X = rand(50,250);
+        echo '<center>Správne! Získavate '.$X.' skúsenostných bodov</center>';
     }
     else
     {
