@@ -17,7 +17,7 @@ if ($result->num_rows > 0) {
 $numbers = range($prva,$druha,$tretia,$spravna);
 shuffle($numbers);
 foreach ($numbers as $number) {
-    echo "$number ";
+    echo $number;
 }
 
 if(isset($_POST['odoslat']))
