@@ -5,13 +5,13 @@ $nahoda=rand(1, 31);
 $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
 $result = $db->query($sql);
 //premenné
+$_SESSION["spravnaodpovedulozena"]=$spravna;
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
-$_SESSION["spravnaodpovedulozena"]=$spravna;
 if(isset($_POST['odoslat']))
 {
     echo '<center>'.$radio_value = $_POST["otazka"].'</center>';
