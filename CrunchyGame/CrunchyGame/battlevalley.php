@@ -78,7 +78,7 @@ if(isset($_POST['odoslat']))
                        </h2>
                        <h4>
                            <input type='hidden' name="spravnaODP" value="<?php echo $spravna; ?>" />
-                           <?php $_POST['key'] = $spravna ?>
+                           <?php $_POST["key"] = $spravna ?>
                            <input type="radio" name="otazka" value="<?php echo $prva; ?>" /><?php echo $prva; ?>
                            <br />
                            <br />
