@@ -21,6 +21,7 @@ function timer() {
     }
     document.getElementById("timer").innerHTML = '<center>Zostava ' + minutes + ':' + seconds + ' </center>';
     if (count === 0) {
-        location.reload();
+        //location.reload();
+        window.location.href = window.location.pathname;
     }
 }
