@@ -1,5 +1,7 @@
 <?php
 include('session.php');
+include('data.php');
+include('config.php');
 session_start();
 $nahoda=rand(1, 31);
 $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
@@ -19,6 +21,9 @@ if(isset($_POST['odoslat']))
     {
         $X = rand(50,250);
         echo '<center>Správne! Získavate '.$X.' skúsenostných bodov</center>';
+        $pricitaj=$X+$xp;
+        $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
+        mysqli_query($db, $sql);
     }
     else
     {
