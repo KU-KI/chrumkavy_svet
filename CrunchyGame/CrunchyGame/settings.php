@@ -92,6 +92,10 @@ if (isset($_POST['zmenheslo']))
                     <td><img src="assets/img/avatar/6.png" alt="1" style="width:80px;height:80px;" /></td>
                 </tr>
             </table>
+            <form id="myform" method="post" action="settings.php">
+                <input type="image" name="avatar" value="assets/img/avatar/default.png" alt="default" src="assets/img/avatar/default.png" />
+                <input type="image" name="avatar" value="assets/img/avatar/1.png" alt="1" src="assets/img/avatar/1.png" />
+            </form>
     </div>
     </div>
 
