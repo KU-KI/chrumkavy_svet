@@ -1,5 +1,6 @@
 <?php
 include('session.php');
+include('data.php');
 session_start();
 ?>
 <!DOCTYPE html>
@@ -48,16 +49,43 @@ session_start();
        </nav>
 
        <div class="container">
+           <div class="starter-template">
+               <h1>Vaša dedina</h1>
+               <p class="lead">
+                   <table style="width:100%">
+                       <tr>
+                           <th>Radnica</th>
+                           <th>Veža</th>
+                           <th>Hostinec</th>
+                       </tr>
+                       <tr>
+                           <td><?php echo $radnica;?></td>
+                           <td><?php echo $veza;?></td>
+                           <td><?php echo $hostinec;?></td>
+                       </tr>
+                       <tr>
+                           <th>Kostol</th>
+                           <th>Kasaren</th>
+                           <th>Hrad</th>
+                       </tr>
+                       <tr>
+                           <td><?php echo $kostol;?></td>
+                           <td><?php echo $kasaren;?></td>
+                           <td><?php echo $hrad;?></td>
+                       </tr>
+                   </table>
+               </p>
+            </div>
 
        </div><!-- /.container -->
 
 
-       <!-- Bootstrap core JavaScript
+           <!-- Bootstrap core JavaScript
     ================================================== -->
-       <!-- Placed at the end of the document so the pages load faster -->
-       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-       <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
-       <script src="assets/js/bootstrap.min.js"></script>
+           <!-- Placed at the end of the document so the pages load faster -->
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+           <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
+           <script src="assets/js/bootstrap.min.js"></script>
 
-   </body>
+</body>
    
