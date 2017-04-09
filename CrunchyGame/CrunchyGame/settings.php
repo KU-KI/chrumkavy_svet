@@ -77,24 +77,9 @@ if (isset($_POST['zmenheslo']))
             </form>
             <br/><br/><?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
             <h1>Vyber si avatar</h1>
-            <table style="width:100%">
-                <tr>
-                    <td><img src="assets/img/avatar/default.png" alt="1" style="width:80px;height:80px;"></td>
-                    <td><img src="assets/img/avatar/1.png" alt="1" style="width:80px;height:80px;"></td>
-                    <td><img src="assets/img/avatar/2.png" alt="1" style="width:80px;height:80px;"></td>
-                </tr>
-                <tr>
-                    <td><img src="assets/img/avatar/3.png" alt="1" style="width:80px;height:80px;"></td>
-                    <td><img src="assets/img/avatar/4.png" alt="1" style="width:80px;height:80px;"></td>
-                    <td><img src="assets/img/avatar/5.png" alt="1" style="width:80px;height:80px;"></td>
-                </tr>
-                <tr>
-                    <td><img src="assets/img/avatar/6.png" alt="1" style="width:80px;height:80px;" /></td>
-                </tr>
-            </table>
             <form id="myform" method="post" action="settings.php">
-                <input type="image" name="avatar" value="assets/img/avatar/default.png" alt="default" src="assets/img/avatar/default.png" />
-                <input type="image" name="avatar" value="assets/img/avatar/1.png" alt="1" src="assets/img/avatar/1.png" />
+                <input type="image" name="avatar" value="assets/img/avatar/default.png" alt="default" src="assets/img/avatar/default.png" style="width:80px;height:80px;"/>
+                <input type="image" name="avatar" value="assets/img/avatar/1.png" alt="1" src="assets/img/avatar/1.png" style="width:80px;height:80px;"/>
             </form>
     </div>
     </div>
