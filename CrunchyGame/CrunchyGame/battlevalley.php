@@ -9,9 +9,9 @@ $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahod
 $result = $db->query($sql);
 
 //premenné
-if ($result->num_rows > 0) 
+if ($result->num_rows > 0)
 {
-    while($row = $result->fetch_assoc()) 
+    while($row = $result->fetch_assoc())
     {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
@@ -28,6 +28,15 @@ if(isset($_POST['odoslat']))
         $pricitaj=$X+$xp;
         $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
         mysqli_query($db, $sql);
+        if($pricitaj>$xpreq)
+        {
+            $newlvl = $level+1;
+            $sql = "UPDATE account SET level ='$newlvl' WHERE id='$id'";
+            mysqli_query($db, $sql);
+            $pricitaj-=$xpreq;
+            $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
+            mysqli_query($db, $sql);
+        }
     }
     else
     {
