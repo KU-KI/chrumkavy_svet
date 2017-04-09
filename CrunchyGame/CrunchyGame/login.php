@@ -39,7 +39,7 @@ elseif (isset($_POST['register']))
                 $username = $_POST['username'];
                 $password = $_POST['password'];
                 
-                $query = "INSERT INTO account (id, username, password, nickname, level, xp) VALUES (NULL,'$username', '$password','$nickname',1,0)";
+                $query = "INSERT INTO account (id, username, password, nickname, level, xp, avatar) VALUES (NULL,'$username', '$password','$nickname',1,0,'default')";
                 $result = mysqli_query($db, $query);
                 if($result)
                 {
