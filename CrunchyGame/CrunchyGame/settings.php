@@ -89,9 +89,7 @@ if (isset($_POST['zmenheslo']))
                     <td>94</td>
                 </tr>
                 <tr>
-                    <td>
-                        <img src="1.png" alt="1" style="width:240px;height:240px;" />
-                    </td>
+                     <img src="1.png" alt="1" style="width:240px;height:240px;" />
                 </tr>
             </table>
     </div>
