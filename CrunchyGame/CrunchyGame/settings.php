@@ -92,7 +92,7 @@ if (isset($_POST["avatar1"]) && !empty($_POST["avatar1"])) {
                 <input type="image" name="avatar5" value="4" alt="4" src="assets/img/avatar/4.png" style="width:80px;height:80px;" />
                 <input type="image" name="avatar6" value="5" alt="5" src="assets/img/avatar/5.png" style="width:80px;height:80px;" />
                 <input type="image" name="avatar7" value="6" alt="6" src="assets/img/avatar/6.png" style="width:80px;height:80px;" />
-                <button name="avatr" value="1"><img src="assets/img/avatar/1.png" alt="1"></button>
+                <button name="avatr" value="1"><img src="assets/img/avatar/1.png" alt="1" style="width:80px;height:80px;"></button>
             </form>
     </div>
     </div>
