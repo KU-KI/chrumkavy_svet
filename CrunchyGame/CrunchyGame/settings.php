@@ -85,14 +85,7 @@ if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
             <br/><br/><?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
             <h1>Vyber si avatar</h1>
             <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
-                <input type="image" name="avatar1" value="default" alt="default" src="assets/img/avatar/default.png" style="width:80px;height:80px;" />
-                <input type="image" name="avatar2" value="1" alt="1" src="assets/img/avatar/1.png" style="width:80px;height:80px;" />
-                <input type="image" name="avatar3" value="2" alt="2" src="assets/img/avatar/2.png" style="width:80px;height:80px;" />
-                <input type="image" name="avatar4" value="3" alt="3" src="assets/img/avatar/3.png" style="width:80px;height:80px;" />
-                <input type="image" name="avatar5" value="4" alt="4" src="assets/img/avatar/4.png" style="width:80px;height:80px;" />
-                <input type="image" name="avatar6" value="5" alt="5" src="assets/img/avatar/5.png" style="width:80px;height:80px;" />
-                <input type="image" name="avatar7" value="6" alt="6" src="assets/img/avatar/6.png" style="width:80px;height:80px;" />
-                <button name="avatr" value="1"><img src="assets/img/avatar/1.png" alt="1" style="width:80px;height:80px;"></button>
+                <button name="avatar" value="1"><img src="assets/img/avatar/1.png" alt="1" style="width:80px;height:80px;"></button>
             </form>
     </div>
     </div>
