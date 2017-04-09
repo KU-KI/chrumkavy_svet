@@ -16,6 +16,7 @@ if (isset($_POST['zmenheslo']))
         }
     }
 }
+echo $_POST["avatar"];
 if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
     $avatar = $_POST['avatar'];
     echo('Vybraný avatar je: ' . $avatar);
