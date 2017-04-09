@@ -79,8 +79,8 @@ if (isset($_POST['zmenheslo']))
             <h1>Vyber si avatar</h1>
             <table style="width:100%">
                 <tr>
-                    <td><img src="assets/img/default.png" alt="1" style="width:240px;height:240px;"></td>
-                    <td><img src="assets/img/1.png" alt="1" style="width:240px;height:240px;"></td>
+                    <td><img src="assets/img/avatar/default.png" alt="1" style="width:240px;height:240px;"></td>
+                    <td><img src="assets/img/avatar/1.png" alt="1" style="width:240px;height:240px;"></td>
                     <td>50</td>
                 </tr>
                 <tr>
@@ -89,7 +89,7 @@ if (isset($_POST['zmenheslo']))
                     <td>94</td>
                 </tr>
                 <tr>
-                     <img src="assets/img/1.png" alt="1" style="width:240px;height:240px;" />
+                    <td><img src="assets/img/avatar/1.png" alt="1" style="width:240px;height:240px;" /></td>
                 </tr>
             </table>
     </div>
