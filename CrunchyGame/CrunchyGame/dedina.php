@@ -65,7 +65,7 @@ session_start();
                        </tr>
                        <tr>
                            <th>Kostol</th>
-                           <th>Kasaren</th>
+                           <th>Kasáreň</th>
                            <th>Hrad</th>
                        </tr>
                        <tr>
