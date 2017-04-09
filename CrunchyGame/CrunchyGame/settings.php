@@ -81,12 +81,12 @@ if (isset($_POST['zmenheslo']))
                 <tr>
                     <td><img src="assets/img/avatar/default.png" alt="1" style="width:80px;height:80px;"></td>
                     <td><img src="assets/img/avatar/1.png" alt="1" style="width:80px;height:80px;"></td>
-                    <td>50</td>
+                    <td><img src="assets/img/avatar/2.png" alt="1" style="width:80px;height:80px;"></td>
                 </tr>
                 <tr>
-                    <td>Eve</td>
-                    <td>Jackson</td>
-                    <td>94</td>
+                    <td><img src="assets/img/avatar/3.png" alt="1" style="width:80px;height:80px;"></td>
+                    <td><img src="assets/img/avatar/4.png" alt="1" style="width:80px;height:80px;"></td>
+                    <td><img src="assets/img/avatar/5.png" alt="1" style="width:80px;height:80px;"></td>
                 </tr>
                 <tr>
                     <td><img src="assets/img/avatar/6.png" alt="1" style="width:80px;height:80px;" /></td>
