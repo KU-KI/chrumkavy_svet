@@ -4,13 +4,15 @@ include('data.php');
 include('config.php');
 session_start();
 $nahoda=rand(1, 31);
+//
 $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
 $result = $db->query($sql);
 
 //premenné
-if ($result->num_rows > 0) {
-    // output data of each row
-    while($row = $result->fetch_assoc()) {
+if ($result->num_rows > 0) 
+{
+    while($row = $result->fetch_assoc()) 
+    {
         $otazka=$row["otazka"]; $prva=$row["prva"]; $druha=$row["druha"]; $tretia=$row["tretia"]; $spravna=$row["spravna"];
     }
 }
@@ -19,7 +21,9 @@ if(isset($_POST['odoslat']))
 {
     if($_POST["otazka"]==$_COOKIE['Cookie'])
     {
-        $X = rand(50,250);
+        // ziskavanie XP algoritmus -->C#ndition
+        $AlgoMX = (70*$radnica + 90*$veza + 120*$hostinec + 150*$kostol + 200*$kasaren + 500*$hrad)/1.25;
+        $X = rand(20,$AlgoMX);
         echo '<center>Správne! Získavate '.$X.' skúsenostných bodov</center>';
         $pricitaj=$X+$xp;
         $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";

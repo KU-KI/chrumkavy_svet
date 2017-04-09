@@ -2,6 +2,8 @@
 include('session.php');
 include('data.php');
 session_start();
+//% do progress baru
+
 ?>
 <!DOCTYPE html>
    
@@ -63,9 +65,8 @@ session_start();
                         if($level<30) echo $xp.'/'.$xpreq; 
                         else echo 'MAX';?>
                    <div class="progress">
-                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="9999"
-                           aria-valuemin="0" aria-valuemax="10000" style="width:100%">
-                           100%
+                       <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
+                           aria-valuemin="0" aria-valuemax="<?php echo $xpreq;?>" style="width:100%">100%
                        </div>
                    </div>
                    <br /><br />
