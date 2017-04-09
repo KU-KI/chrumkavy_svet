@@ -54,7 +54,7 @@ session_start();
                <p class="lead">
                    <p>
                        <center>
-                           <img src="assets/img/avatar/<?php echo $avatar; ?>.png" />
+                           <img src="assets/img/avatar/<?php echo $avatar; ?>.png" style="width:120px;height:120px;" />
                        </center>
                    </p>
                    Váš Nickname: <?php echo $nickname; ?>
