@@ -16,6 +16,12 @@ if (isset($_POST['zmenheslo']))
         }
     }
 }
+if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
+    $selected_color = $_POST['avatar'];
+    echo('Vybraný avatar je: ' . $selected_color);
+}else{
+    echo ('Nevybrali ste Žiadny obrázok');
+}
 ?>
 <!DOCTYPE html>
 
@@ -80,6 +86,11 @@ if (isset($_POST['zmenheslo']))
             <form id="myform" method="post" action="settings.php">
                 <input type="image" name="avatar" value="assets/img/avatar/default.png" alt="default" src="assets/img/avatar/default.png" style="width:80px;height:80px;"/>
                 <input type="image" name="avatar" value="assets/img/avatar/1.png" alt="1" src="assets/img/avatar/1.png" style="width:80px;height:80px;"/>
+                <input type="image" name="avatar" value="assets/img/avatar/2.png" alt="1" src="assets/img/avatar/2.png" style="width:80px;height:80px;" />
+                <input type="image" name="avatar" value="assets/img/avatar/3.png" alt="1" src="assets/img/avatar/3.png" style="width:80px;height:80px;" />
+                <input type="image" name="avatar" value="assets/img/avatar/4.png" alt="1" src="assets/img/avatar/4.png" style="width:80px;height:80px;" />
+                <input type="image" name="avatar" value="assets/img/avatar/5.png" alt="1" src="assets/img/avatar/5.png" style="width:80px;height:80px;" />
+                <input type="image" name="avatar" value="assets/img/avatar/6.png" alt="1" src="assets/img/avatar/6.png" style="width:80px;height:80px;" />
             </form>
     </div>
     </div>
