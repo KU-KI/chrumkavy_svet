@@ -66,7 +66,7 @@ session_start();
                         else echo 'MAX';?>
                    <div class="progress">
                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
-                           aria-valuemin="0" aria-valuemax="<?php echo $xpreq;?>" style="width:<?php echo $xp;?>%">100%
+                           aria-valuemin="0" aria-valuemax="<?php echo $xpreq;?>" style="width:<?php echo 100/($xp*$xpreq);?>%">100%
                        </div>
                    </div>
                    <br /><br />
