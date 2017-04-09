@@ -18,7 +18,12 @@ if (isset($_POST['zmenheslo']))
 }
 if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
     $avatar = $_POST['avatar'];
-    echo('Vybraný avatar je: ' . $avatar);
+    $sql = "UPDATE account SET avatar ='$avatar' WHERE id='$id'";
+    if (mysqli_query($db, $sql)) {
+        $fmsg = "Vaš avatar bol zmenený úspešne!";
+    } else {
+        $fmsg = "chyba pri zmene avataru ..";
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -90,6 +95,7 @@ if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
                 <button name="avatar" value="5"><img src="assets/img/avatar/5.png" alt="5" style="width:80px;height:80px;"></button>
                 <button name="avatar" value="6"><img src="assets/img/avatar/6.png" alt="6" style="width:80px;height:80px;"></button>
             </form>
+            <br/><br/><?php if(isset($fmsg)){ ?><p class="bg-primary"><?php echo $fmsg; ?> </p><?php } ?>
     </div>
     </div>
 
