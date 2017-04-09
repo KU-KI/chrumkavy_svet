@@ -34,8 +34,9 @@ elseif (isset($_POST['register']))
         {
             if($registration_avilable)
             {
-                $username = $_POST['username'];
-                $password = $_POST['password'];
+                $username = mysqli_real_escape_string($db,$_POST['username']);
+                $password = mysqli_real_escape_string($db,$_POST['password']);
+                $nickname = mysqli_real_escape_string($db,$_POST['nickname']);
                 
                 $query = "INSERT INTO account (id, username, password, nickname, level, xp, avatar) VALUES (NULL,'$username', '$password','$nickname',1,0,'default')";
                 $result = mysqli_query($db, $query);
