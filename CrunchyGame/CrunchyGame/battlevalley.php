@@ -25,7 +25,7 @@ if(isset($_POST['odoslat']))
         {
             // ziskavanie XP algoritmus -->C#ndition
             $AlgoMX = (70*$radnica + 90*$veza + 120*$hostinec + 150*$kostol + 200*$kasaren + 500*$hrad)/1.25;
-            $X = rand(20,$AlgoMX);
+            $X = rand($AlgoMX/2,$AlgoMX);
             echo '<center>Správne! Získavate '.$X.' skúsenostných bodov</center>';
             $pricitaj=$X+$xp;
             $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
