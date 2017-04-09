@@ -21,21 +21,24 @@ if(isset($_POST['odoslat']))
 {
     if($_POST["otazka"]==$_COOKIE['Cookie'])
     {
-        // ziskavanie XP algoritmus -->C#ndition
-        $AlgoMX = (70*$radnica + 90*$veza + 120*$hostinec + 150*$kostol + 200*$kasaren + 500*$hrad)/1.25;
-        $X = rand(20,$AlgoMX);
-        echo '<center>Správne! Získavate '.$X.' skúsenostných bodov</center>';
-        $pricitaj=$X+$xp;
-        $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
-        mysqli_query($db, $sql);
-        if($pricitaj>$xpreq)
+        if($level<30)
         {
-            $newlvl = $level+1;
-            $sql = "UPDATE account SET level ='$newlvl' WHERE id='$id'";
-            mysqli_query($db, $sql);
-            $pricitaj-=$xpreq;
+            // ziskavanie XP algoritmus -->C#ndition
+            $AlgoMX = (70*$radnica + 90*$veza + 120*$hostinec + 150*$kostol + 200*$kasaren + 500*$hrad)/1.25;
+            $X = rand(20,$AlgoMX);
+            echo '<center>Správne! Získavate '.$X.' skúsenostných bodov</center>';
+            $pricitaj=$X+$xp;
             $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
             mysqli_query($db, $sql);
+            if($pricitaj>$xpreq)
+            {
+                $newlvl = $level+1;
+                $sql = "UPDATE account SET level ='$newlvl' WHERE id='$id'";
+                mysqli_query($db, $sql);
+                $pricitaj-=$xpreq;
+                $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
+                mysqli_query($db, $sql);
+            }
         }
     }
     else
