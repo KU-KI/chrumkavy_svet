@@ -16,12 +16,9 @@ if (isset($_POST['zmenheslo']))
         }
     }
 }
-echo $_POST["avatar"];
 if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
     $avatar = $_POST['avatar'];
     echo('Vybraný avatar je: ' . $avatar);
-}else{
-    echo ('Nevybrali ste Žiadny obrázok');
 }
 ?>
 <!DOCTYPE html>
@@ -85,7 +82,13 @@ if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
             <br/><br/><?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
             <h1>Vyber si avatar</h1>
             <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                <button name="avatar" value="default"><img src="assets/img/avatar/default.png" alt="default" style="width:80px;height:80px;"></button>
                 <button name="avatar" value="1"><img src="assets/img/avatar/1.png" alt="1" style="width:80px;height:80px;"></button>
+                <button name="avatar" value="2"><img src="assets/img/avatar/2.png" alt="2" style="width:80px;height:80px;"></button>
+                <button name="avatar" value="3"><img src="assets/img/avatar/3.png" alt="3" style="width:80px;height:80px;"></button>
+                <button name="avatar" value="4"><img src="assets/img/avatar/4.png" alt="4" style="width:80px;height:80px;"></button>
+                <button name="avatar" value="5"><img src="assets/img/avatar/5.png" alt="5" style="width:80px;height:80px;"></button>
+                <button name="avatar" value="6"><img src="assets/img/avatar/6.png" alt="6" style="width:80px;height:80px;"></button>
             </form>
     </div>
     </div>
