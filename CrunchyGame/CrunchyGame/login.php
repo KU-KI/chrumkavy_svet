@@ -4,7 +4,6 @@ session_start();
 $registration_avilable=false;
 
 if (isset($_POST['login'])) {
-    // username and password sent from form
 
     $myusername = mysqli_real_escape_string($db,$_POST['username']);
     $mypassword = mysqli_real_escape_string($db,$_POST['password']);
@@ -16,7 +15,6 @@ if (isset($_POST['login'])) {
 
     $count = mysqli_num_rows($result);
 
-    // If result matched $myusername and $mypassword, table row must be 1 row
 
     if($count == 1) {
         $_SESSION['username'] = $myusername;
@@ -34,7 +32,7 @@ elseif (isset($_POST['register']))
 
         if (isset($_POST['username']) && isset($_POST['password']))
         {
-            if($registration_avilable) //dokodit
+            if($registration_avilable)
             {
                 $username = $_POST['username'];
                 $password = $_POST['password'];
