@@ -84,7 +84,7 @@ if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
             </form>
             <br/><br/><?php if(isset($smsg)){ ?><p class="bg-primary"><?php echo $smsg; ?> </p><?php } ?>
             <h1>Vyber si avatar</h1>
-            <form id="formularavatar" method="post" action="">
+            <form id="formularavatar" method="post" action="settings.php">
                 <input type="image" name="avatar" value="default" alt="default" src="assets/img/avatar/default.png" style="width:80px;height:80px;" />
                 <input type="image" name="avatar" value="1" alt="1" src="assets/img/avatar/1.png" style="width:80px;height:80px;" />
                 <input type="image" name="avatar" value="2" alt="2" src="assets/img/avatar/2.png" style="width:80px;height:80px;" />
