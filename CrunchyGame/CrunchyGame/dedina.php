@@ -83,6 +83,7 @@ session_start();
                                <th>Skóre</th>
                            </tr>
                            <?php
+                           $najlepsihracscore = 0; $najlepsihracmeno = '';
                                $sql = "SELECT id, username, level FROM account WHERE id>0";
                                $result = $db->query($sql);
                                if ($result->num_rows > 0) {
@@ -98,7 +99,13 @@ session_start();
                                        $AlgoMX = (70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25;
                                        echo '<tr><td>'.$row["username"].'</td>';
                                        echo '<td>'.$AlgoMX.'</td></tr>';
+                                       if($najlepsihracscore<$AlgoMX)
+                                       {
+                                           $najlepsihracscore=$AlgoMX;
+                                           $najlepsihracmeno = $row["username"];
+                                       }
                                    }
+                                   echo '<center><h2> Najlepší hráč je: '.$najlepsihracmeno.' so skóre: '.$najlepsihracscore.'</h2></center>';
                                }
                                $db->close();
                            ?>
