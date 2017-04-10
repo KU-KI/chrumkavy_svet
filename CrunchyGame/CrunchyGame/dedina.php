@@ -76,7 +76,8 @@ session_start();
                        </tr>
                    </table>
                    <center>
-                       <table style="width:100%">
+                       <h1>Skóre hráčov</h1>
+                       <table width="400">
                            <tr>
                                <th>Hráč</th>
                                <th>Skóre</th>
