@@ -74,6 +74,34 @@ session_start();
                            <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:204px;height:228px;"></td>
                        </tr>
                    </table>
+                   <center>
+                       <table style="width:100%">
+                           <tr>
+                               <th>Hráč</th>
+                               <th>Skóre</th>
+                           </tr>
+                           <?php
+                               $sql = "SELECT username, level FROM account WHERE id>0";
+                               $result = $db->query($sql);
+                               if ($result->num_rows > 0) {
+                                   while($row = $result->fetch_assoc()) {
+                                       $curentlevel=$row["level"];
+                                       $sql = "SELECT level,xpreq,radnica,veza,hostinec,kostol,kasaren,hrad FROM levelstruct WHERE level='$curentlevel'";
+                                       $result = $db->query($sql);
+                                       if ($result->num_rows > 0) {
+                                           while($row = $result->fetch_assoc()) {
+                                               $xpreq1=$row["xpreq"]; $radnica1=$row["radnica"]; $veza1=$row["veza"]; $hostinec1=$row["hostinec"]; $kostol1=$row["kostol"]; $kasaren1=$row["kasaren"]; $hrad1=$row["hrad"];
+                                           }
+                                       }
+                                       $AlgoMX = (70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25;
+                                       echo '<tr><td>'.$row["username"].'</td>';
+                                       echo '<td>'.$AlgoMX.'</td></tr>';
+                                   }
+                               }
+                               $db->close();
+                           ?>
+                       </table>
+                   </center>
                </p>
             </div>
 
