@@ -39,6 +39,12 @@ if(isset($_POST['odoslat']))
                 $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
                 mysqli_query($db, $sql);
             }
+            // Progress bar
+            $progress=100*($xp/$xpreq);
+            echo '<div class="progress">
+                   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
+                       aria-valuemin="0" aria-valuemax="100" style="width:'.(100*($xp/$xpreq)).'%"><center>'.number_format((float)$progress, 2, '.', '').'% skúsenostných bodov</center></div>
+            </div>';
         }
     }
     else
@@ -49,7 +55,7 @@ if(isset($_POST['odoslat']))
 setcookie("Cookie", $spravna);
 ?>
 <!DOCTYPE html>
-   
+
    <head>
       <title>Administrácia</title>
        <meta charset="utf-8">
@@ -58,7 +64,7 @@ setcookie("Cookie", $spravna);
        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
        <link href="assets/css/administracia.css" rel="stylesheet" />
    </head>
-   
+
    <body>
        <nav class="navbar navbar-inverse navbar-fixed-top">
            <div class="container">
@@ -95,10 +101,6 @@ setcookie("Cookie", $spravna);
        <span id="timer"></span>
        <div class="container">
            <div class="starter-template">
-               <div class="progress">
-                   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
-                       aria-valuemin="0" aria-valuemax="100" style="width:<?php echo 100*($xp/$xpreq);?>%"><center><?php $progress=100*($xp/$xpreq); echo number_format((float)$progress, 2, '.', ''); ?> % skúsenostných bodov</center></div>
-               </div>
                <h1>Bojová Sieň</h1>
                <form method="post" action="">
                    <p class="lead">
@@ -131,7 +133,7 @@ setcookie("Cookie", $spravna);
            <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery.min.js"><\/script>')</script>
            <script src="assets/js/bootstrap.min.js"></script>
            <script src="assets/js/funkcie.js"></script>
-            
+
 
 </body>
    
