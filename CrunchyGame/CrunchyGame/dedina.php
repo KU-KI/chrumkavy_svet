@@ -1,6 +1,7 @@
 <?php
 include('session.php');
 include('data.php');
+include('config.php');
 session_start();
 ?>
 <!DOCTYPE html>
@@ -84,7 +85,7 @@ session_start();
                                <td>test</td>
                            </tr>
                            <?php
-                               $sql = "SELECT username, level FROM account WHERE id>0";
+                               $sql = "SELECT id, username, level FROM account WHERE id>0";
                                $result = $db->query($sql);
                                if ($result->num_rows > 0) {
                                    while($row = $result->fetch_assoc()) {
