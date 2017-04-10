@@ -97,7 +97,7 @@ setcookie("Cookie", $spravna);
            <div class="starter-template">
                <div class="progress">
                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
-                       aria-valuemin="0" aria-valuemax="100" style="width:<?php echo 100*($xp/$xpreq);?>%"></div>
+                       aria-valuemin="0" aria-valuemax="100" style="width:<?php echo 100*($xp/$xpreq);?>%"><center><?php $progress=100*($xp/$xpreq); echo number_format((float)$progress, 2, '.', ''); ?> % skúsenostných bodov</center></div>
                </div>
                <h1>Bojová Sieň</h1>
                <form method="post" action="">
