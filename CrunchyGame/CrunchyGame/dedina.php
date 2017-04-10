@@ -89,11 +89,11 @@ session_start();
                                if ($result->num_rows > 0) {
                                    while($row = $result->fetch_assoc()) {
                                        $curentlevel=$row["level"];
-                                       $sql = "SELECT level,xpreq,radnica,veza,hostinec,kostol,kasaren,hrad FROM levelstruct WHERE level='$curentlevel'";
-                                       $result = $db->query($sql);
-                                       if ($result->num_rows > 0) {
-                                           while($row = $result->fetch_assoc()) {
-                                               $xpreq1=$row["xpreq"]; $radnica1=$row["radnica"]; $veza1=$row["veza"]; $hostinec1=$row["hostinec"]; $kostol1=$row["kostol"]; $kasaren1=$row["kasaren"]; $hrad1=$row["hrad"];
+                                       $sql1 = "SELECT level,xpreq,radnica,veza,hostinec,kostol,kasaren,hrad FROM levelstruct WHERE level='$curentlevel'";
+                                       $result1 = $db->query($sql1);
+                                       if ($result1->num_rows > 0) {
+                                           while($row1 = $result1->fetch_assoc()) {
+                                               $xpreq1=$row1["xpreq"]; $radnica1=$row1["radnica"]; $veza1=$row1["veza"]; $hostinec1=$row1["hostinec"]; $kostol1=$row1["kostol"]; $kasaren1=$row1["kasaren"]; $hrad1=$row1["hrad"];
                                            }
                                        }
                                        $AlgoMX = (70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25;
