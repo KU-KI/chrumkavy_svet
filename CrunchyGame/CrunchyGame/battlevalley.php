@@ -92,9 +92,9 @@ setcookie("Cookie", $spravna);
                </div><!--/.nav-collapse -->
            </div>
        </nav>
+       <span id="timer"></span>
        <div class="container">
            <div class="starter-template">
-               <span id="timer"></span>
                <div class="progress">
                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
                        aria-valuemin="0" aria-valuemax="100" style="width:<?php echo 100*($xp/$xpreq);?>%"></div>
