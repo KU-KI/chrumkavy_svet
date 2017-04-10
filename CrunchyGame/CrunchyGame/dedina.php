@@ -59,9 +59,9 @@ session_start();
                            <th>Hostinec</th>
                        </tr>
                        <tr>
-                           <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:200px;height:200px;"></td>
-                           <td><img src="assets/img/budovy/veza<?php echo $radnica?>.png" alt="Veža" style="width:200px;height:200px;"></td>
-                           <td><img src="assets/img/budovy/hostinec<?php echo $radnica?>.png" alt="Hostinec" style="width:304px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:220px;height:200px;"></td>
+                           <td><img src="assets/img/budovy/veza<?php echo $radnica?>.png" alt="Veža" style="width:200px;height:150px;"></td>
+                           <td><img src="assets/img/budovy/hostinec<?php echo $radnica?>.png" alt="Hostinec" style="width:254px;height:228px;"></td>
                        </tr>
                        <tr>
                            <th>Kostol</th>
@@ -69,9 +69,9 @@ session_start();
                            <th>Hrad</th>
                        </tr>
                        <tr>
-                           <td><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:304px;height:228px;"></td>
-                           <td><img src="assets/img/budovy/kasaren<?php echo $kasaren?>.png" alt="Kasáreň" style="width:304px;height:228px;"></td>
-                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:304px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:254px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň" style="width:304px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:254px;height:228px;"></td>
                        </tr>
                    </table>
                </p>
