@@ -64,7 +64,7 @@ session_start();
                     XP: <?php 
                         if($level<30) echo $xp.'/'.$xpreq; 
                         else echo 'MAX';?>
-               <center><?php echo 100*($xp/$xpreq);?> % skúsenostných bodov</center><br/>
+               <center><?php $progress=100*($xp/$xpreq); echo number_format((float)$progress, 2, '.', ''); ?> % skúsenostných bodov</center><br/>
                    <div class="progress">
                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
                            aria-valuemin="0" aria-valuemax="100" style="width:<?php echo 100*($xp/$xpreq);?>%">
