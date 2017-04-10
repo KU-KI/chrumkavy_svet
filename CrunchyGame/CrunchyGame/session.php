@@ -13,8 +13,4 @@ $username = $row['username'];
 if(!isset($_SESSION['username'])){
     header("location:login.php");
 }
-else
-{
-    header("location:index.php");
-}
 ?>
