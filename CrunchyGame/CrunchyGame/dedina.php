@@ -52,7 +52,7 @@ session_start();
            <div class="starter-template">
                <h1>Vaša dedina</h1>
                <p class="lead">
-                   <table>
+                   <table style="width:100%">
                        <tr>
                            <th>Radnica</th>
                            <th>Veža</th>
@@ -71,7 +71,7 @@ session_start();
                        <tr>
                            <td><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:254px;height:228px;"></td>
                            <td><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň" style="width:304px;height:228px;"></td>
-                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:254px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:204px;height:228px;"></td>
                        </tr>
                    </table>
                </p>
