@@ -75,10 +75,13 @@ session_start();
                        </tr>
                    </table>
                    <center>
-                       <table style="width:100%">
+                       <table>
                            <tr>
                                <th>Hráč</th>
                                <th>Skóre</th>
+                           </tr>
+                           <tr>
+                               <td>test</td>
                            </tr>
                            <?php
                                $sql = "SELECT username, level FROM account WHERE id>0";
