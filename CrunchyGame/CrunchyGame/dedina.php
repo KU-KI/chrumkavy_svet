@@ -94,9 +94,9 @@ session_start();
                                                $xpreq1=$row1["xpreq"]; $radnica1=$row1["radnica"]; $veza1=$row1["veza"]; $hostinec1=$row1["hostinec"]; $kostol1=$row1["kostol"]; $kasaren1=$row1["kasaren"]; $hrad1=$row1["hrad"];
                                            }
                                        }
-                                       //$AlgoMX = (70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25;
+                                       $AlgoMX = (70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25;
                                        echo '<tr><td>'.$row["username"].'</td>';
-                                       echo '<td>'.'11'.'</td></tr>';
+                                       echo '<td>'.$AlgoMX.'</td></tr>';
                                    }
                                }
                                $db->close();
