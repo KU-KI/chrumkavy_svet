@@ -105,7 +105,7 @@ session_start();
                                            $najlepsihracmeno = $row["username"];
                                        }
                                    }
-                                   echo '<center><h3> Najlepší hráč je: '.$najlepsihracmeno.' so skóre: '.$najlepsihracscore.'</h3></center>';
+                                   echo '<center><h3> Najlepší hráč je '.$najlepsihracmeno.' so skóre '.$najlepsihracscore.'</h3></center>';
                                }
                                $db->close();
                            ?>
