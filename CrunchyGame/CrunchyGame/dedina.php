@@ -52,7 +52,7 @@ session_start();
            <div class="starter-template">
                <h1>Vaša dedina</h1>
                <p class="lead">
-                   <table style="width:100%">
+                   <table>
                        <tr>
                            <th>Radnica</th>
                            <th>Veža</th>
