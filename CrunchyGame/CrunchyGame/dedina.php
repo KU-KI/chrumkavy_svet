@@ -97,7 +97,7 @@ session_start();
                                            }
                                        }
                                        $AlgoMX = ((70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25)+($row["xp"])/4;
-                                       echo '<tr><td>'.$row["username"].'</td>';
+                                       echo '<tr><td>'.$row["username"].' ['.$level.']</td>';
                                        echo '<td>'.$AlgoMX.'</td></tr>';
                                        if($najlepsihracscore<$AlgoMX)
                                        {
