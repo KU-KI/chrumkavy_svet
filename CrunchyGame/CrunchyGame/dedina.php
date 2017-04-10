@@ -59,7 +59,7 @@ session_start();
                            <th>Hostinec</th>
                        </tr>
                        <tr>
-                           <td><img src="assets/img/dedina/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:304px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:304px;height:228px;"></td>
                            <td><?php echo $veza;?></td>
                            <td><?php echo $hostinec;?></td>
                        </tr>
