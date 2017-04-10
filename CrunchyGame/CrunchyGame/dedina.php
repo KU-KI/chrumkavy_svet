@@ -55,9 +55,9 @@ session_start();
                <p class="lead">
                    <table style="width:100%">
                        <tr>
-                           <th>Radnica</th>
-                           <th>Veža</th>
-                           <th>Hostinec</th>
+                           <th>Radnica [<?php echo $radnica?>]</th>
+                           <th>Veža [<?php echo $veza>]</th>
+                           <th>Hostinec [<?php echo $hostinec?>]</th>
                        </tr>
                        <tr>
                            <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:220px;height:200px;"></td>
@@ -65,9 +65,9 @@ session_start();
                            <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec" style="width:254px;height:228px;"></td>
                        </tr>
                        <tr>
-                           <th>Kostol</th>
-                           <th>Kasáreň</th>
-                           <th>Hrad</th>
+                           <th>Kostol [<?php echo $kostol?>]</th>
+                           <th>Kasáreň [<?php echo $kasaren?>]</th>
+                           <th>Hrad [<?php echo $hrad?>]</th>
                        </tr>
                        <tr>
                            <td><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:254px;height:228px;"></td>
