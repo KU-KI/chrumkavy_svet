@@ -43,7 +43,7 @@ if(isset($_POST['odoslat']))
             $progress=100*($xp/$xpreq);
             echo '<div class="progress">
                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
-                       aria-valuemin="0" aria-valuemax="100" style="width:'.(100*($xp/$xpreq)).'%"><center>'.number_format((float)$progress, 2, '.', '').'% skúsenostných bodov</center></div>
+                       aria-valuemin="0" aria-valuemax="100" style="width:'.(100*($xp/$xpreq)).'%"><center>'.$xp.'/'.$xpreq.'% skúsenostných bodov</center></div>
             </div>';
         }
     }
