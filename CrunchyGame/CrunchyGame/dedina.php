@@ -76,27 +76,24 @@ session_start();
                        </tr>
                    </table>
                    <center>
-                       <table>
+                       <table style="width:100%">
                            <tr>
                                <th>Hráč</th>
                                <th>Skóre</th>
-                           </tr>
-                           <tr>
-                               <td>test</td>
                            </tr>
                            <?php
                                $sql = "SELECT id, username, level FROM account WHERE id>0";
                                $result = $db->query($sql);
                                if ($result->num_rows > 0) {
                                    while($row = $result->fetch_assoc()) {
-                                       //$curentlevel=$row["level"];
-                                       /*$sql1 = "SELECT level,xpreq,radnica,veza,hostinec,kostol,kasaren,hrad FROM levelstruct WHERE level='$curentlevel'";
+                                       $curentlevel=$row["level"];
+                                       $sql1 = "SELECT level,xpreq,radnica,veza,hostinec,kostol,kasaren,hrad FROM levelstruct WHERE level='$curentlevel'";
                                        $result1 = $db->query($sql1);
                                        if ($result1->num_rows > 0) {
                                            while($row1 = $result1->fetch_assoc()) {
                                                $xpreq1=$row1["xpreq"]; $radnica1=$row1["radnica"]; $veza1=$row1["veza"]; $hostinec1=$row1["hostinec"]; $kostol1=$row1["kostol"]; $kasaren1=$row1["kasaren"]; $hrad1=$row1["hrad"];
                                            }
-                                       }*/
+                                       }
                                        //$AlgoMX = (70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25;
                                        echo '<tr><td>'.$row["username"].'</td>';
                                        echo '<td>'.'11'.'</td></tr>';
