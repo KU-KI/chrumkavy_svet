@@ -60,8 +60,8 @@ session_start();
                        </tr>
                        <tr>
                            <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:304px;height:228px;"></td>
-                           <td><?php echo $veza;?></td>
-                           <td><?php echo $hostinec;?></td>
+                           <td><img src="assets/img/budovy/veza<?php echo $radnica?>.png" alt="Veža" style="width:304px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/hostinec<?php echo $radnica?>.png" alt="Hostinec" style="width:304px;height:228px;"></td>
                        </tr>
                        <tr>
                            <th>Kostol</th>
