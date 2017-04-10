@@ -59,7 +59,7 @@ session_start();
                            <th>Hostinec</th>
                        </tr>
                        <tr>
-                           <td><?php echo $radnica;?></td>
+                           <td><img src="radnica<?php echo $radnica?>.png" alt="Mountain View" style="width:304px;height:228px;"></td>
                            <td><?php echo $veza;?></td>
                            <td><?php echo $hostinec;?></td>
                        </tr>
