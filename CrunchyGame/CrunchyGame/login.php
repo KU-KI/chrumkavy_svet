@@ -1,14 +1,21 @@
 <?php
 include("config.php");
 session_start();
-$registration_avilable=false;
+$registration_avilable=true;
 
 if (isset($_POST['login'])) {
 
     $myusername = mysqli_real_escape_string($db,$_POST['username']);
     $mypassword = mysqli_real_escape_string($db,$_POST['password']);
-
-    $sql = "SELECT id FROM account WHERE username = '$myusername' and password = '$mypassword'";
+    // dekryptovanie hesla pred porovnanim
+    $saltQuery = "SELECT salt FROM account WHERE username = '$myusername';";
+    $result = mysqli_query($db,$saltQuery);
+    $row = mysql_fetch_assoc($result);
+    $salt = $row['salt'];
+    $saltedPW = $mypassword.$salt;
+    $hashedPW = hash('sha256',$saltedPW);
+    // porovnanie hesiel
+    $sql = "SELECT id FROM account WHERE username = '$myusername' and password = '$hashedPW'";
     $result = mysqli_query($db,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $active = $row['active'];
@@ -37,8 +44,11 @@ elseif (isset($_POST['register']))
                 $username = mysqli_real_escape_string($db,$_POST['username']);
                 $password = mysqli_real_escape_string($db,$_POST['password']);
                 $nickname = mysqli_real_escape_string($db,$_POST['nickname']);
+                $salt = bin2hex(mcrypt_create_iv(32, MCRYPT_DEV_URANDOM));
+                $saltedPW =  $password . $salt;
+                $hashedPW = hash('sha256', $saltedPW);
                 
-                $query = "INSERT INTO account (id, username, password, nickname, level, xp, avatar) VALUES (NULL,'$username', '$password','$nickname',1,0,'default')";
+                $query = "INSERT INTO account (id, username, password, salt,  nickname, level, xp, avatar) VALUES (NULL,'$username','$hashedPW','$salt','$nickname',1,0,'default')";
                 $result = mysqli_query($db, $query);
                 if($result)
                 {
