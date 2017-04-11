@@ -61,7 +61,7 @@ session_start();
                        </tr>
                        <tr>
                            <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:220px;height:200px;"></td>
-                           <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža" style="width:240px;height:150px;"></td>
+                           <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža" style="width:220px;height:150px;"></td>
                            <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec" style="width:234px;height:228px;"></td>
                        </tr>
                        <tr>
@@ -72,7 +72,7 @@ session_start();
                        <tr>
                            <td><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:224px;height:228px;"></td>
                            <td><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň" style="width:304px;height:228px;"></td>
-                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:204px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:224px;height:228px;"></td>
                        </tr>
                    </table>
                    <center>
