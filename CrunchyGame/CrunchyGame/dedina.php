@@ -3,13 +3,11 @@ include('session.php');
 include('data.php');
 include('config.php');
 session_start();
-if (isset($_POST['zmenheslo']))
+if (isset($_POST['dedinasubmit']))
 {
     $dedinahladaj = mysqli_real_escape_string($db,$_POST['dedina']);
-    echo $dedinahladaj;
     if($dedinahladaj != '')
     {
-        echo $dedinahladaj;
         $sql = "SELECT level FROM account WHERE username='$dedinahladaj'";
         $result = $db->query($sql);
         //premenné pre profil a pracu s profilom
