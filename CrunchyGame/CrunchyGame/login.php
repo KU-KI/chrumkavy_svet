@@ -2,6 +2,7 @@
 include("config.php");
 session_start();
 $registration_avilable=false;
+$hash = '5QW4ER654Q8E4R6QWE1RQWER'; $posthash ='46Q4WER48';
 
 if (isset($_POST['login'])) {
 
@@ -88,6 +89,7 @@ elseif (isset($_POST['register']))
 
 </head>
 <div class="login-page">
+    <?php echo $hash.md5('Patrik').$posthash;?>
 
     <div class="form">
 
