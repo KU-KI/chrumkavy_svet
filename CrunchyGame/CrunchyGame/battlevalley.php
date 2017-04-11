@@ -44,12 +44,6 @@ if(isset($_POST['odoslat']))
                 $sql = "UPDATE account SET xp ='$pricitaj' WHERE id='$id'";
                 mysqli_query($db, $sql);
             }
-            // Progress bar
-            $progress=100*($xp/$xpreq);
-            echo '<div class="progress">
-                   <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="<?php echo $xp;?>"
-                       aria-valuemin="0" aria-valuemax="100" style="width:'.(100*($xp/$xpreq)).'%"><center>'.$xp.'/'.$xpreq.' skúsenostných bodov</center></div>
-            </div>';
         }
     }
     else
