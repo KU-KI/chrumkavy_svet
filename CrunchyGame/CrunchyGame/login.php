@@ -5,7 +5,7 @@ $registration_avilable=false;
 $name = 'Patrik';
 $hash = 'q4wet98qwet84qw8et456qw4'; $posthash ='485q4we8t';
 $crypted = $hash.md5(name).$posthash;
-$decrypted = str_replace($hash,NULL,NULL);
+$decrypted = str_replace($hash,NULL,$crypted);
 
 
 if (isset($_POST['login'])) {
