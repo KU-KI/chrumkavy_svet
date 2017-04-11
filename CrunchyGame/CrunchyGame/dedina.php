@@ -60,9 +60,9 @@ session_start();
                            <th>Hostinec [<?php echo $hostinec; ?>]</th>
                        </tr>
                        <tr>
-                           <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica"></td>
-                           <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža"></td>
-                           <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec"></td>
+                           <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:220px;height:200px;"></td>
+                           <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža" style="width:200px;height:150px;"></td>
+                           <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec" style="width:254px;height:228px;"></td>
                        </tr>
                        <tr>
                            <th>Kostol [<?php echo $kostol; ?>]</th>
