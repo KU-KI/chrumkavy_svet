@@ -4,6 +4,10 @@ include('data.php');
 include('config.php');
 session_start();
 $nahoda=rand(1, 31);
+while($nahoda==$_COOKIE['nahodnecislo'])
+{
+    $nahoda=rand(1, 31);
+}
 //
 $sql = "SELECT otazka, prva, druha, tretia, spravna FROM otazky WHERE id='$nahoda'";
 $result = $db->query($sql);
@@ -53,6 +57,7 @@ if(isset($_POST['odoslat']))
     }
 }
 setcookie("Cookie", $spravna);
+setcookie("nahodnecislo", $nahoda);
 ?>
 <!DOCTYPE html>
 
