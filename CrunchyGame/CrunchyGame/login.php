@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 session_start();
-$registration_avilable=false;
+$registration_avilable=true;
 
 if (isset($_POST['login'])) {
 
