@@ -12,6 +12,7 @@ if (isset($_POST['login'])) {
     $result = mysqli_query($db,$saltQuery);
     $row = mysql_fetch_assoc($result);
     $salt = $row['salt'];
+    echo $salt.'<br/>';
     $saltedPW = $mypassword.$salt;
     $hashedPW = hash('sha256', $saltedPW); 
     echo $hashedPW.'<br/>';
