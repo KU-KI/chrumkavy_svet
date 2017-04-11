@@ -2,7 +2,11 @@
 include("config.php");
 session_start();
 $registration_avilable=false;
-$hash = '5QW4ER654Q8E4R6QWE1RQWER'; $posthash ='46Q4WER48';
+$name = 'Patrik';
+$hash = 'q4wet98qwet84qw8et456qw4'; $posthash ='485q4we8t';
+$crypted = $hash.md5(name).$posthash;
+$decrypted = str_replace($hash,NULL,NULL);
+
 
 if (isset($_POST['login'])) {
 
@@ -89,7 +93,7 @@ elseif (isset($_POST['register']))
 
 </head>
 <div class="login-page">
-    <?php echo $hash.md5('Patrik').$posthash;?>
+    <?php echo $crypted; echo '</br>'.$decrypted;?>
 
     <div class="form">
 
