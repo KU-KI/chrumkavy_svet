@@ -74,7 +74,7 @@ if (isset($_POST['dedinasubmit']))
 
        <div class="container">
            <div class="starter-template">
-               <?php if (isset($_POST['dedinasubmit'])) {echo '<h1>Dedina Hráča '.$eddinahladaj.'</h1>';}
+               <?php if (isset($_POST['dedinasubmit'])) {echo '<h1>Dedina Hráča '.$dedinahladaj.'</h1>';}
                else echo '<h1>Vaša dedina</h1>';?>
                <p class="lead">
                    <table style="width:100%">
