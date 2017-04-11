@@ -8,7 +8,10 @@ if (isset($_POST['zmenheslo']))
     $noveheslo = mysqli_real_escape_string($db,$_POST['passwordchange']);
     if($noveheslo != '')
     {
-        $sql = "UPDATE account SET password ='$noveheslo' WHERE id='$id'";
+        $salt = bin2hex(mcrypt_create_iv(32, MCRYPT_DEV_URANDOM));
+        $saltedPW =  $noveheslo . $salt;
+        $hashedPW = hash('sha256', $saltedPW);
+        $sql = "UPDATE account SET password ='$hashedPW', salt='$salt' WHERE id='$id'";
         if (mysqli_query($db, $sql)) {
             $smsg = "Vaše heslo bolo zmenené úspešne!";
         } else {
