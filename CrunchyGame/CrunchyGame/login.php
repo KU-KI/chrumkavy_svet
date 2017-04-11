@@ -5,7 +5,7 @@ $registration_avilable=false;
 $name = 'Patrik';
 $hash = 'q4wet98qwet84qw8et456qw4'; $posthash ='485q4we8t';
 $crypted = $hash.md5(utf8_encode($name)).$posthash;
-$decrypted = str_replace($hash,NULL,str_replace($hash,NULL,$crypted));
+$decrypted = str_replace($hash,'',str_replace($hash,'',$crypted));
 $decrypted = md5(utf8_decode($decrypted));
 
 
