@@ -37,6 +37,7 @@ if(isset($_POST['odoslat']))
             if($pricitaj>$xpreq)
             {
                 $newlvl = $level+1;
+                echo '<center>Gratulujeme pokročili ste na dalšiu úroveň, vaša dedina sa rozrástla!</center>';
                 $sql = "UPDATE account SET level ='$newlvl' WHERE id='$id'";
                 mysqli_query($db, $sql);
                 $pricitaj-=$xpreq;
