@@ -12,12 +12,10 @@ if (isset($_POST['login'])) {
     $result = mysqli_query($db,$saltQuery);
     $row = mysql_fetch_assoc($result);
     $salt = $row['salt'];
-    //echo $salt.'<br>';
     $saltedPW = $mypassword.$salt;
-    echo $saltedPW.'<br>';
-    //$hashedPW = hash('sha256',$saltedPW);
+    $hashedPW = hash('sha256',$saltedPW);
     // porovnanie hesiel
-    $sql = "SELECT id FROM account WHERE username = '$myusername' and password = '$salt'";
+    $sql = "SELECT id FROM account WHERE username = '$myusername' and password = '$hashedPW'";
     $result = mysqli_query($db,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $active = $row['active'];
