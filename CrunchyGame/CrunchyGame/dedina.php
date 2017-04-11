@@ -6,6 +6,7 @@ session_start();
 if (isset($_POST['zmenheslo']))
 {
     $dedinahladaj = mysqli_real_escape_string($db,$_POST['dedina']);
+    echo $dedinahladaj;
     if($dedinahladaj != '')
     {
         echo $dedinahladaj;
