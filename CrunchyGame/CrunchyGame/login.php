@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 session_start();
-$registration_avilable=true;
+$registration_avilable=false;
 
 if (isset($_POST['login'])) {
 
@@ -10,7 +10,7 @@ if (isset($_POST['login'])) {
     // dekryptovanie hesla pred porovnanim
     $saltQuery = "SELECT salt FROM account WHERE username = '$myusername';";
     $result = mysqli_query($db,$saltQuery);
-    $row = mysql_fetch_assoc($result);
+    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $salt = $row['salt'];
     echo $salt.'<br/>';
     $saltedPW = $mypassword.$salt;
