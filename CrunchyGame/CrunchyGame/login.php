@@ -31,7 +31,7 @@ if (isset($_POST['login'])) {
 
         header("location: profile.php");
     }else {
-        $error = "Vaše prihlasovacie meno alebo heslo niesú správne";
+        $fmsg = "Vaše prihlasovacie meno alebo heslo niesú správne";
     }
 }
 elseif (isset($_POST['register'])) 
