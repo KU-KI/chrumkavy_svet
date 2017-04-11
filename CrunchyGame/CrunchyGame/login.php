@@ -13,6 +13,7 @@ if (isset($_POST['login'])) {
     $row = mysql_fetch_assoc($result);
     $salt = $row['salt'];
     $saltedPW = $mypassword.$salt;
+    echo $saltedPW;
     $hashedPW = hash('sha256',$saltedPW);
     // porovnanie hesiel
     $sql = "SELECT id FROM account WHERE username = '$myusername' and password = '$hashedPW'";
@@ -46,9 +47,8 @@ elseif (isset($_POST['register']))
                 $nickname = mysqli_real_escape_string($db,$_POST['nickname']);
                 $salt = bin2hex(mcrypt_create_iv(32, MCRYPT_DEV_URANDOM));
                 $saltedPW =  $password . $salt;
-                $hashedPW = hash('sha256', $saltedPW);
-                
-                $query = "INSERT INTO account (id, username, password, salt,  nickname, level, xp, avatar) VALUES (NULL,'$username','$hashedPW','$salt','$nickname',1,0,'default')";
+                $hashedPW = hash('sha256', $saltedPW);                
+                $query = "INSERT INTO account (id, username, password, salt, nickname, level, xp, avatar) VALUES (NULL,'$username','$hashedPW','$salt','$nickname',1,0,'default')";
                 $result = mysqli_query($db, $query);
                 if($result)
                 {
