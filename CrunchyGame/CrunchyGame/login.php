@@ -14,6 +14,7 @@ if (isset($_POST['login'])) {
     $salt = $row['salt'];
     $saltedPW = $mypassword.$salt;
     $hashedPW = hash('sha256',$saltedPW);
+    echo $hashedPW.'<br/>';
     // porovnanie hesiel
     $sql = "SELECT id FROM account WHERE username = '$myusername' and password = '$hashedPW'";
     $result = mysqli_query($db,$sql);
