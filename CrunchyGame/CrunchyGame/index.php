@@ -65,7 +65,7 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="assets/img/banner_2.png" alt="" class="">
+                        <img src="assets/img/1.jpg" alt="" class="">
                         <div class="carousel-caption">
                             <i class=""></i>
                             <h1>Crunchy game</h1>
@@ -75,7 +75,7 @@
                     </div>
                     <div class="item">
 
-                        <img src="assets/img/crunchy1.jpg" alt="">
+                        <img src="assets/img/2.jpg" alt="">
                         <div class="carousel-caption">
                             <i class=""></i>
                             <h1>Crunchy game</h1>
@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="item">
-                        <img src="assets/img/banner-img.jpg" alt="">
+                        <img src="assets/img/3.jpg" alt="">
                         <div class="carousel-caption">
                             <i class=""></i>
                             <h1>Crunchy game</h1>
