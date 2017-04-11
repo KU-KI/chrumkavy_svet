@@ -140,7 +140,7 @@
                                 <img src="assets/img/img1.jpg" alt="">
                             </div>
                             <p>Vybuduj si vlastnú dedinu, bojuj s časom, alebo si dopomôž historickými hádankami a skráť tak svoje čakanie!</p>
-                            <p><a href="#" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
+                            <p><a href="assets/img/nav/navdedina.jpg" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
                         </div>
                     </li>
                     <li>
@@ -150,7 +150,7 @@
                                 <img src="assets/img/img2.jpg" alt="">
                             </div>
                             <p>Miesto kde môžeš preukázať svoje zručnosti v logických a historických hádankách</p>
-                            <p><a href="#" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
+                            <p><a href="assets/img/nav/navbattlevalley.jpg" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
                         </div>
                     </li>
                     <li>
@@ -160,7 +160,7 @@
                                 <img src="assets/img/img3.jpg" alt="">
                             </div>
                             <p>Sleduj svoj postup v hre v kolonke profil kde si môžeš porovnať svoj postup s ostatnými!</p>
-                            <p><a href="#" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
+                            <p><a href="assets/img/nav/navprofil.jpg" class="more">Viac informácií <i class="fw-icon-chevron-right"></i></a></p>
                         </div>
                     </li>
                 </ul>
