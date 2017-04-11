@@ -8,6 +8,7 @@ if (isset($_POST['zmenheslo']))
     $dedinahladaj = mysqli_real_escape_string($db,$_POST['dedina']);
     if($dedinahladaj != '')
     {
+        echo $dedinahladaj;
         $sql = "SELECT level FROM account WHERE username='$dedinahladaj'";
         $result = $db->query($sql);
         //premenné pre profil a pracu s profilom
