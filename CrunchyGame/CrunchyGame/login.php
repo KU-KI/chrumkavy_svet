@@ -64,6 +64,7 @@ elseif (isset($_POST['register']))
             }
         }
 }
+$db->close();
 ?>
 <!DOCTYPE html>
 

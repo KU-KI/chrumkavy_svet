@@ -28,6 +28,7 @@ if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
         $fmsg = "chyba pri zmene avataru ..";
     }
 }
+$db->close();
 ?>
 <!DOCTYPE html>
 

@@ -3,6 +3,29 @@ include('session.php');
 include('data.php');
 include('config.php');
 session_start();
+if (isset($_POST['zmenheslo']))
+{
+    $dedinahladaj = mysqli_real_escape_string($db,$_POST['dedina']);
+    if($dedinahladaj != '')
+    {
+        $sql = "SELECT level FROM account WHERE username='$dedinahladaj'";
+        $result = $db->query($sql);
+        //premenné pre profil a pracu s profilom
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                $level=$row["level"];
+            }
+        }
+        $sql = "SELECT radnica,veza,hostinec,kostol,kasaren,hrad FROM levelstruct WHERE level='$level'";
+        $result = $db->query($sql);
+        if ($result->num_rows > 0) {
+            while($row = $result->fetch_assoc()) {
+                $radnica=$row["radnica"]; $veza=$row["veza"]; $hostinec=$row["hostinec"]; $kostol=$row["kostol"]; $kasaren=$row["kasaren"]; $hrad=$row["hrad"];
+            }
+        }
+    }
+    $db->close();
+}
 ?>
 <!DOCTYPE html>
    
@@ -108,11 +131,18 @@ session_start();
                                }
                                $db->close();
                                echo '<center><h3> Najlepší hráč je '.$najlepsihracmeno.' so skóre '.$najlepsihracscore.'</h3></center>';
-                               ?>
+                                    ?>
                            </table>
                        </div>
                 </center>
                </p>
+               <h2>Zobraziť dedinu hráča</h2>
+               <form role="form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>" method="post">
+                   <input type="text" placeholder="Zadaj meno hráča" name="dedina" />
+                   <br />
+                   <br />
+                   <button name="dedinasubmit" type="submit">Zobraziť dedinu</button>
+               </form>
             </div>
 
        </div><!-- /.container -->
