@@ -26,7 +26,7 @@ if (isset($_POST['dedinasubmit']))
     }
     $db->close();
 }
-if (isset($_POST['dedinasubmit']))
+if (isset($_POST['mojadedina']))
 {
     header("Refresh:0");
 }
