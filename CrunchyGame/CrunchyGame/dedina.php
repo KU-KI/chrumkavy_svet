@@ -1,13 +1,18 @@
 <?php
+// Prilinkovanie súborov
 include('session.php');
 include('data.php');
 include('config.php');
 session_start();
+// pokiaľ bolo stlačené tlačidlo s hodnotou name=dedinasubmit spusti sa nasledovná časť kódu
 if (isset($_POST['dedinasubmit']))
 {
+    // nahrá názov dediny urciteho hraca pomocou zabezpečenej metódy získavania textu escape
     $dedinahladaj = mysqli_real_escape_string($db,$_POST['dedina']);
+    // Ak nazov hráča nieje prázdny
     if($dedinahladaj != '')
     {
+        // Získaj úroveň hráča z databázy
         $sql = "SELECT level FROM account WHERE username='$dedinahladaj'";
         $result = $db->query($sql);
         //premenné pre profil a pracu s profilom
@@ -16,6 +21,7 @@ if (isset($_POST['dedinasubmit']))
                 $level=$row["level"];
             }
         }
+        // Vymení premenné s prilinkovaného súboru dáta, súbormi hráča ktorého sme si vybrali
         $sql = "SELECT radnica,veza,hostinec,kostol,kasaren,hrad FROM levelstruct WHERE level='$level'";
         $result = $db->query($sql);
         if ($result->num_rows > 0) {
@@ -24,10 +30,13 @@ if (isset($_POST['dedinasubmit']))
             }
         }
     }
+    // uzatvorí spojenie s databázou
     $db->close();
 }
+// Tlačidlo návrat na vlastnú dedinu
 if (isset($_POST['mojadedina']))
 {
+    // Refreshne stránku a vráti prvotný obsah z data.php
     header("Refresh:0");
 }
 ?>
@@ -110,6 +119,7 @@ if (isset($_POST['mojadedina']))
                        }
                        else
                        {
+                                  // Vypíše tabulku len za tých okolností že hráč je na svojej dedine
                            echo 
                            '<h1>Skóre hráčov</h1>
                             <div class="table-responsive">
@@ -118,9 +128,12 @@ if (isset($_POST['mojadedina']))
                                    <th>Hráč</th>
                                    <th>Skóre</th>
                                </tr>';
+                                // Vynulovanie premenných
                                $najlepsihracscore = 0; $najlepsihracmeno = '';
+                               // Vyberie všetkých hráčov ktorých ID je väčšie ako 0 z databázy a spustí výpis
                                $sql = "SELECT id, username, level, xp FROM account WHERE id>0";
                                $result = $db->query($sql);
+                               // Získa údaje od konkrétneho hráča
                                if ($result->num_rows > 0) {
                                    while($row = $result->fetch_assoc()) {
                                        $curentlevel=$row["level"];
@@ -131,9 +144,12 @@ if (isset($_POST['mojadedina']))
                                                $xpreq1=$row1["xpreq"]; $radnica1=$row1["radnica"]; $veza1=$row1["veza"]; $hostinec1=$row1["hostinec"]; $kostol1=$row1["kostol"]; $kasaren1=$row1["kasaren"]; $hrad1=$row1["hrad"];
                                            }
                                        }
+                                       // Algoritmus pre vypočítanie skóre hráča do tabulky
                                        $AlgoMX = ((70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25)+($row["xp"])/4;
+                                       // vypisuje a zároveň generuje riadky a stĺpce do tabulky
                                        echo '<tr><td>'.$row["username"].' ['.$curentlevel.']</td>';
                                        echo '<td>'.$AlgoMX.'</td></tr>';
+                                       // Overuje ktorý hráč má najväčšie skóre v cykle
                                        if($najlepsihracscore<$AlgoMX)
                                        {
                                            $najlepsihracscore=$AlgoMX;
@@ -141,8 +157,9 @@ if (isset($_POST['mojadedina']))
                                        }
                                    }
                                }
+                               // Uzatvorenie spojenia s databázou
                                $db->close();
-
+                               // Výpis mena a skóre najlepšieho hráča v strede nadpisom typu h3
                                echo '<center><h3> Najlepší hráč je '.$najlepsihracmeno.' so skóre '.$najlepsihracscore.'</h3></center>';
                                }
                                     ?>

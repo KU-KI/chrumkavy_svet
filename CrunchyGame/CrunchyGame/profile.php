@@ -1,9 +1,12 @@
 <?php
+// Prilinkovanie súborov data a session
 include('session.php');
 include('data.php');
 session_start();
 //% do progress baru
 
+// V profile pomocou vyššie uvedených prilinkovaných súborov nechávame len jednoducho vypísať cez príkaz echo premenné aby mal uživateľ prehľad o postupe v hre
+// V progressbare je použitý jednoduchý matematický krok na prepočítanie dvoch numerických hodnôt do 100% progressbaru
 ?>
 <!DOCTYPE html>
    

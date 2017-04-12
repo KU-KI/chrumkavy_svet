@@ -1,17 +1,27 @@
 <?php
+// Stránka nastavení 
+// Prilinkovanie suborov
 include('session.php');
 include('data.php');
 include('config.php');
 session_start();
+// Ak používateľ stlačí tlačidlo pre zmenu hesla spustí sa následovné
 if (isset($_POST['zmenheslo']))
 {
+    // Bezpečné prebratie políčka z heslom
     $noveheslo = mysqli_real_escape_string($db,$_POST['passwordchange']);
+    // Ak políčko z heslom nieje prázdne
     if($noveheslo != '')
     {
+        // Generovanie náhodného saltu
         $salt = bin2hex(mcrypt_create_iv(32, MCRYPT_DEV_URANDOM));
+        // Pripojenie Hesla k saltu
         $saltedPW =  $noveheslo . $salt;
+        // Hashovanie hesla
         $hashedPW = hash('sha256', $saltedPW);
+        // Vloženie zahashovaného hesla do databázy
         $sql = "UPDATE account SET password ='$hashedPW', salt='$salt' WHERE id='$id'";
+        // Kontrola úspešnosti vloženia
         if (mysqli_query($db, $sql)) {
             $smsg = "Vaše heslo bolo zmenené úspešne!";
         } else {
@@ -19,9 +29,13 @@ if (isset($_POST['zmenheslo']))
         }
     }
 }
+// Výber avataru, kontrola či bol niektorý vybraný, nesmie byť prázdny
 if (isset($_POST["avatar"]) && !empty($_POST["avatar"])) {
+    // nastaví premennú avatar podľa hodnoty prebraného vybratého obrázku / každý obrázok má číselnú hodnotu
     $avatar = $_POST['avatar'];
+    // vloží avatar do tabulky account
     $sql = "UPDATE account SET avatar ='$avatar' WHERE id='$id'";
+    // Kontrola správneho priebehu akcie
     if (mysqli_query($db, $sql)) {
         $fmsg = "Vaš avatar bol zmenený úspešne!";
     } else {
