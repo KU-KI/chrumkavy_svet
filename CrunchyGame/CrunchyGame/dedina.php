@@ -25,10 +25,10 @@ if (isset($_POST['dedinasubmit']))
         }
     }
     $db->close();
-    if (isset($_POST['dedinasubmit']))
-    {
-        header("Refresh:0");
-    }
+}
+if (isset($_POST['dedinasubmit']))
+{
+    header("Refresh:0");
 }
 ?>
 <!DOCTYPE html>
