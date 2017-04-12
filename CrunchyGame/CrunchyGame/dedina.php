@@ -100,14 +100,21 @@ if (isset($_POST['dedinasubmit']))
                        </tr>
                    </table>
                    <center>
-                       <h1>Skóre hráčov</h1>
-                       <div class="table-responsive">
-                           <table class="table">
+                        <?php if (isset($_POST['dedinasubmit']))
+                       {
+                                  
+                       }
+                       else
+                       {
+                           echo 
+                           '<h1>Skóre hráčov</h1>
+                            <div class="table-responsive">
+                            <table class="table">
                                <tr>
                                    <th>Hráč</th>
                                    <th>Skóre</th>
-                               </tr><?php
-                                $najlepsihracscore = 0; $najlepsihracmeno = '';
+                               </tr>';
+                               $najlepsihracscore = 0; $najlepsihracmeno = '';
                                $sql = "SELECT id, username, level, xp FROM account WHERE id>0";
                                $result = $db->query($sql);
                                if ($result->num_rows > 0) {
@@ -131,8 +138,11 @@ if (isset($_POST['dedinasubmit']))
                                    }
                                }
                                $db->close();
+
                                echo '<center><h3> Najlepší hráč je '.$najlepsihracmeno.' so skóre '.$najlepsihracscore.'</h3></center>';
+                               }
                                     ?>
+
                            </table>
                        </div>
                 </center>
