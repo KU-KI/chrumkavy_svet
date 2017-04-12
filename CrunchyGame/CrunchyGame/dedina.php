@@ -25,6 +25,10 @@ if (isset($_POST['dedinasubmit']))
         }
     }
     $db->close();
+    if (isset($_POST['dedinasubmit']))
+    {
+        header("Refresh:0");
+    }
 }
 ?>
 <!DOCTYPE html>
@@ -153,6 +157,7 @@ if (isset($_POST['dedinasubmit']))
                    <br />
                    <br />
                    <button name="dedinasubmit" type="submit">Zobraziť dedinu</button>
+                   <button name="mojadedina" type="submit">Naspäť na moju dedinu</button>
                </form>
             </div>
 
