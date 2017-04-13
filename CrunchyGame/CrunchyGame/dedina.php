@@ -137,22 +137,22 @@ if (isset($_POST['mojadedina']))
                        <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive">
                        </div>
-                       <div class="col-xs-3">
+                       <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive">
                        </div>
-                       <div class="col-xs-3">
+                       <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive"> TEXT
                        </div>
-                       <div class="col-xs-3">
+                       <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive">
                        </div>
-                       <div class="col-xs-3">
+                       <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive">
                        </div>
-                       <div class="col-xs-3">
+                       <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive">
                        </div>
-                       <div class="col-xs-3">
+                       <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive">
                        </div>
                    </div>
