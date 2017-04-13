@@ -103,6 +103,8 @@ if (isset($_POST['mojadedina']))
                        </tr>
                        <tr>
                            <td>Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</td>
+                           <td>Veža slúži na obranu dediny, dobrovolníci sa odoberú na stráž a vaša dedina je tak v noci i počas dňa lepšie chránená, veža pridáva 90 skúsenostných bodov</td>
+                           <td>Hostinec je miesto, kde sa každý človek v dedine rád odreaguje po ťažkej práci, zvyšuje to ich spokojnosť a v bojovej sieni získate o 120 skúsenostných bodov viac</td>
                        </tr>
                        <tr>
                            <th>Kostol [<?php echo $kostol; ?>]</th>
