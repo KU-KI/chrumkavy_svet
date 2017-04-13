@@ -136,7 +136,7 @@ if (isset($_POST['mojadedina']))
                        </div>
                        <div class="col-xs-4">
                                 Veža [<?php echo $veza; ?>]
-                               <img src="assets/img/budovy/veza<?php echo $veza?>.png" class="img-responsive" style="width:220px;height:150px;"> Veža slúži na obranu dediny, dobrovolníci sa odoberú na stráž a vaša dedina je tak v noci i počas dňa lepšie chránená, veža pridáva 90 skúsenostných bodov
+                               <img src="assets/img/budovy/veza<?php echo $veza?>.png" class="img-responsive" style="width:160px;height:150px;"> Veža slúži na obranu dediny, dobrovolníci sa odoberú na stráž a vaša dedina je tak v noci i počas dňa lepšie chránená, veža pridáva 90 skúsenostných bodov
                        </div>
                        <div class="col-xs-4">
                                 Hostinec [<?php echo $hostinec; ?>]
