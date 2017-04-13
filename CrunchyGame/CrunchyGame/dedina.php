@@ -135,16 +135,13 @@ if (isset($_POST['mojadedina']))
                    <p>This layout displays <b>4 images per row</b>. Bootstrap 3 sizes images "responsively" using the <code>img-responsive</code> CSS class. As browser width shrinks, the columns and images scale down accordingly...</p>
                    <div class="row">
                        <div class="col-xs-4">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
+                               <img src="http://placehold.it/350x150" class="img-responsive"> Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše
                        </div>
                        <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive">
                        </div>
                        <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive"> TEXT
-                       </div>
-                       <div class="col-xs-4">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
                        </div>
                        <div class="col-xs-4">
                                <img src="http://placehold.it/350x150" class="img-responsive">
