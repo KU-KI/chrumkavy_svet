@@ -49,7 +49,6 @@ if (isset($_POST['mojadedina']))
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
        <link href="assets/css/administracia.css" rel="stylesheet" />
-       <link href="assets/css/our.css" rel="stylesheet">
    </head>
    
    <body>
@@ -91,7 +90,6 @@ if (isset($_POST['mojadedina']))
                <?php if (isset($_POST['dedinasubmit'])) {echo '<h1>Dedina hráča '.$dedinahladaj.'</h1>';}
                      else echo '<h1>Vaša dedina</h1>';?>
                <p class="lead">
-                   <div class="cell"><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica"></div>
                    <div class="table-responsive">
                    <table class="table">
                        <tr>
@@ -100,9 +98,9 @@ if (isset($_POST['mojadedina']))
                            <th>Hostinec [<?php echo $hostinec; ?>]</th>
                        </tr>
                        <tr>
-                           <div class="cell"><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica"></div>
-                           <td><div class="cell"><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža"></div></td>
-                           <td><div class="cell"><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec"></div></td>
+                           <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:220px;height:200px;"></td>
+                           <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža" style="width:220px;height:150px;"></td>
+                           <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec" style="width:234px;height:228px;"></td>
                        </tr>
                        <tr>
                            <td>Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</td>
@@ -115,9 +113,9 @@ if (isset($_POST['mojadedina']))
                            <th>Hrad [<?php echo $hrad; ?>]</th>
                        </tr>
                        <tr>
-                           <td><div class="cell"><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol"></div></td>
-                           <td><div class="cell"><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň"></div></td>
-                           <td><div class="cell"><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad"></div></td>
+                           <td><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:224px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň" style="width:304px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:224px;height:228px;"></td>
                        </tr>
                        <tr>
                            <td>Veriaci obyvatelia vašej dediny potrebujú miesto kde sa budú stretávať, kým nieje postavený kostol slúži im na to radnica, po postavení kostola získate o 150 skúsenostných bodov viac</td>
