@@ -127,15 +127,81 @@ if (isset($_POST['mojadedina']))
                    <p class="bg-info">Úroveň budov sa zvyšuje podľa vašej úrovňe a získaných skúsenostných bodov, každá ďalšia úroveň vám zvýši maximálny zisk o spomínanú konštantu v tabulke</p>
                    <br/>
                    <h6>Zisk skúsenostných bodov sa dokopy zratúva a delí sa konštantou 1,25 preto pre presný výpočet maximálneho možného zisku bodov je potrebné spočítať zisk všetkých budov a videliť ho, ďalej pre výpočet minimálneho možného počtu získania skúsenostných bodov toto videlené číslo opäť videliť dvomi</h6>
-                   <center>
-                        <?php if (isset($_POST['dedinasubmit']))
+               <div class="container">
+                   <h1>Bootstrap 3 Responsive Image Grid</h1>
+                   <hr>
+
+                   <h2>Non-stacking grid example<p class="lead">Uses the tiny <code>.col-*</code> grid classes</p></h2>
+                   <p>This layout displays <b>4 images per row</b>. Bootstrap 3 sizes images "responsively" using the <code>img-responsive</code> CSS class. As browser width shrinks, the columns and images scale down accordingly...</p>
+                   <div class="row">
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                       <div class="col-xs-3">
+                           <a href="#" class="thumbnail">
+                               <img src="http://placehold.it/350x150" class="img-responsive">
+                           </a>
+                       </div>
+                   </div>
+                   <center><?php if (isset($_POST['dedinasubmit']))
                        {
-                                  
                        }
                        else
                        {
                                   // Vypíše tabulku len za tých okolností že hráč je na svojej dedine
-                           echo 
+                           echo
                            '<h1>Skóre hráčov</h1>
                             <div class="table-responsive">
                             <table class="table">
@@ -179,8 +245,8 @@ if (isset($_POST['mojadedina']))
                                }
                                     ?>
 
-                           </table>
-                       </div>
+                       </table>
+               </div>
                 </center>
                </p>
                <h2>Zobraziť dedinu hráča</h2>
