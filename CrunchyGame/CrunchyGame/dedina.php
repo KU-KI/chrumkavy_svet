@@ -98,9 +98,9 @@ if (isset($_POST['mojadedina']))
                            <th>Hostinec [<?php echo $hostinec; ?>]</th>
                        </tr>
                        <tr>
-                           <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:220px;height:200px;"></td>
-                           <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža" style="width:220px;height:150px;"></td>
-                           <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec" style="width:234px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" class="img-responsive img-responsive-2"></td>
+                           <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža" class="img-responsive img-responsive-2"></td>
+                           <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec" class="img-responsive img-responsive-2"></td>
                        </tr>
                        <tr>
                            <td>Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</td>
@@ -113,9 +113,9 @@ if (isset($_POST['mojadedina']))
                            <th>Hrad [<?php echo $hrad; ?>]</th>
                        </tr>
                        <tr>
-                           <td><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:224px;height:228px;"></td>
-                           <td><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň" style="width:304px;height:228px;"></td>
-                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:224px;height:228px;"></td>
+                           <td><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" class="img-responsive img-responsive-2"></td>
+                           <td><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň" class="img-responsive img-responsive-2"></td>
+                           <td><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" class="img-responsive img-responsive-2"></td>
                        </tr>
                        <tr>
                            <td>Veriaci obyvatelia vašej dediny potrebujú miesto kde sa budú stretávať, kým nieje postavený kostol slúži im na to radnica, po postavení kostola získate o 150 skúsenostných bodov viac</td>
