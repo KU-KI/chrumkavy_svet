@@ -98,7 +98,7 @@ if (isset($_POST['mojadedina']))
                            </div>
                            <div class="col-xs-4">
                                Veža [<?php echo $veza; ?>]
-                               <center><img src="assets/img/budovy/veza<?php echo $veza?>.png" class="img-responsive" style="width:200px;height:150px;"> Veža slúži na obranu dediny, dobrovolníci sa odoberú na stráž a vaša dedina je tak v noci i počas dňa lepšie chránená, veža pridáva 90 skúsenostných bodov</center>
+                               <center><img src="assets/img/budovy/veza<?php echo $veza?>.png" class="img-responsive" style="width:180px;height:150px;"> Veža slúži na obranu dediny, dobrovolníci sa odoberú na stráž a vaša dedina je tak v noci i počas dňa lepšie chránená, veža pridáva 90 skúsenostných bodov</center>
                            </div>
                            <div class="col-xs-4">
                                Hostinec [<?php echo $hostinec; ?>]
@@ -106,7 +106,7 @@ if (isset($_POST['mojadedina']))
                            </div>
                            <div class="col-xs-4">
                                Kostol [<?php echo $kostol; ?>]
-                               <center><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:200px;height:150px;" class="img-responsive"> Veriaci obyvatelia vašej dediny potrebujú miesto kde sa budú stretávať, kým nieje postavený kostol slúži im na to radnica, po postavení kostola získate o 150 skúsenostných bodov viac</center>
+                               <center><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:180px;height:150px;" class="img-responsive"> Veriaci obyvatelia vašej dediny potrebujú miesto kde sa budú stretávať, kým nieje postavený kostol slúži im na to radnica, po postavení kostola získate o 150 skúsenostných bodov viac</center>
                            </div>
                            <div class="col-xs-4">
                                Kasáreň [<?php echo $kasaren; ?>]
