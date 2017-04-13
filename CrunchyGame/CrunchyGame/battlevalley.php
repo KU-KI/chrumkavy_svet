@@ -87,6 +87,7 @@ if(isset($_POST['odoslat']))
 //  nastavenie cookies čo sa hodí pri refreshovaní stránky, údaje ostanú zapísané
 setcookie("Cookie", $spravna);
 setcookie("nahodnecislo", $nahoda);
+$db->close();
 ?>
 <!DOCTYPE html>
 
