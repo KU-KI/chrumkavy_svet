@@ -115,7 +115,7 @@ if (isset($_POST['mojadedina']))
                            </div>
                            <div class="col-xs-4">
                                Hrad [<?php echo $hrad; ?>]
-                               <center><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:170px;height:150px;" class="img-responsive"> Hrad slúži ako úkryt pre obyvateľov dediny, kto má vo svojej dedine hrad jeho dedina sa viac menej stáva mestom, zisk skúsenosti sa posunie o rovných 500 bodov</center>
+                               <center><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:150px;height:150px;" class="img-responsive"> Hrad slúži ako úkryt pre obyvateľov dediny, kto má vo svojej dedine hrad jeho dedina sa viac menej stáva mestom, zisk skúsenosti sa posunie o rovných 500 bodov</center>
                            </div>
                        </div><br/>
                     <p class="bg-info">Úroveň budov sa zvyšuje podľa vašej úrovňe a získaných skúsenostných bodov, každá ďalšia úroveň vám zvýši maximálny zisk o spomínanú konštantu v tabulke</p>
