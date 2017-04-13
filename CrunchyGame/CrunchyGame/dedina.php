@@ -117,9 +117,8 @@ if (isset($_POST['mojadedina']))
                                Hrad [<?php echo $hrad; ?>]
                                <center><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:170px;height:150px;" class="img-responsive"> Hrad slúži ako úkryt pre obyvateľov dediny, kto má vo svojej dedine hrad jeho dedina sa viac menej stáva mestom, zisk skúsenosti sa posunie o rovných 500 bodov</center>
                            </div>
-                       </div>
+                       </div><br/>
                     <p class="bg-info">Úroveň budov sa zvyšuje podľa vašej úrovňe a získaných skúsenostných bodov, každá ďalšia úroveň vám zvýši maximálny zisk o spomínanú konštantu v tabulke</p>
-                   <br/>
                    <h6>Zisk skúsenostných bodov sa dokopy zratúva a delí sa konštantou 1,25 preto pre presný výpočet maximálneho možného zisku bodov je potrebné spočítať zisk všetkých budov a videliť ho, ďalej pre výpočet minimálneho možného počtu získania skúsenostných bodov toto videlené číslo opäť videliť dvomi</h6>
                    
                    <center><?php if (isset($_POST['dedinasubmit']))
