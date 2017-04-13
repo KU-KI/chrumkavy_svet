@@ -91,7 +91,6 @@ if (isset($_POST['mojadedina']))
                      else echo '<h1>Vaša dedina</h1>';?>
                <p class="lead">
                    <div class="container">
-                       <h1>Bootstrap 3 Responsive Image Grid</h1>
                        <div class="row">
                            <div class="col-xs-4">
                                Radnica [<?php echo $radnica; ?>]
