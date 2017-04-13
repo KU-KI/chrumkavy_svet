@@ -146,27 +146,7 @@ if (isset($_POST['mojadedina']))
                        </div>
                        <div class="col-xs-3">
                            <a href="#" class="thumbnail">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
-                           </a>
-                       </div>
-                       <div class="col-xs-3">
-                           <a href="#" class="thumbnail">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
-                           </a>
-                       </div>
-                       <div class="col-xs-3">
-                           <a href="#" class="thumbnail">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
-                           </a>
-                       </div>
-                       <div class="col-xs-3">
-                           <a href="#" class="thumbnail">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
-                           </a>
-                       </div>
-                       <div class="col-xs-3">
-                           <a href="#" class="thumbnail">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
+                               <img src="http://placehold.it/350x150" class="img-responsive"> TEXT
                            </a>
                        </div>
                        <div class="col-xs-3">
