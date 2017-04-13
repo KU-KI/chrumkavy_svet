@@ -98,9 +98,9 @@ if (isset($_POST['mojadedina']))
                            <th>Hostinec [<?php echo $hostinec; ?>]</th>
                        </tr>
                        <tr>
-                           <td><img class="img-responsive"src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:224px;height:228px;"></td>
-                           <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža"></td>
-                           <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec"></td>
+                           <td><img class="img-responsive" src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:224px;height:228px;"></td>
+                           <td><img class="img-responsive" src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža"></td>
+                           <td><img class="img-responsive" src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec"></td>
                        </tr>
                        <tr>
                            <td>Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</td>
