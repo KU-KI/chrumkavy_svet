@@ -102,8 +102,8 @@ if (isset($_POST['mojadedina']))
                            </div>
                            <div class="col-xs-4">
                                Hostinec [<?php echo $hostinec; ?>]
-                               <center><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" class="img-responsive" style="width:200px;height:150px;"> Hostinec je miesto, kde sa každý človek v dedine rád odreaguje po ťažkej práci, zvyšuje to ich spokojnosť a v bojovej sieni získate o 120 skúsenostných bodov viac</center>
-                           </div><br/>
+                               <center><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" class="img-responsive" style="width:200px;height:150px;"> Hostinec je miesto, kde sa každý človek v dedine rád odreaguje po ťažkej práci, zvyšuje to ich spokojnosť a v bojovej sieni získate o 120 skúsenostných bodov viac</center></br>
+                           </div>
                            <div class="col-xs-4">
                                Kostol [<?php echo $kostol; ?>]
                                <center><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:200px;height:150px;" class="img-responsive"> Veriaci obyvatelia vašej dediny potrebujú miesto kde sa budú stretávať, kým nieje postavený kostol slúži im na to radnica, po postavení kostola získate o 150 skúsenostných bodov viac</center>
