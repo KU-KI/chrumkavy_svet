@@ -94,7 +94,7 @@ if (isset($_POST['mojadedina']))
                        <div class="row">
                            <div class="col-xs-4">
                                Radnica [<?php echo $radnica; ?>]
-                               <center><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" class="img-responsive" style="width:200px;"> Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</center>
+                               <center><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" class="img-responsive" style="width:200px; height:auto"> Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</center>
                            </div>
                            <div class="col-xs-4">
                                Veža [<?php echo $veza; ?>]
@@ -102,19 +102,19 @@ if (isset($_POST['mojadedina']))
                            </div>
                            <div class="col-xs-4">
                                Hostinec [<?php echo $hostinec; ?>]
-                               <center><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" class="img-responsive" style="width:200px;"> Hostinec je miesto, kde sa každý človek v dedine rád odreaguje po ťažkej práci, zvyšuje to ich spokojnosť a v bojovej sieni získate o 120 skúsenostných bodov viac</center></br>
+                               <center><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" class="img-responsive" style="width:200px; height:auto"> Hostinec je miesto, kde sa každý človek v dedine rád odreaguje po ťažkej práci, zvyšuje to ich spokojnosť a v bojovej sieni získate o 120 skúsenostných bodov viac</center></br>
                            </div>
                            <div class="col-xs-4">
                                Kostol [<?php echo $kostol; ?>]
-                               <center><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:180px;" class="img-responsive"> Veriaci obyvatelia vašej dediny potrebujú miesto kde sa budú stretávať, kým nieje postavený kostol slúži im na to radnica, po postavení kostola získate o 150 skúsenostných bodov viac</center>
+                               <center><img src="assets/img/budovy/kostol<?php echo $kostol?>.png" alt="Kostol" style="width:180px; height:auto" class="img-responsive"> Veriaci obyvatelia vašej dediny potrebujú miesto kde sa budú stretávať, kým nieje postavený kostol slúži im na to radnica, po postavení kostola získate o 150 skúsenostných bodov viac</center>
                            </div>
                            <div class="col-xs-4">
                                Kasáreň [<?php echo $kasaren; ?>]
-                               <center><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň" style="width:200px;" class="img-responsive"> Kasárne sú miesto, kde sa môžu obyvatelia dediny vzdelávať v bojovom umení a byť tak pripravený na útoky z rôznych zdrojov, to však necháme na nich. Kasárne prilepšujú ziskom 200 skúsenostných bodov</center>
+                               <center><img src="assets/img/budovy/kasarne<?php echo $kasaren?>.png" alt="Kasáreň" style="width:200px; height:auto" class="img-responsive"> Kasárne sú miesto, kde sa môžu obyvatelia dediny vzdelávať v bojovom umení a byť tak pripravený na útoky z rôznych zdrojov, to však necháme na nich. Kasárne prilepšujú ziskom 200 skúsenostných bodov</center>
                            </div>
                            <div class="col-xs-4">
                                Hrad [<?php echo $hrad; ?>]
-                               <center><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:150px;" class="img-responsive"> Hrad slúži ako úkryt pre obyvateľov dediny, kto má vo svojej dedine hrad jeho dedina sa viac menej stáva mestom, zisk skúsenosti sa posunie o rovných 500 bodov</center>
+                               <center><img src="assets/img/budovy/hrad<?php echo $hrad?>.png" alt="Hrad" style="width:150px; height:auto" class="img-responsive"> Hrad slúži ako úkryt pre obyvateľov dediny, kto má vo svojej dedine hrad jeho dedina sa viac menej stáva mestom, zisk skúsenosti sa posunie o rovných 500 bodov</center>
                            </div>
                        </div></div><br/>
                     <p class="bg-info">Úroveň budov sa zvyšuje podľa vašej úrovňe a získaných skúsenostných bodov, každá ďalšia úroveň vám zvýši maximálny zisk o spomínanú konštantu v tabulke</p>
