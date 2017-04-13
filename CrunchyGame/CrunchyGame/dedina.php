@@ -101,7 +101,9 @@ if (isset($_POST['mojadedina']))
                            <td><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža" style="width:220px;height:150px;"></td>
                            <td><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec" style="width:234px;height:228px;"></td>
                        </tr>
+                       <tr>
                            <td>Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</td>
+                       </tr>
                        <tr>
                            <th>Kostol [<?php echo $kostol; ?>]</th>
                            <th>Kasáreň [<?php echo $kasaren; ?>]</th>
