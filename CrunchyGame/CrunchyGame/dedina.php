@@ -94,7 +94,7 @@ if (isset($_POST['mojadedina']))
                        <div class="row">
                            <div class="col-xs-4">
                                Radnica [<?php echo $radnica; ?>]
-                               <center><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" class="img-responsive" style="width:200px;height:150px;"> Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</center>
+                               <center><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" class="img-responsive" style="width:200px;"> Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</center>
                            </div>
                            <div class="col-xs-4">
                                Veža [<?php echo $veza; ?>]
