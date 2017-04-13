@@ -88,9 +88,10 @@ if (isset($_POST['mojadedina']))
        <div class="container">
            <div class="starter-template">
                <?php if (isset($_POST['dedinasubmit'])) {echo '<h1>Dedina hráča '.$dedinahladaj.'</h1>';}
-               else echo '<h1>Vaša dedina</h1>';?>
+                     else echo '<h1>Vaša dedina</h1>';?>
                <p class="lead">
-                   <table style="width:100%">
+                   <div class="table-responsive">
+                   <table class="table">
                        <tr>
                            <th>Radnica [<?php echo $radnica; ?>]</th>
                            <th>Veža [<?php echo $veza; ?>]</th>
@@ -121,7 +122,8 @@ if (isset($_POST['mojadedina']))
                            <td>Kasárne sú miesto, kde sa môžu obyvatelia dediny vzdelávať v bojovom umení a byť tak pripravený na útoky z rôznych zdrojov, to však necháme na nich. Kasárne prilepšujú ziskom 200 skúsenostných bodov</td>
                            <td>Hrad slúži ako úkryt pre obyvateľov dediny, kto má vo svojej dedine hrad jeho dedina sa viac menej stáva mestom, zisk skúsenosti sa posunie o rovných 500 bodov</td>
                        </tr>
-                   </table><br/>
+                   </table>
+                       </div><br/>
                    <h6>Zisk skúsenostných bodov sa dokopy zratúva a delí sa konštantou 1,25 preto pre presný výpočet maximálneho možného zisku bodov je potrebné spočítať zisk všetkých budov a videliť ho, ďalej pre výpočet minimálneho možného počtu získania skúsenostných bodov toto videlené číslo opäť videliť dvomi</h6>
                    <center>
                         <?php if (isset($_POST['dedinasubmit']))
