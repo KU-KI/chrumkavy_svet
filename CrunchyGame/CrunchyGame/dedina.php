@@ -134,7 +134,7 @@ if (isset($_POST['mojadedina']))
                    <h2>Non-stacking grid example<p class="lead">Uses the tiny <code>.col-*</code> grid classes</p></h2>
                    <p>This layout displays <b>4 images per row</b>. Bootstrap 3 sizes images "responsively" using the <code>img-responsive</code> CSS class. As browser width shrinks, the columns and images scale down accordingly...</p>
                    <div class="row">
-                       <div class="col-xs-3">
+                       <div class="col-xs-4">
                            <a href="#" class="thumbnail">
                                <img src="http://placehold.it/350x150" class="img-responsive">
                            </a>
