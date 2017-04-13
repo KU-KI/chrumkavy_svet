@@ -129,28 +129,25 @@ if (isset($_POST['mojadedina']))
                    <h6>Zisk skúsenostných bodov sa dokopy zratúva a delí sa konštantou 1,25 preto pre presný výpočet maximálneho možného zisku bodov je potrebné spočítať zisk všetkých budov a videliť ho, ďalej pre výpočet minimálneho možného počtu získania skúsenostných bodov toto videlené číslo opäť videliť dvomi</h6>
                <div class="container">
                    <h1>Bootstrap 3 Responsive Image Grid</h1>
-                   <hr>
-
-                   <h2>Non-stacking grid example<p class="lead">Uses the tiny <code>.col-*</code> grid classes</p></h2>
-                   <p>This layout displays <b>4 images per row</b>. Bootstrap 3 sizes images "responsively" using the <code>img-responsive</code> CSS class. As browser width shrinks, the columns and images scale down accordingly...</p>
                    <div class="row">
                        <div class="col-xs-4">
+                                Radnica [<?php echo $radnica; ?>]
                                <img src="assets/img/budovy/radnica<?php echo $radnica?>.png" class="img-responsive"> Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše
                        </div>
                        <div class="col-xs-4">
-                               <img src="http://placehold.it/350x150" class="img-responsive"> Veža slúži na obranu dediny, dobrovolníci sa odoberú na stráž a vaša dedina je tak v noci i počas dňa lepšie chránená, veža pridáva 90 skúsenostných bodov
+                               <img src="assets/img/budovy/veza<?php echo $veza?>.png" class="img-responsive"> Veža slúži na obranu dediny, dobrovolníci sa odoberú na stráž a vaša dedina je tak v noci i počas dňa lepšie chránená, veža pridáva 90 skúsenostných bodov
                        </div>
                        <div class="col-xs-4">
-                               <img src="http://placehold.it/350x150" class="img-responsive"> Hostinec je miesto, kde sa každý človek v dedine rád odreaguje po ťažkej práci, zvyšuje to ich spokojnosť a v bojovej sieni získate o 120 skúsenostných bodov viac
+                               <img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" class="img-responsive"> Hostinec je miesto, kde sa každý človek v dedine rád odreaguje po ťažkej práci, zvyšuje to ich spokojnosť a v bojovej sieni získate o 120 skúsenostných bodov viac
                        </div>
                        <div class="col-xs-4">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
+                               <img src="http://placehold.it/350x150" class="img-responsive"> Veriaci obyvatelia vašej dediny potrebujú miesto kde sa budú stretávať, kým nieje postavený kostol slúži im na to radnica, po postavení kostola získate o 150 skúsenostných bodov viac
                        </div>
                        <div class="col-xs-4">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
+                               <img src="http://placehold.it/350x150" class="img-responsive"> Kasárne sú miesto, kde sa môžu obyvatelia dediny vzdelávať v bojovom umení a byť tak pripravený na útoky z rôznych zdrojov, to však necháme na nich. Kasárne prilepšujú ziskom 200 skúsenostných bodov
                        </div>
                        <div class="col-xs-4">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
+                               <img src="http://placehold.it/350x150" class="img-responsive"> Hrad slúži ako úkryt pre obyvateľov dediny, kto má vo svojej dedine hrad jeho dedina sa viac menej stáva mestom, zisk skúsenosti sa posunie o rovných 500 bodov
                        </div>
                    </div>
                    <center><?php if (isset($_POST['dedinasubmit']))
