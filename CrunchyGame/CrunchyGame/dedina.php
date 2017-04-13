@@ -169,11 +169,6 @@ if (isset($_POST['mojadedina']))
                                <img src="http://placehold.it/350x150" class="img-responsive">
                            </a>
                        </div>
-                       <div class="col-xs-3">
-                           <a href="#" class="thumbnail">
-                               <img src="http://placehold.it/350x150" class="img-responsive">
-                           </a>
-                       </div>
                    </div>
                    <center><?php if (isset($_POST['dedinasubmit']))
                        {
