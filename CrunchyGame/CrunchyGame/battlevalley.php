@@ -153,8 +153,8 @@ setcookie("nahodnecislo", $nahoda);
                            ?>
                        </h4>
                        <br />
-                       <br />
                        <button type="submit" class="btn btn-danger" button name="odoslat">Odoslať odpoveď</button>
+                       <h5>Zvoľ prosím odpoveď ktorú považuješ za správnu</h5>
                    </p>
                </form>
             </div>
