@@ -1,0 +1,12 @@
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.cell {
+    display: table-cell;
+}
+
+.cell-fluid {
+    width: 100%;
+}

@@ -49,6 +49,7 @@ if (isset($_POST['mojadedina']))
        <meta name="viewport" content="width=device-width, initial-scale=1">
        <link href="assets/css/bootstrap.min.css" rel="stylesheet">
        <link href="assets/css/administracia.css" rel="stylesheet" />
+       <link href="assets/css/our.css" rel="stylesheet">
    </head>
    
    <body>
@@ -98,9 +99,9 @@ if (isset($_POST['mojadedina']))
                            <th>Hostinec [<?php echo $hostinec; ?>]</th>
                        </tr>
                        <tr>
-                           <td><img class="img-responsive" src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica" style="width:220px;height:200px;"></td>
-                           <td><img class="img-responsive" src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža" style="width:220px;height:150px;"></td>
-                           <td><img class="img-responsive" src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec" style="width:234px;height:228px;"></td>
+                           <td><div class="cell"><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica"></div></td>
+                           <td><div class="cell"><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža"></div></td>
+                           <td><div class="cell"><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec"></div></td>
                        </tr>
                        <tr>
                            <td>Radnica je základná budova vašej dediny, ľudia v dedine sa tu obracajú na starostu, každá úroveň vám získa 70 skúsenostných bodov navyše</td>
