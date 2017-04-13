@@ -91,6 +91,7 @@ if (isset($_POST['mojadedina']))
                <?php if (isset($_POST['dedinasubmit'])) {echo '<h1>Dedina hráča '.$dedinahladaj.'</h1>';}
                      else echo '<h1>Vaša dedina</h1>';?>
                <p class="lead">
+                   <div class="cell"><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica"></div>
                    <div class="table-responsive">
                    <table class="table">
                        <tr>
@@ -99,7 +100,7 @@ if (isset($_POST['mojadedina']))
                            <th>Hostinec [<?php echo $hostinec; ?>]</th>
                        </tr>
                        <tr>
-                           <td><div class="cell"><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica"></div></td>
+                           <div class="cell"><img src="assets/img/budovy/radnica<?php echo $radnica?>.png" alt="Radnica"></div>
                            <td><div class="cell"><img src="assets/img/budovy/veza<?php echo $veza?>.png" alt="Veža"></div></td>
                            <td><div class="cell"><img src="assets/img/budovy/hostinec<?php echo $hostinec?>.png" alt="Hostinec"></div></td>
                        </tr>
