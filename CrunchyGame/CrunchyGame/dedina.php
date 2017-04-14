@@ -153,7 +153,7 @@ if (isset($_POST['mojadedina']))
                                        // Algoritmus pre vypočítanie skóre hráča do tabulky
                                        $AlgoMX = ((70*$radnica1 + 90*$veza1 + 120*$hostinec1 + 150*$kostol1 + 200*$kasaren1 + 500*$hrad1)/1.25)+(($row["xp"])/400);
                                        // vypisuje a zároveň generuje riadky a stĺpce do tabulky
-                                       echo '<tr><td>'.$row["username"].' ['.$curentlevel.']</td>';
+                                       echo '<tr><td>'.ucfirst($row["username"]).' ['.$curentlevel.']</td>';
                                        // Zaokrúhlenie na 2 miesta
                                        echo '<td>'.number_format((float)$AlgoMX, 2, '.', '').'</td></tr>';
                                        // Overuje ktorý hráč má najväčšie skóre v cykle
@@ -167,7 +167,7 @@ if (isset($_POST['mojadedina']))
                                // Uzatvorenie spojenia s databázou
                                $db->close();
                                // Výpis mena a skóre najlepšieho hráča v strede nadpisom typu h3
-                               echo '<center><h3> Najlepší hráč je '.$najlepsihracmeno.' so skóre '.number_format((float)$najlepsihracscore, 2, '.', '').'</h3></center>';
+                               echo '<center><h3> Najlepší hráč je '.ucfirst($najlepsihracmeno).' so skóre '.number_format((float)$najlepsihracscore, 2, '.', '').'</h3></center>';
                                }
                                     ?>
 
