@@ -167,7 +167,7 @@ if (isset($_POST['mojadedina']))
                                // Uzatvorenie spojenia s databázou
                                $db->close();
                                // Výpis mena a skóre najlepšieho hráča v strede nadpisom typu h3
-                               echo '<center><h3> Najlepší hráč je '.number_format((float)$najlepsihracmeno, 2, '.', '').' so skóre '.number_format((float)$najlepsihracscore, 2, '.', '').'</h3></center>';
+                               echo '<center><h3> Najlepší hráč je '.$najlepsihracmeno.' so skóre '.number_format((float)$najlepsihracscore, 2, '.', '').'</h3></center>';
                                }
                                     ?>
 
