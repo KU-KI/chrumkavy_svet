@@ -118,7 +118,7 @@
         </div>
         <div class="lines">
             <div class="more-btn">
-                <a href="#" class="btn">Pozri viac</a>
+                <a href="assets/manual.pdf" class="btn">Manuál k hre CrunchyGame</a>
             </div>
         </div>
         <div class="ruler"></div>

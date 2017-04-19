@@ -23,4 +23,7 @@
     <Compile Include="session.php" />
     <Compile Include="settings.php" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="assets\manual.pdf" />
+  </ItemGroup>
 </Project>

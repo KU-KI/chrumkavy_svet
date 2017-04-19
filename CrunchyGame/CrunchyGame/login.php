@@ -3,7 +3,7 @@
 include("config.php");
 session_start();
 // Povolenie/zakazanie registracii pouzivatelov -> mozne pouzit ako nastavenie pre admina
-$registration_avilable=false;
+$registration_avilable=true;
 // ak sa pouzivatel pokusa prihlasit spusti sa nasledovne po stlaceni tlacidla prihlasit
 if (isset($_POST['login'])) {
     // zabezpečeným spôsobom sa preberu udaje do premenných
