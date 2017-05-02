@@ -172,7 +172,7 @@
     </div><!-- /container -->
     <div class="container">
         <div class="copy-rights">
-            Copyright(c) Chrumkavý Svet<br>
+            Copyright(c) Chrumkavý Svet
         </div>
     </div>
     
