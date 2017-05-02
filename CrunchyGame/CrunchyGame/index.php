@@ -171,7 +171,7 @@
         </div>
     </div><!-- /container -->
     <div class="container">
-        <center>Copyright(c) Chrumkavý Svet</center>
+        <center><font color="white">Copyright(c) Chrumkavý Svet</font></center>
     </div>
     
     <!-- Bootstrap core JavaScript
