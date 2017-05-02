@@ -171,9 +171,7 @@
         </div>
     </div><!-- /container -->
     <div class="container">
-        <div class="copy-rights">
-            Copyright(c) Chrumkavý Svet
-        </div>
+        <center>Copyright(c) Chrumkavý Svet</center>
     </div>
     
     <!-- Bootstrap core JavaScript
