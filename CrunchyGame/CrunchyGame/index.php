@@ -169,21 +169,13 @@
 
             </div>
         </div>
-
     </div><!-- /container -->
-
     <div class="container">
         <div class="copy-rights">
             Copyright(c) Chrumkavý Svet<br>
         </div>
     </div>
-
-
-
-
-
-
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -194,7 +186,6 @@
     <script src="assets/js/imagesloaded.js"></script>
     <script src="assets/js/classie.js"></script>
     <script src="assets/js/AnimOnScroll.js"></script>
-
     <script>
       new AnimOnScroll( document.getElementById( 'grid' ), {
         minDuration : 0.4,
@@ -202,8 +193,5 @@
         viewportFactor : 0.2
       } );
     </script>
-
-
 </body>
 </html>
-
