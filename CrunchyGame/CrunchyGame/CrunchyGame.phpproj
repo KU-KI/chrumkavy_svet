@@ -26,4 +26,7 @@
   <ItemGroup>
     <Content Include="assets\manual.pdf" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="assets\" />
+  </ItemGroup>
 </Project>
